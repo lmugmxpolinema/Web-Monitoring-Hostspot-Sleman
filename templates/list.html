@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Daftar ONT</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/logo.png') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .controls {
+            max-width: 1000px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .controls-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .controls-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .controls a {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .controls a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .controls a i {
+            margin-right: 6px;
+        }
+
+        .controls select,
+        .controls input[type="text"] {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .controls select:focus,
+        .controls input[type="text"]:focus {
+            outline: none;
+            border-color: #3498db;
+            background-color: #fff;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .controls select {
+            min-width: 180px;
+            cursor: pointer;
+        }
+
+        .controls input[type="text"] {
+            min-width: 250px;
+        }
+
+        .controls input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            table-layout: auto;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        th:nth-child(4),
+        td:nth-child(4) {
+            min-width: 300px;
+            max-width: 600px;
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e2f2fc;
+        }
+
+        tr:hover {
+            background-color: #eef9bc;
+        }
+
+        td a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: white;
+            transition: all 0.3s ease;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        td a[href*="/edit"] { background-color: #2ecc71; }
+        td a[href*="/delete"] { background-color: #e74c3c; }
+        td a:hover[href*="/edit"] { background-color: #27ae60; }
+        td a:hover[href*="/delete"] { background-color: #c0392b; }
+
+        td:last-child {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            min-width: 140px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .pagination button {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .pagination button.active {
+            background-color: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+        .pagination button:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.75rem;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-logo {
+            width: 50px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            table { font-size: 14px; }
+            th, td { padding: 10px; }
+            
+            .controls {
+                padding: 15px;
+            }
+            
+            .controls-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                width: 100%;
+                gap: 8px;
+            }
+            
+            .filter-group {
+                flex-direction: column;
+                width: 100%;
+                gap: 8px;
+            }
+            
+            .controls a {
+                width: 100%;
+                justify-content: center;
+                padding: 12px;
+            }
+            
+            .controls input[type="text"],
+            .controls select {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo" class="header-logo">
+        <h1>Daftar ONT</h1>
+    </div>
+
+    <div class="controls">
+        <!-- Baris 1: Navigation Buttons -->
+        <div class="controls-row">
+            <div class="button-group">
+                <a href="/dashboard" style="background-color: #ff6b35;">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="/add" style="background-color: #e74c3c;">
+                    <i class="fas fa-plus"></i> Tambah ONT
+                </a>
+                <a href="/notifications" style="background-color: #8e44ad; position: relative;">
+                    <i class="fas fa-bell"></i> Notifikasi
+                    <span id="notification-badge" class="notification-badge" style="display: none;">0</span>
+                </a>
+                <a href="/" style="background-color: #3498db;">
+                    <i class="fas fa-map-marked-alt"></i> Peta
+                </a>
+                {% if current_user.is_authenticated %}
+                <a href="/logout" style="background-color: #95a5a6;">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Baris 2: Filter & Search -->
+        <div class="controls-row">
+            <div class="filter-group">
+                <select id="statusFilter">
+                    <option value="all">Tampilkan Semua ONT</option>
+                    <option value="on">Tampilkan Hanya ONT ON</option>
+                    <option value="off">Tampilkan Hanya ONT OFF</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="🔍 Cari ONT...">
+            </div>
+        </div>
+    </div>
+
+    <table id="ontTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>ID CCBS</th>
+                <th>Nama</th>
+                <th>Lokasi</th>
+                <th>IP</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Status</th>
+                <th>Keterangan Terakhir ON</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="ontBody">
+            {% for ont in onts %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ ont.id_ccbs }}</td>
+                <td>{{ ont.name }}</td>
+                <td>{{ ont.lokasi }}</td>
+                <td>
+                    <a href="http://{{ ont.ip }}" target="_blank" 
+                        style="color: blue; text-decoration: none; padding: 2px 6px; border-radius: 3px; display: inline-block;"
+                        onmouseover="this.style.color='white'; this.style.backgroundColor='blue';"
+                        onmouseout="this.style.color='blue'; this.style.backgroundColor='transparent';">
+                        {{ ont.ip }}
+                    </a>
+                </td>
+                <td>{{ ont.latitude }}</td>
+                <td>{{ ont.longitude }}</td>
+                <td style="color: {{ 'green' if ont.status == 'ON' else 'red' }}">{{ ont.status }}</td>
+                <td>
+                    {% if ont.status != 'ON' %}
+                        {% if ont.last_on %}
+                            {% set dt = ont.last_on.split('T') %}
+                            {% set tgl = dt[0].split('-') %}
+                            {% set jam = dt[1] %}
+                            Terakhir ON: {{ tgl[2] }}/{{ tgl[1] }}/{{ tgl[0] }} {{ jam }}
+                        {% else %}
+                            Belum ada data ON
+                        {% endif %}
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="/edit/{{ ont.id }}">Edit</a>
+                    <a href="/delete/{{ ont.id }}" onclick="return confirm('Yakin hapus?')">Hapus</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script>
+        const rowsPerPage = 10;
+        const tbody = document.getElementById('ontBody');
+        const searchInput = document.getElementById('searchInput');
+        const statusFilter = document.getElementById('statusFilter');
+        const pagination = document.getElementById('pagination');
+        let currentPage = 1;
+        let filteredRows = Array.from(tbody.querySelectorAll('tr'));
+
+        function filterRows() {
+            const filter = searchInput.value.toLowerCase();
+            const status = statusFilter.value;
+            
+            filteredRows = Array.from(tbody.querySelectorAll('tr')).filter(row => {
+                const rowText = row.textContent.toLowerCase();
+                const statusCell = row.querySelector('td:nth-child(8)');
+                if (!statusCell) return false;
+
+                const statusText = statusCell.textContent.trim().toUpperCase();
+                
+                // Logika Filter
+                let statusMatch = true; // Defaultnya tampilkan semua
+                if (status === 'on') {
+                    statusMatch = (statusText === 'ON');
+                } else if (status === 'off') {
+                    statusMatch = (statusText !== 'ON'); // Semua selain ON dianggap OFF (OFF, RTO, Waiting, dll.)
+                }
+
+                const searchMatch = rowText.includes(filter);
+                
+                return statusMatch && searchMatch;
+            });
+            currentPage = 1;
+            paginate();
+        }
+
+        function paginate() {
+            const totalPages = Math.ceil(filteredRows.length / rowsPerPage);
+
+            Array.from(tbody.querySelectorAll('tr')).forEach(row => {
+                row.style.display = 'none';
+            });
+
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+            filteredRows.slice(start, end).forEach(row => {
+                row.style.display = '';
+            });
+
+            pagination.innerHTML = '';
+            if (totalPages > 1) {
+                for (let i = 1; i <= totalPages; i++) {
+                    const btn = document.createElement('button');
+                    btn.textContent = i;
+                    if (i === currentPage) {
+                        btn.classList.add('active');
+                    }
+                    btn.addEventListener('click', () => {
+                        currentPage = i;
+                        paginate();
+                    });
+                    pagination.appendChild(btn);
+                }
+            }
+        }
+
+        searchInput.addEventListener('input', filterRows);
+        statusFilter.addEventListener('change', filterRows);
+
+        window.addEventListener('DOMContentLoaded', () => {
+            filteredRows = Array.from(tbody.querySelectorAll('tr'));
+            paginate();
+            loadNotificationCount();
+        });
+
+        function loadNotificationCount() {
+            fetch('/api/notifications')
+                .then(response => response.json())
+                .then(data => {
+                    const unreadCount = data.filter(n => !n.read).length;
+                    const badge = document.getElementById('notification-badge');
+
+                    if (unreadCount > 0) {
+                        badge.textContent = unreadCount;
+                        badge.style.display = 'block';
+                    } else {
+                        badge.style.display = 'none';
+                    }
+                })
+                .catch(error => console.error('Error loading notification count:', error));
+        }
+
+        setInterval(loadNotificationCount, 30000);
+    </script>
+</body>
+</html>

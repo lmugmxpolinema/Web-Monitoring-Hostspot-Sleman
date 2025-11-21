@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ 'Edit' if ont else 'Tambah' }} ONT</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/logo.png') }}">
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f3f6; /* slightly lighter than before */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #2c3e50;
+    }
+
+    /* Card wrapper to match screenshot */
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 560px;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(20, 30, 40, 0.08);
+      padding: 28px 36px;
+    }
+
+    .card h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 18px;
+      color: #1f2d3d;
+      font-weight: 600;
+    }
+
+    form .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #34495e;
+      font-size: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #e6e9ee;
+      border-radius: 6px;
+      font-size: 15px;
+      color: #2c3e50;
+      background-clip: padding-box;
+    }
+
+    input::placeholder {
+      color: #bfc9d4;
+      font-weight: 400;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #2b97e6;
+      box-shadow: 0 6px 18px rgba(43, 151, 230, 0.12);
+    }
+
+    .btn-primary {
+      display: inline-block;
+      width: 100%;
+      background-color: #3498db;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover { background-color: #2a85c4; }
+
+    /* Small screen tweaks */
+    @media (max-width: 480px) {
+      .card { padding: 20px; }
+      .card h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>{{ 'Edit' if ont else 'Tambah' }} ONT</h1>
+    <form method="post">
+      <div class="form-group">
+        <label for="id_pelanggan">ID Pelanggan:</label>
+        <input type="text" name="id_pelanggan" id="id_pelanggan" value="{{ ont.id_pelanggan or '' }}" placeholder="Contoh: XM000123 — ID unik pelanggan (wajib)" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" name="name" id="name" value="{{ ont.name or '' }}" placeholder="Nama pelanggan / contoh: Budi Santoso">
+      </div>
+
+      <div class="form-group">
+        <label for="lokasi">Lokasi:</label>
+  <input type="text" name="lokasi" id="lokasi" value="{{ ont.lokasi or '' }}" placeholder="Alamat, desa, kecamatan">
+      </div>
+
+      <div class="form-group">
+        <label for="ip">IP:</label>
+        <input type="text" name="ip" id="ip" value="{{ ont.ip or '' }}" placeholder="Contoh: 192.168.1.10">
+      </div>
+
+      <div class="form-group">
+        <label for="latitude">Latitude:</label>
+        <input type="number" step="any" name="latitude" id="latitude" value="{{ ont.latitude or '' }}" placeholder="Contoh: -7.12345">
+      </div>
+
+      <div class="form-group">
+        <label for="longitude">Longitude:</label>
+        <input type="number" step="any" name="longitude" id="longitude" value="{{ ont.longitude or '' }}" placeholder="Contoh: 110.34567">
+      </div>
+
+      <!-- status select intentionally left commented out for now -->
+
+      <button type="submit" class="btn-primary">Simpan</button>
+    </form>
+  </div>
+</body>
+</html>

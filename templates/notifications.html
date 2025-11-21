@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histori Notifikasi - Sistem Monitoring ONT</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/logo.png') }}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #3B82F6;
+            --primary-hover: #2563EB;
+            --secondary-color: #1F2937;
+            --background-color: #F3F4F6;
+            --card-bg-color: #FFFFFF;
+            --text-dark: #111827;
+            --text-light: #6B7280;
+            --border-color: #E5E7EB;
+            --unread-bg: #EFF6FF;
+            
+            --info-color: #3B82F6;
+            --success-color: #10B981;
+            --warning-color: #F59E0B;
+            --error-color: #EF4444;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        /* Header Bar */
+        .header-bar {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+        .header-bar h1 {
+            font-weight: 600;
+        }
+        .header-bar .btn-outline-light {
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .header-bar .btn-outline-light:hover {
+            background-color: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Card */
+        .content-card {
+            background-color: var(--card-bg-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Filter Button Group */
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            background-color: var(--background-color);
+            padding: 0.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .filter-btn {
+            flex-grow: 1;
+            text-align: center;
+            border: none;
+            background: none;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: all 0.2s ease;
+        }
+        .filter-btn:hover {
+            background-color: #FFF;
+            color: var(--text-dark);
+        }
+        .filter-btn.active {
+            background-color: #FFF;
+            color: var(--primary-color);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            margin-bottom: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        /* Notification Item Card */
+        .notification-item {
+            border: 1px solid var(--border-color);
+            border-left-width: 5px;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .notification-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        .notification-item.unread {
+            background-color: var(--unread-bg);
+            border-color: var(--primary-color);
+            border-left-color: var(--primary-color);
+        }
+
+        /* Color coding for notification types */
+        .notification-type-info { border-left-color: var(--info-color); }
+        .notification-type-success { border-left-color: var(--success-color); }
+        .notification-type-warning { border-left-color: var(--warning-color); }
+        .notification-type-error { border-left-color: var(--error-color); }
+
+        .notification-message { font-weight: 500; color: var(--text-dark); }
+        .real-time-timestamp { color: var(--text-light); font-size: 0.85rem; }
+        
+        .mark-read-btn {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 1rem;
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            color: var(--text-light);
+        }
+        .empty-state i {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-bar d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0"><i class="fas fa-bell me-2"></i> Histori Notifikasi</h1>
+            <div>
+                <a href="/dashboard" class="btn btn-outline-light btn-sm me-2"><i class="fas fa-tachometer-alt me-1"></i> Dashboard</a>
+                <a href="/admin" class="btn btn-outline-light btn-sm me-2"><i class="fas fa-list me-1"></i> Daftar ONT</a>
+                <a href="/" class="btn btn-outline-light btn-sm"><i class="fas fa-map-marker-alt me-1"></i> Peta</a>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-list me-2"></i>Semua</button>
+                <button class="filter-btn" data-filter="info"><i class="fas fa-info-circle me-2"></i>Info</button>
+                <button class="filter-btn" data-filter="success"><i class="fas fa-check-circle me-2"></i>Sukses</button>
+                <button class="filter-btn" data-filter="warning"><i class="fas fa-exclamation-triangle me-2"></i>Peringatan</button>
+                <button class="filter-btn" data-filter="error"><i class="fas fa-times-circle me-2"></i>Error</button>
+                <button class="filter-btn" data-filter="unread"><i class="fas fa-envelope me-2"></i>Belum Dibaca</button>
+            </div>
+
+            <div id="notifications-container">
+                {% if notifications %}
+                    {% for notification in notifications %}
+                    <div class="card mb-3 notification-item {{ 'unread' if not notification.read }} notification-type-{{ notification.type }}" 
+                         data-type="{{ notification.type }}" 
+                         data-read="{{ 'true' if notification.read else 'false' }}"
+                         data-id="{{ notification.id }}">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="flex-grow-1">
+                                    <p class="notification-message mb-2">{{ notification.message }}</p>
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                        <small class="real-time-timestamp me-3">
+                                            <i class="far fa-clock me-1"></i>
+                                            <span class="time-ago" data-timestamp="{{ notification.timestamp }}">Memuat...</span>
+                                        </small>
+                                        {% if notification.ont_name %}
+                                        <small class="text-muted">
+                                            <i class="fas fa-network-wired me-1"></i>
+                                            {{ notification.ont_name }}
+                                        </small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% if not notification.read %}
+                                <button class="btn btn-sm btn-outline-primary mark-read-btn ms-3" data-notification-id="{{ notification.id }}">
+                                    <i class="fas fa-check"></i> Tandai Dibaca
+                                </button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-state">
+                        <i class="fas fa-bell-slash"></i>
+                        <h4>Tidak Ada Notifikasi</h4>
+                        <p>Semua notifikasi akan muncul di sini saat ada aktivitas sistem.</p>
+                    </div>
+                {% endif %}
+            </div>
+
+            {% if notifications %}
+            <div class="action-buttons">
+                <button id="clearAllBtn" class="btn btn-danger btn-sm me-2"><i class="fas fa-trash-alt me-1"></i> Hapus Semua Notifikasi</button>
+                <button id="restoreBackupBtn" class="btn btn-warning btn-sm me-2 text-dark"><i class="fas fa-undo me-1"></i> Pulihkan dari Backup</button>
+                <span id="clearAllStatus" class="ms-2" style="font-size: 0.9em; color: var(--text-light); display: none;"></span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // === SEMUA FUNGSI JAVASCRIPT ANDA TETAP SAMA ===
+        // Tidak ada perubahan logika, karena fungsionalitasnya sudah sangat baik.
+        // Hanya memastikan selektor tetap bekerja dengan struktur baru.
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                let hasVisibleNotifications = false;
+                document.querySelectorAll('.notification-item').forEach(notification => {
+                    const type = notification.getAttribute('data-type');
+                    const read = notification.getAttribute('data-read');
+                    let show = false;
+                    
+                    if (filter === 'all') show = true;
+                    else if (filter === 'unread') show = (read === 'false');
+                    else show = (type === filter);
+                    
+                    notification.style.display = show ? 'block' : 'none';
+                    if(show) hasVisibleNotifications = true;
+                });
+
+                // Show/hide empty state based on filter result
+                const container = document.getElementById('notifications-container');
+                let emptyState = container.querySelector('.empty-state-filter');
+                if (emptyState) emptyState.remove();
+
+                if (!hasVisibleNotifications) {
+                    const noResultHTML = `<div class="empty-state empty-state-filter">
+                        <i class="fas fa-search"></i>
+                        <h4>Tidak ada notifikasi</h4>
+                        <p>Tidak ada notifikasi yang cocok dengan filter "${filter}".</p>
+                    </div>`;
+                    container.insertAdjacentHTML('beforeend', noResultHTML);
+                }
+            });
+        });
+
+        // Mark as read functionality
+        document.getElementById('notifications-container').addEventListener('click', function(event) {
+            if (event.target.classList.contains('mark-read-btn') || event.target.closest('.mark-read-btn')) {
+                const btn = event.target.closest('.mark-read-btn');
+                const notificationId = btn.getAttribute('data-notification-id');
+                const notificationItem = btn.closest('.notification-item');
+                
+                fetch(`/api/notifications/mark-read/${notificationId}`, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        notificationItem.classList.remove('unread');
+                        notificationItem.setAttribute('data-read', 'true');
+                        btn.remove();
+                    } else {
+                        alert('Gagal menandai notifikasi sebagai dibaca');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Terjadi kesalahan jaringan.');
+                });
+            }
+        });
+
+        // Clear All Notifications
+        const clearAllBtn = document.getElementById('clearAllBtn');
+        if(clearAllBtn) {
+            clearAllBtn.addEventListener('click', function() {
+                const confirmation = prompt('Ketik "HAPUS" untuk mengkonfirmasi penghapusan SEMUA notifikasi. Tindakan ini tidak dapat dibatalkan.');
+                if (confirmation !== 'HAPUS') {
+                    alert('Penghapusan dibatalkan.');
+                    return;
+                }
+                
+                this.disabled = true;
+                this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Menghapus...';
+                
+                fetch('/api/notifications/clear-all', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    const statusEl = document.getElementById('clearAllStatus');
+                    if (data.success) {
+                        statusEl.textContent = 'Semua notifikasi berhasil dihapus.';
+                        statusEl.style.color = 'var(--success-color)';
+                        document.getElementById('notifications-container').innerHTML = `<div class="empty-state">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Notifikasi Dihapus</h4>
+                            <p>Semua notifikasi telah berhasil dihapus. Backup otomatis telah dibuat.</p>
+                        </div>`;
+                        this.closest('.action-buttons').style.display = 'none'; // Sembunyikan semua tombol aksi
+                    } else {
+                        statusEl.textContent = 'Gagal menghapus: ' + (data.message || 'Error tidak diketahui');
+                        statusEl.style.color = 'var(--error-color)';
+                        this.disabled = false;
+                        this.innerHTML = '<i class="fas fa-trash-alt me-1"></i> Hapus Semua Notifikasi';
+                    }
+                    statusEl.style.display = 'inline';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    // Reset button on error
+                    this.disabled = false;
+                    this.innerHTML = '<i class="fas fa-trash-alt me-1"></i> Hapus Semua Notifikasi';
+                });
+            });
+        }
+        
+        // Restore from Backup
+        const restoreBackupBtn = document.getElementById('restoreBackupBtn');
+        if (restoreBackupBtn) {
+            restoreBackupBtn.addEventListener('click', function() {
+                if (confirm('Anda yakin ingin memulihkan notifikasi dari backup? Notifikasi saat ini akan diganti.')) {
+                    this.disabled = true;
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Memulihkan...';
+                    
+                    fetch('/api/notifications/restore-backup', { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert(`Berhasil memulihkan ${data.count} notifikasi. Halaman akan dimuat ulang.`);
+                            location.reload();
+                        } else {
+                            alert('Gagal memulihkan: ' + (data.message || 'Error tidak diketahui'));
+                            this.disabled = false;
+                            this.innerHTML = '<i class="fas fa-undo me-1"></i> Pulihkan dari Backup';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Terjadi kesalahan jaringan.');
+                        this.disabled = false;
+                        this.innerHTML = '<i class="fas fa-undo me-1"></i> Pulihkan dari Backup';
+                    });
+                }
+            });
+        }
+        
+        // Real-time timestamp functions
+        function formatTimeAgo(timestamp) {
+            const now = new Date();
+            const past = new Date(timestamp);
+            const diffInSeconds = Math.floor((now - past) / 1000);
+            
+            if (diffInSeconds < 60) return 'Baru saja';
+            const minutes = Math.floor(diffInSeconds / 60);
+            if (minutes < 60) return `${minutes} menit yang lalu`;
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return `${hours} jam yang lalu`;
+            const days = Math.floor(hours / 24);
+            return `${days} hari yang lalu`;
+        }
+        function updateAllTimestamps() {
+            document.querySelectorAll('.time-ago').forEach(el => {
+                const timestamp = el.getAttribute('data-timestamp');
+                if (timestamp) el.textContent = formatTimeAgo(timestamp);
+            });
+        }
+        updateAllTimestamps();
+        setInterval(updateAllTimestamps, 60000);
+    </script>
+</body>
+</html>

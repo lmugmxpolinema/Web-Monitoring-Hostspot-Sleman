@@ -1,0 +1,3449 @@
+[
+  {
+    "id": 1,
+    "id_ccbs": "XM003274",
+    "name": "Niron/Dukuh Lor RW 21",
+    "lokasi": "Gereja Katolik St. Fransiskus Xaverius Stasi Dukuh",
+    "latitude": -7.7009757,
+    "longitude": 110.3600488,
+    "ip": "10.239.1.209"
+  },
+  {
+    "id": 2,
+    "id_ccbs": "XM003275",
+    "name": "Niron/Dukuh Lor RW 21 RT 3",
+    "lokasi": "Pos Ronda RT 03",
+    "latitude": -7.7004062,
+    "longitude": 110.3604548,
+    "ip": "10.239.1.188"
+  },
+  {
+    "id": 3,
+    "id_ccbs": "XM003276",
+    "name": "Niron/Dukuh Lor RW 21 RT 4",
+    "lokasi": "Masjid Al Mubarok",
+    "latitude": -7.70048,
+    "longitude": 110.36182,
+    "ip": "10.239.1.243"
+  },
+  {
+    "id": 4,
+    "id_ccbs": "XM003277",
+    "name": "Gabugan/Kloncoman RW 15",
+    "lokasi": "Ruang Akses Publik Lingkup RW 15",
+    "latitude": -7.7106026,
+    "longitude": 110.3636943,
+    "ip": "10.239.1.244"
+  },
+  {
+    "id": 5,
+    "id_ccbs": "XM003278",
+    "name": "Gabugan/Kloncoman RW 15 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7102524,
+    "longitude": 110.3642193,
+    "ip": "10.239.1.245"
+  },
+  {
+    "id": 6,
+    "id_ccbs": "XM003285",
+    "name": "Gabugan/Kloncoman RW 15 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.711103,
+    "longitude": 110.3654796,
+    "ip": "10.239.2.35"
+  },
+  {
+    "id": 7,
+    "id_ccbs": "XM003286",
+    "name": "Gabugan/Kloncoman RW 15 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.7104119,
+    "longitude": 110.3630891,
+    "ip": "10.239.2.34"
+  },
+  {
+    "id": 8,
+    "id_ccbs": "XM003287",
+    "name": "Plalangan/Gajahkuning RW 42",
+    "lokasi": "Ruang Akses Publik Lingkup RW 42",
+    "latitude": -7.6775254,
+    "longitude": 110.3691056,
+    "ip": "10.239.1.252"
+  },
+  {
+    "id": 9,
+    "id_ccbs": "XM003288",
+    "name": "Plalangan/Gajahkuning RW 42 RT 6",
+    "lokasi": "Ruang Akses Publik Lingkup RT 06",
+    "latitude": -7.6773845,
+    "longitude": 110.3684435,
+    "ip": "10.239.2.1"
+  },
+  {
+    "id": 10,
+    "id_ccbs": "XM003299",
+    "name": "Jetakan/Toino RW 16",
+    "lokasi": "Ruang Akses Publik Lingkup RW 16",
+    "latitude": -7.7025067,
+    "longitude": 110.3672599,
+    "ip": "10.239.1.184"
+  },
+  {
+    "id": 11,
+    "id_ccbs": "XM003300",
+    "name": "Jetakan/Toino RW 16 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7052358,
+    "longitude": 110.3652939,
+    "ip": "10.239.1.182"
+  },
+  {
+    "id": 12,
+    "id_ccbs": "XM003301",
+    "name": "Jetakan/Toino RW 16 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7046145,
+    "longitude": 110.366409,
+    "ip": "10.239.1.183"
+  },
+  {
+    "id": 13,
+    "id_ccbs": "XM003302",
+    "name": "Plalangan/Gajahkuning RW 42 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.677421,
+    "longitude": 110.3696773,
+    "ip": "10.239.2.62"
+  },
+  {
+    "id": 14,
+    "id_ccbs": "XM003303",
+    "name": "Berkisan/Mlaten RW 6 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7135101,
+    "longitude": 110.3678782,
+    "ip": "10.239.2.40"
+  },
+  {
+    "id": 15,
+    "id_ccbs": "XM003304",
+    "name": "Grojogan/Tlacap RW 1",
+    "lokasi": "Ruang Akses Publik Lingkup RW 01",
+    "latitude": -7.7175372,
+    "longitude": 110.3687325,
+    "ip": "10.239.2.55"
+  },
+  {
+    "id": 16,
+    "id_ccbs": "XM003305",
+    "name": "Jabung RW 38",
+    "lokasi": "Pos Jaga Warga Jabung",
+    "latitude": -7.683845,
+    "longitude": 110.36834,
+    "ip": "10.239.2.5"
+  },
+  {
+    "id": 17,
+    "id_ccbs": "XM003306",
+    "name": "Grojogan/Tlacap RW 1 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7179136,
+    "longitude": 110.3691955,
+    "ip": "10.239.2.46"
+  },
+  {
+    "id": 18,
+    "id_ccbs": "XM003307",
+    "name": "Jabung RW 38",
+    "lokasi": "Pos Ronda",
+    "latitude": -7.683921,
+    "longitude": 110.368058,
+    "ip": "10.239.2.13"
+  },
+  {
+    "id": 19,
+    "id_ccbs": "XM003308",
+    "name": "Grojogan/Tlacap RW 1 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7165916,
+    "longitude": 110.3691814,
+    "ip": "10.239.2.48"
+  },
+  {
+    "id": 20,
+    "id_ccbs": "XM003310",
+    "name": "Karangasem RW 27",
+    "lokasi": "Pos Ronda Karangasem",
+    "latitude": -7.70098,
+    "longitude": 110.36876,
+    "ip": "10.239.2.212"
+  },
+  {
+    "id": 21,
+    "id_ccbs": "XM003311",
+    "name": "Temon RW 23 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.6982506,
+    "longitude": 110.3625024,
+    "ip": "10.239.1.185"
+  },
+  {
+    "id": 22,
+    "id_ccbs": "XM003312",
+    "name": "Gawar RW 37 RT 4",
+    "lokasi": "Masjid Ash Sholeh",
+    "latitude": -7.68772,
+    "longitude": 110.36608,
+    "ip": "10.239.1.212"
+  },
+  {
+    "id": 23,
+    "id_ccbs": "XM003314",
+    "name": "Temon RW 23",
+    "lokasi": "Ruang Akses Publik Lingkup RW 23",
+    "latitude": -7.6975681,
+    "longitude": 110.3625543,
+    "ip": "10.239.1.191"
+  },
+  {
+    "id": 24,
+    "id_ccbs": "XM003315",
+    "name": "Temon RW 23 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.6968209,
+    "longitude": 110.3632004,
+    "ip": "10.239.1.186"
+  },
+  {
+    "id": 25,
+    "id_ccbs": "XM003316",
+    "name": "Temon RW 22",
+    "lokasi": "Ruang Akses Publik Lingkup RW 22",
+    "latitude": -7.697283,
+    "longitude": 110.3638938,
+    "ip": "10.239.1.190"
+  },
+  {
+    "id": 26,
+    "id_ccbs": "XM003317",
+    "name": "Temon RW 22 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.6975973,
+    "longitude": 110.3638978,
+    "ip": "10.239.1.187"
+  },
+  {
+    "id": 27,
+    "id_ccbs": "XM003318",
+    "name": "Temon RW 22 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.696986,
+    "longitude": 110.3638683,
+    "ip": "10.239.1.189"
+  },
+  {
+    "id": 28,
+    "id_ccbs": "XM003319",
+    "name": "Sawahan RW 19",
+    "lokasi": "Ruang Akses Publik Lingkup RW 19",
+    "latitude": -7.7093424,
+    "longitude": 110.3589293,
+    "ip": "10.239.2.22"
+  },
+  {
+    "id": 29,
+    "id_ccbs": "XM003320",
+    "name": "Sawahan RW 19 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.7085168,
+    "longitude": 110.3588713,
+    "ip": "10.239.2.23"
+  },
+  {
+    "id": 30,
+    "id_ccbs": "XM003321",
+    "name": "Sawahan RW 19 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7074811,
+    "longitude": 110.359966,
+    "ip": "10.239.1.193"
+  },
+  {
+    "id": 31,
+    "id_ccbs": "XM003323",
+    "name": "Sawahan RW 19 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7069359,
+    "longitude": 110.3607177,
+    "ip": "10.239.1.246"
+  },
+  {
+    "id": 32,
+    "id_ccbs": "XM003324",
+    "name": "Sawahan RW 18",
+    "lokasi": "Ruang Akses Publik Lingkup RW 18",
+    "latitude": -7.7078506,
+    "longitude": 110.3598289,
+    "ip": "10.239.2.21"
+  },
+  {
+    "id": 33,
+    "id_ccbs": "XM003325",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.707822,
+    "longitude": 110.3616612,
+    "ip": "10.239.1.181"
+  },
+  {
+    "id": 34,
+    "id_ccbs": "XM003326",
+    "name": "Sawahan RW 18 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7087261,
+    "longitude": 110.3609356,
+    "ip": "10.239.2.24"
+  },
+  {
+    "id": 35,
+    "id_ccbs": "XM003327",
+    "name": "Plalangan/Gajahkuning RW 41",
+    "lokasi": "Ruang Akses Publik Lingkup RW 41",
+    "latitude": -7.679627,
+    "longitude": 110.3666595,
+    "ip": "10.239.2.11"
+  },
+  {
+    "id": 36,
+    "id_ccbs": "XM003328",
+    "name": "Plalangan/Gajahkuning RW 41 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.6817325,
+    "longitude": 110.3677867,
+    "ip": "10.239.2.16"
+  },
+  {
+    "id": 37,
+    "id_ccbs": "XM003329",
+    "name": "Plalangan/Gajahkuning RW 41 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.6825795,
+    "longitude": 110.367611,
+    "ip": "10.239.1.240"
+  },
+  {
+    "id": 38,
+    "id_ccbs": "XM003331",
+    "name": "Plalangan/Gajahkuning RW 40",
+    "lokasi": "Pos Jaga Warga Plalangan",
+    "latitude": -7.6813,
+    "longitude": 110.36786,
+    "ip": "10.239.1.238"
+  },
+  {
+    "id": 39,
+    "id_ccbs": "XM003332",
+    "name": "Gawar RW 37 RT 3",
+    "lokasi": "Pos Ronda Gawar",
+    "latitude": -7.68876,
+    "longitude": 110.36569,
+    "ip": "10.239.1.213"
+  },
+  {
+    "id": 40,
+    "id_ccbs": "XM003333",
+    "name": "Grojogan/Tlacap RW 2 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7187608,
+    "longitude": 110.3675811,
+    "ip": "10.239.2.44"
+  },
+  {
+    "id": 41,
+    "id_ccbs": "XM003334",
+    "name": "Grojogan/Tlacap RW 2 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7188232,
+    "longitude": 110.3672241,
+    "ip": "10.239.2.45"
+  },
+  {
+    "id": 42,
+    "id_ccbs": "XM003335",
+    "name": "Grojogan/Tlacap RW 2",
+    "lokasi": "Ruang Akses Publik Lingkup RW 02",
+    "latitude": -7.7182747,
+    "longitude": 110.3674148,
+    "ip": "10.239.2.43"
+  },
+  {
+    "id": 43,
+    "id_ccbs": "XM003336",
+    "name": "Jabung RW 38 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.6862676,
+    "longitude": 110.3682312,
+    "ip": "10.239.2.17"
+  },
+  {
+    "id": 44,
+    "id_ccbs": "XM003338",
+    "name": "Jabung RW 38",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.686566,
+    "longitude": 110.36781,
+    "ip": "10.239.1.237"
+  },
+  {
+    "id": 45,
+    "id_ccbs": "XM003339",
+    "name": "Jabung RW 38 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.6869159,
+    "longitude": 110.367047,
+    "ip": "10.239.2.18"
+  },
+  {
+    "id": 46,
+    "id_ccbs": "XM003340",
+    "name": "Jabung RW 39 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.6842448,
+    "longitude": 110.3686651,
+    "ip": "10.239.2.15"
+  },
+  {
+    "id": 47,
+    "id_ccbs": "XM003346",
+    "name": "Jabung RW 39 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.6856951,
+    "longitude": 110.3671698,
+    "ip": "10.239.1.236"
+  },
+  {
+    "id": 48,
+    "id_ccbs": "XM003347",
+    "name": "Jabung RW 39",
+    "lokasi": "Ruang Akses Publik Lingkup RW 39",
+    "latitude": -7.6843049,
+    "longitude": 110.3675225,
+    "ip": "10.239.1.234"
+  },
+  {
+    "id": 49,
+    "id_ccbs": "XM003354",
+    "name": "Plalangan/Gajahkuning RW 40 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.682098,
+    "longitude": 110.3683717,
+    "ip": "10.239.1.223"
+  },
+  {
+    "id": 50,
+    "id_ccbs": "XM003355",
+    "name": "Plalangan/Gajahkuning RW 40 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.6834869,
+    "longitude": 110.3688612,
+    "ip": "10.239.1.43"
+  },
+  {
+    "id": 51,
+    "id_ccbs": "XM003356",
+    "name": "Pajangan RW 9",
+    "lokasi": "Ruang Akses Publik Lingkup RW 09",
+    "latitude": -7.7144373,
+    "longitude": 110.3659805,
+    "ip": "10.239.1.202"
+  },
+  {
+    "id": 52,
+    "id_ccbs": "XM003357",
+    "name": "Pajangan RW 9 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7143221,
+    "longitude": 110.3660258,
+    "ip": "10.239.1.201"
+  },
+  {
+    "id": 53,
+    "id_ccbs": "XM003358",
+    "name": "Pajangan RW 9 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.714948,
+    "longitude": 110.365487,
+    "ip": "10.239.1.200"
+  },
+  {
+    "id": 54,
+    "id_ccbs": "XM003359",
+    "name": "Pajangan RW 8",
+    "lokasi": "Ruang Akses Publik Lingkup RW 08",
+    "latitude": -7.7155849,
+    "longitude": 110.3657629,
+    "ip": "10.239.1.199"
+  },
+  {
+    "id": 55,
+    "id_ccbs": "XM003360",
+    "name": "Pajangan RW 8 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7155195,
+    "longitude": 110.3655973,
+    "ip": ""
+  },
+  {
+    "id": 56,
+    "id_ccbs": "XM003361",
+    "name": "Pajangan RW 8 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7152038,
+    "longitude": 110.3663785,
+    "ip": "10.239.1.194"
+  },
+  {
+    "id": 57,
+    "id_ccbs": "XM003362",
+    "name": "Nyaen/Ngelo RW 35 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.693688,
+    "longitude": 110.368078,
+    "ip": "10.239.1.211"
+  },
+  {
+    "id": 58,
+    "id_ccbs": "XM003363",
+    "name": "Nyaen/Ngelo RW 34 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.692097,
+    "longitude": 110.368859,
+    "ip": "10.239.1.217"
+  },
+  {
+    "id": 59,
+    "id_ccbs": "XM003364",
+    "name": "Jabung RW 39 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.6835211,
+    "longitude": 110.3666481,
+    "ip": "10.239.2.14"
+  },
+  {
+    "id": 60,
+    "id_ccbs": "XM003365",
+    "name": "Jetakan/Toino RW 17",
+    "lokasi": "Ruang Akses Publik Lingkup RW 17",
+    "latitude": -7.7058681,
+    "longitude": 110.3637563,
+    "ip": "10.239.1.196"
+  },
+  {
+    "id": 61,
+    "id_ccbs": "XM003366",
+    "name": "Jetakan/Toino RW 17 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7057059,
+    "longitude": 110.3635045,
+    "ip": "10.239.1.197"
+  },
+  {
+    "id": 62,
+    "id_ccbs": "XM003367",
+    "name": "Jetakan/Toino RW 17 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7068353,
+    "longitude": 110.363765,
+    "ip": "10.239.1.195"
+  },
+  {
+    "id": 63,
+    "id_ccbs": "XM003368",
+    "name": "Karangasem RW 26",
+    "lokasi": "Ruang Akses Publik Lingkup RW 26",
+    "latitude": -7.7010033,
+    "longitude": 110.367273,
+    "ip": "10.239.1.224"
+  },
+  {
+    "id": 64,
+    "id_ccbs": "XM003369",
+    "name": "Berkisan/Mlaten RW 6 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.713442,
+    "longitude": 110.3683214,
+    "ip": "10.239.2.41"
+  },
+  {
+    "id": 65,
+    "id_ccbs": "XM003370",
+    "name": "Berkisan/Mlaten RW 6",
+    "lokasi": "Ruang Akses Publik Lingkup RW 06",
+    "latitude": -7.7136077,
+    "longitude": 110.3684961,
+    "ip": "10.239.2.39"
+  },
+  {
+    "id": 66,
+    "id_ccbs": "XM003373",
+    "name": "Nyaen/Ngelo RW 34 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.6926,
+    "longitude": 110.368067,
+    "ip": "10.239.1.210"
+  },
+  {
+    "id": 67,
+    "id_ccbs": "XM003374",
+    "name": "Nyaen/Ngelo RW 34",
+    "lokasi": "Ruang Akses Publik Lingkup RW 34",
+    "latitude": -7.692506,
+    "longitude": 110.368757,
+    "ip": "10.239.1.192"
+  },
+  {
+    "id": 68,
+    "id_ccbs": "XM003376",
+    "name": "Karangasem RW 26 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7029253,
+    "longitude": 110.3674926,
+    "ip": "10.239.1.225"
+  },
+  {
+    "id": 69,
+    "id_ccbs": "XM003377",
+    "name": "Karangasem RW 26 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.700773,
+    "longitude": 110.3686758,
+    "ip": "10.239.1.232"
+  },
+  {
+    "id": 70,
+    "id_ccbs": "XM003378",
+    "name": "Karangasem RW 27 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7004019,
+    "longitude": 110.368534,
+    "ip": "10.239.1.239"
+  },
+  {
+    "id": 71,
+    "id_ccbs": "XM003379",
+    "name": "Karangasem RW 27",
+    "lokasi": "Ruang Akses Publik Lingkup RW 27",
+    "latitude": -7.6998244,
+    "longitude": 110.3680043,
+    "ip": "10.239.2.26"
+  },
+  {
+    "id": 72,
+    "id_ccbs": "XM003380",
+    "name": "Niron/Dukuh Lor RW 20 RT 2",
+    "lokasi": "Balai RW",
+    "latitude": -7.7049856,
+    "longitude": 110.3596046,
+    "ip": "10.239.1.203"
+  },
+  {
+    "id": 73,
+    "id_ccbs": "XM003381",
+    "name": "Niron/Dukuh Lor RW 20",
+    "lokasi": "Masjid Sinar Muslim",
+    "latitude": -7.7054056,
+    "longitude": 110.3600173,
+    "ip": "10.239.1.204"
+  },
+  {
+    "id": 74,
+    "id_ccbs": "XM003382",
+    "name": "Niron/Dukuh Lor RW 20 RT 1",
+    "lokasi": "pos ronda",
+    "latitude": -7.7066811,
+    "longitude": 110.3601722,
+    "ip": "10.239.1.205"
+  },
+  {
+    "id": 75,
+    "id_ccbs": "XM003383",
+    "name": "Nyaen/Ngelo RW 35 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.693891,
+    "longitude": 110.368921,
+    "ip": "10.239.1.218"
+  },
+  {
+    "id": 76,
+    "id_ccbs": "XM003384",
+    "name": "Nyaen/Ngelo RW 35",
+    "lokasi": "Ruang Akses Publik Lingkup RW 35",
+    "latitude": -7.693908,
+    "longitude": 110.368197,
+    "ip": "10.239.1.214"
+  },
+  {
+    "id": 77,
+    "id_ccbs": "XM003385",
+    "name": "Berkisan/Mlaten RW 5 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7147457,
+    "longitude": 110.3681917,
+    "ip": "10.239.2.42"
+  },
+  {
+    "id": 78,
+    "id_ccbs": "XM003386",
+    "name": "Berkisan/Mlaten RW 5 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7145972,
+    "longitude": 110.3677327,
+    "ip": "10.239.1.163"
+  },
+  {
+    "id": 79,
+    "id_ccbs": "XM003387",
+    "name": "Berkisan/Mlaten RW 5",
+    "lokasi": "BALAI RW 05",
+    "latitude": -7.7153208,
+    "longitude": 110.367621,
+    "ip": "10.239.1.14"
+  },
+  {
+    "id": 80,
+    "id_ccbs": "XM003388",
+    "name": "Kleben/Mancasan RW 24 RT 2",
+    "lokasi": "Musholla dan RTQ Al-Hafizh",
+    "latitude": -7.6977728,
+    "longitude": 110.3667386,
+    "ip": "10.239.255.17"
+  },
+  {
+    "id": 81,
+    "id_ccbs": "XM003389",
+    "name": "Kleben/Mancasan RW 24 RT 1",
+    "lokasi": "Ruang Seni Kleben",
+    "latitude": -7.7000351,
+    "longitude": 110.3660741,
+    "ip": "10.239.1.207"
+  },
+  {
+    "id": 82,
+    "id_ccbs": "XM003390",
+    "name": "Kleben/Mancasan RW 24",
+    "lokasi": "Ruang Akses Publik Lingkup RW 24",
+    "latitude": -7.6990985,
+    "longitude": 110.3660912,
+    "ip": "10.239.1.229"
+  },
+  {
+    "id": 83,
+    "id_ccbs": "XM003395",
+    "name": "Karangasem RW 27 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.6995051,
+    "longitude": 110.3679188,
+    "ip": "10.239.1.235"
+  },
+  {
+    "id": 84,
+    "id_ccbs": "XM003396",
+    "name": "Karangtanjung RW 13",
+    "lokasi": "Ruang Akses Publik Lingkup RW 13",
+    "latitude": -7.7088181,
+    "longitude": 110.3667155,
+    "ip": "10.239.2.29"
+  },
+  {
+    "id": 85,
+    "id_ccbs": "XM003397",
+    "name": "Karangtanjung RW 12 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7114698,
+    "longitude": 110.3677159,
+    "ip": "10.239.2.30"
+  },
+  {
+    "id": 86,
+    "id_ccbs": "XM003398",
+    "name": "Karangtanjung RW 12 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7108186,
+    "longitude": 110.3671061,
+    "ip": "10.239.2.53"
+  },
+  {
+    "id": 87,
+    "id_ccbs": "XM003399",
+    "name": "Majegan RW 33 RT 5",
+    "lokasi": "Masjid Nurul Alamin",
+    "latitude": -7.691248,
+    "longitude": 110.371538,
+    "ip": "10.239.1.231"
+  },
+  {
+    "id": 88,
+    "id_ccbs": "XM003400",
+    "name": "Majegan RW 33",
+    "lokasi": "Ruang Akses Publik Lingkup RW 33",
+    "latitude": -7.69187,
+    "longitude": 110.370637,
+    "ip": "10.239.1.222"
+  },
+  {
+    "id": 89,
+    "id_ccbs": "XM003411",
+    "name": "Majegan RW 33 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.690744,
+    "longitude": 110.371395,
+    "ip": "10.239.1.230"
+  },
+  {
+    "id": 90,
+    "id_ccbs": "XM003412",
+    "name": "Majegan RW 33 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.692893,
+    "longitude": 110.370838,
+    "ip": "10.239.1.208"
+  },
+  {
+    "id": 91,
+    "id_ccbs": "XM003414",
+    "name": "Majegan RW 32 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.69006,
+    "longitude": 110.373269,
+    "ip": "10.239.2.7"
+  },
+  {
+    "id": 92,
+    "id_ccbs": "XM003415",
+    "name": "Majegan RW 32 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.689975,
+    "longitude": 110.372849,
+    "ip": "10.239.2.8"
+  },
+  {
+    "id": 93,
+    "id_ccbs": "XM003416",
+    "name": "Majegan RW 32",
+    "lokasi": "Ruang Akses Publik Lingkup RW 32",
+    "latitude": -7.691064,
+    "longitude": 110.372823,
+    "ip": "10.239.1.206"
+  },
+  {
+    "id": 94,
+    "id_ccbs": "XM003429",
+    "name": "Karangtanjung RW 12 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7098065,
+    "longitude": 110.3665146,
+    "ip": "10.239.2.27"
+  },
+  {
+    "id": 95,
+    "id_ccbs": "XM003430",
+    "name": "Karangtanjung RW 12",
+    "lokasi": "Ruang Akses Publik Lingkup RW 12",
+    "latitude": -7.7105381,
+    "longitude": 110.3677166,
+    "ip": "10.239.2.33"
+  },
+  {
+    "id": 96,
+    "id_ccbs": "XM003431",
+    "name": "Karangtanjung RW 13 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7082985,
+    "longitude": 110.3688401,
+    "ip": "10.239.2.36"
+  },
+  {
+    "id": 97,
+    "id_ccbs": "XM003432",
+    "name": "Karangtanjung RW 13 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.7085224,
+    "longitude": 110.3664348,
+    "ip": "10.239.2.28"
+  },
+  {
+    "id": 98,
+    "id_ccbs": "XM003433",
+    "name": "Kleben/Mancasan RW 25 RT 4",
+    "lokasi": "Masjid Al Khiro Mancasan",
+    "latitude": -7.6986137,
+    "longitude": 110.3646428,
+    "ip": "10.239.1.221"
+  },
+  {
+    "id": 99,
+    "id_ccbs": "XM003434",
+    "name": "Berkisan/Mlaten RW 7 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.7128183,
+    "longitude": 110.3686835,
+    "ip": "10.239.2.38"
+  },
+  {
+    "id": 100,
+    "id_ccbs": "XM003435",
+    "name": "Kleben/Mancasan RW 25",
+    "lokasi": "Ruang Seni Karawitan",
+    "latitude": -7.69903,
+    "longitude": 110.3656,
+    "ip": "10.239.1.226"
+  },
+  {
+    "id": 101,
+    "id_ccbs": "XM003436",
+    "name": "Berkisan/Mlaten RW 7 RT 6",
+    "lokasi": "Ruang Akses Publik Lingkup RT 06",
+    "latitude": -7.7117083,
+    "longitude": 110.3684163,
+    "ip": "10.239.2.37"
+  },
+  {
+    "id": 102,
+    "id_ccbs": "XM003437",
+    "name": "Kleben/Mancasan RW 25 RT 3",
+    "lokasi": "Pos Ronda RT 03",
+    "latitude": -7.6980691,
+    "longitude": 110.3652379,
+    "ip": "10.239.1.220"
+  },
+  {
+    "id": 103,
+    "id_ccbs": "XM003438",
+    "name": "Berkisan/Mlaten RW 7",
+    "lokasi": "Ruang Akses Publik Lingkup RW 07",
+    "latitude": -7.7114292,
+    "longitude": 110.3686765,
+    "ip": "10.239.1.7"
+  },
+  {
+    "id": 104,
+    "id_ccbs": "XM003440",
+    "name": "Gabugan/Kloncoman RW 14 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7145241,
+    "longitude": 110.3634536,
+    "ip": "10.239.1.242"
+  },
+  {
+    "id": 105,
+    "id_ccbs": "XM003441",
+    "name": "Jetis Jogopaten RW 30 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.698017,
+    "longitude": 110.376767,
+    "ip": "10.239.3.63"
+  },
+  {
+    "id": 106,
+    "id_ccbs": "XM003442",
+    "name": "Gabugan/Kloncoman RW 14 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.7142456,
+    "longitude": 110.3648942,
+    "ip": "10.239.1.247"
+  },
+  {
+    "id": 107,
+    "id_ccbs": "XM003443",
+    "name": "Gabugan/Kloncoman RW 14",
+    "lokasi": "Ruang Akses Publik Lingkup RW 14",
+    "latitude": -7.7145271,
+    "longitude": 110.3637747,
+    "ip": "10.239.1.241"
+  },
+  {
+    "id": 108,
+    "id_ccbs": "XM003444",
+    "name": "Krandon RW 43 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.6846844,
+    "longitude": 110.3717201,
+    "ip": "10.239.1.233"
+  },
+  {
+    "id": 109,
+    "id_ccbs": "XM003445",
+    "name": "Saragan RW 3 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7126326,
+    "longitude": 110.3727591,
+    "ip": "10.239.3.10"
+  },
+  {
+    "id": 110,
+    "id_ccbs": "XM003446",
+    "name": "Krandon RW 43 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.6839218,
+    "longitude": 110.3719987,
+    "ip": "10.239.1.228"
+  },
+  {
+    "id": 111,
+    "id_ccbs": "XM003447",
+    "name": "Krandon RW 43",
+    "lokasi": "Ruang Akses Publik Lingkup RW 43",
+    "latitude": -7.6830759,
+    "longitude": 110.3714241,
+    "ip": "10.239.2.20"
+  },
+  {
+    "id": 112,
+    "id_ccbs": "XM003449",
+    "name": "Saragan RW 3",
+    "lokasi": "Ruang Akses Publik Lingkup RW 03",
+    "latitude": -7.7125502,
+    "longitude": 110.3728212,
+    "ip": "10.239.3.13"
+  },
+  {
+    "id": 113,
+    "id_ccbs": "XM003451",
+    "name": "Saragan RW 4 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.7123951,
+    "longitude": 110.373203,
+    "ip": "10.239.3.121"
+  },
+  {
+    "id": 114,
+    "id_ccbs": "XM003452",
+    "name": "Krandon RW 44 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.6835019,
+    "longitude": 110.3734257,
+    "ip": "10.239.3.134"
+  },
+  {
+    "id": 115,
+    "id_ccbs": "XM003453",
+    "name": "Krandon RW 44",
+    "lokasi": "Ruang Akses Publik Lingkup RW 44",
+    "latitude": -7.6834876,
+    "longitude": 110.3734307,
+    "ip": "10.239.2.19"
+  },
+  {
+    "id": 116,
+    "id_ccbs": "XM003454",
+    "name": "Saragan RW 4",
+    "lokasi": "Ruang Akses Publik Lingkup RW 04",
+    "latitude": -7.7076871,
+    "longitude": 110.3732664,
+    "ip": "10.239.3.141"
+  },
+  {
+    "id": 117,
+    "id_ccbs": "XM003455",
+    "name": "Krandon RW 44 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.682582,
+    "longitude": 110.373514,
+    "ip": "10.239.2.52"
+  },
+  {
+    "id": 118,
+    "id_ccbs": "XM003456",
+    "name": "Jembulan RW 46",
+    "lokasi": "Ruang Akses Publik Lingkup RW 46",
+    "latitude": -7.688887,
+    "longitude": 110.379606,
+    "ip": "10.239.3.102"
+  },
+  {
+    "id": 119,
+    "id_ccbs": "XM003457",
+    "name": "Saragan RW 47 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.7070914,
+    "longitude": 110.3750591,
+    "ip": "10.239.3.125"
+  },
+  {
+    "id": 120,
+    "id_ccbs": "XM003458",
+    "name": "Jembulan RW 46 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.688873,
+    "longitude": 110.379714,
+    "ip": "10.239.3.104"
+  },
+  {
+    "id": 121,
+    "id_ccbs": "XM003459",
+    "name": "Saragan RW 47 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.707823,
+    "longitude": 110.3749388,
+    "ip": "10.239.3.128"
+  },
+  {
+    "id": 122,
+    "id_ccbs": "XM003460",
+    "name": "Jembulan RW 46 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.689031,
+    "longitude": 110.379872,
+    "ip": "10.239.3.106"
+  },
+  {
+    "id": 123,
+    "id_ccbs": "XM003461",
+    "name": "Saragan RW 47 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.7088583,
+    "longitude": 110.3756958,
+    "ip": ""
+  },
+  {
+    "id": 124,
+    "id_ccbs": "XM003462",
+    "name": "Jembulan RW 45",
+    "lokasi": "Ruang Akses Publik Lingkup RW 45",
+    "latitude": -7.686959,
+    "longitude": 110.37579,
+    "ip": ""
+  },
+  {
+    "id": 125,
+    "id_ccbs": "XM003463",
+    "name": "Saragan RW 47",
+    "lokasi": "Ruang Akses Publik Lingkup RW 47",
+    "latitude": -7.7069964,
+    "longitude": 110.3751084,
+    "ip": "10.239.3.126"
+  },
+  {
+    "id": 126,
+    "id_ccbs": "XM003464",
+    "name": "Jembulan RW 45 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.688876,
+    "longitude": 110.379313,
+    "ip": "10.239.3.96"
+  },
+  {
+    "id": 127,
+    "id_ccbs": "XM003467",
+    "name": "Jetis Jogopaten RW 31",
+    "lokasi": "Ruang Akses Publik Lingkup RW 31",
+    "latitude": -7.697483,
+    "longitude": 110.379408,
+    "ip": "10.239.3.57"
+  },
+  {
+    "id": 128,
+    "id_ccbs": "XM003468",
+    "name": "Jetis Jogopaten RW 31 RT 6",
+    "lokasi": "Ruang Akses Publik Lingkup RT 06",
+    "latitude": -7.696514,
+    "longitude": 110.380244,
+    "ip": ""
+  },
+  {
+    "id": 129,
+    "id_ccbs": "XM003469",
+    "name": "Jetis Jogopaten RW 31 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.698329,
+    "longitude": 110.37864,
+    "ip": "10.239.3.66"
+  },
+  {
+    "id": 130,
+    "id_ccbs": "XM003470",
+    "name": "Jetis Jogopaten RW 31 RT 5",
+    "lokasi": "Ruang Akses Publik Lingkup RT 05",
+    "latitude": -7.697225,
+    "longitude": 110.378748,
+    "ip": "10.239.3.61"
+  },
+  {
+    "id": 131,
+    "id_ccbs": "XM003471",
+    "name": "Jetis Jogopaten RW 30 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.695706,
+    "longitude": 110.378333,
+    "ip": "10.239.3.54"
+  },
+  {
+    "id": 132,
+    "id_ccbs": "XM003473",
+    "name": "Jetis Jogopaten RW 30 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.695969,
+    "longitude": 110.377653,
+    "ip": "10.239.3.65"
+  },
+  {
+    "id": 133,
+    "id_ccbs": "XM003474",
+    "name": "Jetakan RW 17 RT 3",
+    "lokasi": "Ruang Akses Publik Jetakan",
+    "latitude": -7.70537,
+    "longitude": 110.36176,
+    "ip": "10.239.2.60"
+  },
+  {
+    "id": 134,
+    "id_ccbs": "XM003513",
+    "name": "Karangtanjung RW 12",
+    "lokasi": "Pos Jaga Warga Karangtanjung",
+    "latitude": -7.71013,
+    "longitude": 110.36767,
+    "ip": "10.239.2.32"
+  },
+  {
+    "id": 135,
+    "id_ccbs": "XM003514",
+    "name": "Karangtanjung RW 12",
+    "lokasi": "Ruang Akses Publik Kepala Kalurahan",
+    "latitude": -7.71034,
+    "longitude": 110.36718,
+    "ip": "10.239.2.31"
+  },
+  {
+    "id": 136,
+    "id_ccbs": "XM003515",
+    "name": "Kleben/Mancasan RW 24",
+    "lokasi": "Kelompok Kandang",
+    "latitude": -7.69911,
+    "longitude": 110.36712,
+    "ip": "10.239.2.25"
+  },
+  {
+    "id": 137,
+    "id_ccbs": "XM003516",
+    "name": "Majegan RW 33",
+    "lokasi": "Pos Ronda",
+    "latitude": -7.69165,
+    "longitude": 110.37204,
+    "ip": "10.239.2.12"
+  },
+  {
+    "id": 138,
+    "id_ccbs": "XM003517",
+    "name": "Nyaen/Ngelo RW 35",
+    "lokasi": "Ruang Kumpul Karang Taruna",
+    "latitude": -7.69301,
+    "longitude": 110.36855,
+    "ip": "10.239.2.178"
+  },
+  {
+    "id": 139,
+    "id_ccbs": "XM003518",
+    "name": "Plalangan/Gajahkuning RW 40",
+    "lokasi": "Ruang Akses Publik Lingkup RW 40",
+    "latitude": -7.683507,
+    "longitude": 110.368286,
+    "ip": "10.239.2.4"
+  },
+  {
+    "id": 140,
+    "id_ccbs": "XM003519",
+    "name": "Sawahan RW 18",
+    "lokasi": "Pos Ronda Sawahan",
+    "latitude": -7.70778,
+    "longitude": 110.36033,
+    "ip": "10.239.1.254"
+  },
+  {
+    "id": 141,
+    "id_ccbs": "XM003520",
+    "name": "Jetakan/Toino RW 16",
+    "lokasi": "Pos Ronda Toino",
+    "latitude": -7.705,
+    "longitude": 110.36629,
+    "ip": "10.239.1.249"
+  },
+  {
+    "id": 142,
+    "id_ccbs": "XM003521",
+    "name": "Kleben/Mancasan RW 25",
+    "lokasi": "Taman Kuliner Kelurahan",
+    "latitude": -7.70237,
+    "longitude": 110.36349,
+    "ip": "10.239.3.4"
+  },
+  {
+    "id": 143,
+    "id_ccbs": "XM003522",
+    "name": "Kleben/Mancasan RW 25",
+    "lokasi": "Balai Budaya Kalurahan",
+    "latitude": -7.70332,
+    "longitude": 110.36473,
+    "ip": "10.239.1.248"
+  },
+  {
+    "id": 144,
+    "id_ccbs": "XM003523",
+    "name": "Gabugan/Kloncoman RW 15",
+    "lokasi": "POS RONDA GABUGAN 1",
+    "latitude": -7.711523,
+    "longitude": 110.363596,
+    "ip": "10.239.1.250"
+  },
+  {
+    "id": 145,
+    "id_ccbs": "XM003524",
+    "name": "Grojogan/Tlacap RW 1",
+    "lokasi": "Balai RW 01",
+    "latitude": -7.716685,
+    "longitude": 110.36887,
+    "ip": "10.239.2.47"
+  },
+  {
+    "id": 146,
+    "id_ccbs": "XM003525",
+    "name": "Grojogan/Tlacap RW 2",
+    "lokasi": "Balai RW 02",
+    "latitude": -7.718149,
+    "longitude": 110.367971,
+    "ip": "10.239.2.56"
+  },
+  {
+    "id": 147,
+    "id_ccbs": "XM003526",
+    "name": "Jetakan/Toino RW 17",
+    "lokasi": "Masjid Al Huda",
+    "latitude": -7.70637,
+    "longitude": 110.36373,
+    "ip": "10.239.2.3"
+  },
+  {
+    "id": 148,
+    "id_ccbs": "XM003527",
+    "name": "Krandon RW 44",
+    "lokasi": "Joglo Padukuhan",
+    "latitude": -7.685,
+    "longitude": 110.37307,
+    "ip": "10.239.2.6"
+  },
+  {
+    "id": 149,
+    "id_ccbs": "XM004039",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "Pos Ronda Tlacap",
+    "latitude": -7.71685,
+    "longitude": 110.36878,
+    "ip": ""
+  },
+  {
+    "id": 150,
+    "id_ccbs": "XM004040",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "Masjid Al-Muttaqin",
+    "latitude": -7.71666,
+    "longitude": 110.36849,
+    "ip": "10.239.2.66"
+  },
+  {
+    "id": 151,
+    "id_ccbs": "XM004929",
+    "name": "Berkisan/Mlaten",
+    "lokasi": "KANDANG KELOMPOK BERKISAN",
+    "latitude": -7.71093,
+    "longitude": 110.36858,
+    "ip": "10.239.2.125"
+  },
+  {
+    "id": 152,
+    "id_ccbs": "XM004931",
+    "name": "Berkisan/Mlaten",
+    "lokasi": "MASJID MIFTAHUL KHASANA",
+    "latitude": -7.71363,
+    "longitude": 110.36864,
+    "ip": "10.239.2.137"
+  },
+  {
+    "id": 153,
+    "id_ccbs": "XM004932",
+    "name": "Berkisan/Mlaten",
+    "lokasi": "POS RONDA BERKISAN",
+    "latitude": -7.71206,
+    "longitude": 110.36851,
+    "ip": "10.239.2.127"
+  },
+  {
+    "id": 154,
+    "id_ccbs": "XM004933",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "POS RONDA KLONCOMAN",
+    "latitude": -7.71469,
+    "longitude": 110.36399,
+    "ip": "10.239.2.119"
+  },
+  {
+    "id": 155,
+    "id_ccbs": "XM004934",
+    "name": "Berkisan/Mlaten",
+    "lokasi": "MUSHOLLA HIDAYATULLOH",
+    "latitude": -7.711687,
+    "longitude": 110.368401,
+    "ip": "10.239.2.141"
+  },
+  {
+    "id": 156,
+    "id_ccbs": "XM004935",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "MUSHOLLA KLONCOMAN",
+    "latitude": -7.71416,
+    "longitude": 110.36465,
+    "ip": "10.239.2.123"
+  },
+  {
+    "id": 157,
+    "id_ccbs": "XM004936",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "POS RONDA GABUGAN 2",
+    "latitude": -7.71149,
+    "longitude": 110.36504,
+    "ip": "10.239.2.136"
+  },
+  {
+    "id": 158,
+    "id_ccbs": "XM004937",
+    "name": "Pajangan RT 01 RW 09",
+    "lokasi": "Pos Ronda Pajangan Baru",
+    "latitude": -7.71522,
+    "longitude": 110.36559,
+    "ip": "10.239.2.121"
+  },
+  {
+    "id": 159,
+    "id_ccbs": "XM004939",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "KESEKRETARIATAN WISATA SUNGAI LESTARIKU",
+    "latitude": -7.71013,
+    "longitude": 110.3633,
+    "ip": "10.239.3.83"
+  },
+  {
+    "id": 160,
+    "id_ccbs": "XM004940",
+    "name": "Gabugan Kloncoman",
+    "lokasi": "Masjid Nurul Huda",
+    "latitude": -7.711552,
+    "longitude": 110.364092,
+    "ip": "10.239.2.116"
+  },
+  {
+    "id": 161,
+    "id_ccbs": "XM004941",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.71041,
+    "longitude": 110.36414,
+    "ip": "10.239.2.117"
+  },
+  {
+    "id": 162,
+    "id_ccbs": "XM004942",
+    "name": "Gabugan/Kloncoman Rt 05 Rw 15",
+    "lokasi": "WISATA SUNGAI LESTARIKU",
+    "latitude": -7.7111,
+    "longitude": 110.36271,
+    "ip": "10.239.2.120"
+  },
+  {
+    "id": 163,
+    "id_ccbs": "XM004943",
+    "name": "Pajangan",
+    "lokasi": "Posyandu Mekar",
+    "latitude": -7.715362,
+    "longitude": 110.365399,
+    "ip": "10.239.2.122"
+  },
+  {
+    "id": 164,
+    "id_ccbs": "XM004945",
+    "name": "Gabugan/Kloncoman",
+    "lokasi": "GKBI GABUGAN",
+    "latitude": -7.7101,
+    "longitude": 110.36362,
+    "ip": "10.239.2.118"
+  },
+  {
+    "id": 165,
+    "id_ccbs": "XM004946",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "Ruang Akses Publik Ulu Ulu Kalurahan",
+    "latitude": -7.71659,
+    "longitude": 110.36906,
+    "ip": "10.239.3.1"
+  },
+  {
+    "id": 166,
+    "id_ccbs": "XM004947",
+    "name": "Gawar RW 37 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.68757,
+    "longitude": 110.36633,
+    "ip": "10.239.3.88"
+  },
+  {
+    "id": 167,
+    "id_ccbs": "XM004948",
+    "name": "Gawar RW 36 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.6890224,
+    "longitude": 110.364846,
+    "ip": "10.239.3.101"
+  },
+  {
+    "id": 168,
+    "id_ccbs": "XM004949",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "Ruang Akses Publik LPMD Kalurahan",
+    "latitude": -7.71746,
+    "longitude": 110.36896,
+    "ip": "10.239.3.6"
+  },
+  {
+    "id": 169,
+    "id_ccbs": "XM004950",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.71644,
+    "longitude": 110.3691,
+    "ip": "10.239.3.3"
+  },
+  {
+    "id": 170,
+    "id_ccbs": "XM004951",
+    "name": "Gawar",
+    "lokasi": "Kelompok Kandang Gawar",
+    "latitude": -7.6893,
+    "longitude": 110.36438,
+    "ip": "10.239.3.97"
+  },
+  {
+    "id": 171,
+    "id_ccbs": "XM004952",
+    "name": "Grojogan/Tlacap",
+    "lokasi": "SDN Tlacap",
+    "latitude": -7.71521,
+    "longitude": 110.36967,
+    "ip": "10.239.3.5"
+  },
+  {
+    "id": 172,
+    "id_ccbs": "XM004953",
+    "name": "Gawar",
+    "lokasi": "Masjid Ar-Rahim",
+    "latitude": -7.68829,
+    "longitude": 110.36381,
+    "ip": "10.239.3.105"
+  },
+  {
+    "id": 173,
+    "id_ccbs": "XM004954",
+    "name": "Gawar RW 37 RT 4",
+    "lokasi": "Posyandu Gawar",
+    "latitude": -7.68769,
+    "longitude": 110.36986,
+    "ip": "10.239.3.109"
+  },
+  {
+    "id": 174,
+    "id_ccbs": "XM004955",
+    "name": "Gawar RW 36 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.68823,
+    "longitude": 110.36482,
+    "ip": "10.239.3.103"
+  },
+  {
+    "id": 175,
+    "id_ccbs": "XM004956",
+    "name": "Gawar",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.68709,
+    "longitude": 110.36634,
+    "ip": "10.239.3.89"
+  },
+  {
+    "id": 176,
+    "id_ccbs": "XM004958",
+    "name": "Gawar RW 37",
+    "lokasi": "Ruang Akses Publik Lingkup RW 37",
+    "latitude": -7.6869567,
+    "longitude": 110.3660006,
+    "ip": "10.239.3.90"
+  },
+  {
+    "id": 177,
+    "id_ccbs": "XM004959",
+    "name": "Jabung RW 38",
+    "lokasi": "Ruang Akses Publik Lingkup RW 38",
+    "latitude": -7.68662,
+    "longitude": 110.36786,
+    "ip": "10.239.3.110"
+  },
+  {
+    "id": 178,
+    "id_ccbs": "XM004961",
+    "name": "Jabung",
+    "lokasi": "Masjid At-Taubah",
+    "latitude": -7.68475,
+    "longitude": 110.3691,
+    "ip": "10.239.2.131"
+  },
+  {
+    "id": 179,
+    "id_ccbs": "XM004962",
+    "name": "Jabung",
+    "lokasi": "Mushola Al-Ikhsan Jabung Gede",
+    "latitude": -7.68482,
+    "longitude": 110.3673,
+    "ip": "10.239.3.112"
+  },
+  {
+    "id": 180,
+    "id_ccbs": "XM004963",
+    "name": "Jembulan RW 45 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.689772,
+    "longitude": 110.379509,
+    "ip": "10.239.3.99"
+  },
+  {
+    "id": 181,
+    "id_ccbs": "XM004964",
+    "name": "Jetakan/Toino",
+    "lokasi": "Pos Ronda RT 03",
+    "latitude": -7.70577,
+    "longitude": 110.36401,
+    "ip": "10.239.3.124"
+  },
+  {
+    "id": 182,
+    "id_ccbs": "XM004965",
+    "name": "Jetakan/Toino",
+    "lokasi": "TPS BUMDES AMARTA",
+    "latitude": -7.70525,
+    "longitude": 110.3632,
+    "ip": "10.239.3.123"
+  },
+  {
+    "id": 183,
+    "id_ccbs": "XM004966",
+    "name": "Jetakan/Toino",
+    "lokasi": "Gapoktan",
+    "latitude": -7.705922,
+    "longitude": 110.363258,
+    "ip": "10.239.3.120"
+  },
+  {
+    "id": 184,
+    "id_ccbs": "XM004967",
+    "name": "Jetakan/Toino",
+    "lokasi": "Kelompok Ikan Jetakan",
+    "latitude": -7.70665,
+    "longitude": 110.36302,
+    "ip": "10.239.3.113"
+  },
+  {
+    "id": 185,
+    "id_ccbs": "XM004968",
+    "name": "Jetakan/Toino",
+    "lokasi": "Masjid Baitul Muttaqien",
+    "latitude": -7.70562,
+    "longitude": 110.36549,
+    "ip": "10.239.3.30"
+  },
+  {
+    "id": 186,
+    "id_ccbs": "XM004969",
+    "name": "Jetis Jogopaten",
+    "lokasi": "Masjid Jetis Jogopaten",
+    "latitude": -7.69697,
+    "longitude": 110.37815,
+    "ip": "10.239.3.55"
+  },
+  {
+    "id": 187,
+    "id_ccbs": "XM004970",
+    "name": "Jetis Jogopaten",
+    "lokasi": "SDN Jetis Jogopaten",
+    "latitude": -7.69845,
+    "longitude": 110.37684,
+    "ip": "10.239.3.62"
+  },
+  {
+    "id": 188,
+    "id_ccbs": "XM004971",
+    "name": "Karangasem",
+    "lokasi": "Kandang Kelompok",
+    "latitude": -7.69952,
+    "longitude": 110.36768,
+    "ip": "10.239.3.17"
+  },
+  {
+    "id": 189,
+    "id_ccbs": "XM004972",
+    "name": "Jetis Jogopaten",
+    "lokasi": "Kandang Kelompok Jetis Jogopaten",
+    "latitude": -7.69532,
+    "longitude": 110.37673,
+    "ip": "10.239.3.59"
+  },
+  {
+    "id": 190,
+    "id_ccbs": "XM004973",
+    "name": "Karangasem",
+    "lokasi": "Ruang Pertemuan Kelompok Kandang",
+    "latitude": -7.70197,
+    "longitude": 110.37049,
+    "ip": "10.239.3.75"
+  },
+  {
+    "id": 191,
+    "id_ccbs": "XM004974",
+    "name": "Karangtanjung",
+    "lokasi": "TPS Karangtanjung",
+    "latitude": -7.71053,
+    "longitude": 110.36863,
+    "ip": "10.239.2.124"
+  },
+  {
+    "id": 192,
+    "id_ccbs": "XM004975",
+    "name": "Karangasem",
+    "lokasi": "Ruang Akses Publik BPKal",
+    "latitude": -7.70168,
+    "longitude": 110.36959,
+    "ip": "10.239.3.37"
+  },
+  {
+    "id": 193,
+    "id_ccbs": "XM004976",
+    "name": "Karangasem",
+    "lokasi": "Masjid Nurul Iman",
+    "latitude": -7.70023,
+    "longitude": 110.36858,
+    "ip": "10.239.3.14"
+  },
+  {
+    "id": 194,
+    "id_ccbs": "XM004977",
+    "name": "Karangtanjung",
+    "lokasi": "DESA WISATA KARANGTANJUNG",
+    "latitude": -7.709973,
+    "longitude": 110.367129,
+    "ip": "10.239.2.166"
+  },
+  {
+    "id": 195,
+    "id_ccbs": "XM004978",
+    "name": "Karangasem",
+    "lokasi": "Ruang Seni Karawitan",
+    "latitude": -7.700372,
+    "longitude": 110.36778,
+    "ip": "10.239.3.31"
+  },
+  {
+    "id": 196,
+    "id_ccbs": "XM004979",
+    "name": "Karangtanjung",
+    "lokasi": "Ruang Akses Publik BPKal",
+    "latitude": -7.711152,
+    "longitude": 110.3673,
+    "ip": "10.239.2.252"
+  },
+  {
+    "id": 197,
+    "id_ccbs": "XM004980",
+    "name": "Karangasem",
+    "lokasi": "Unit Pengelola Pupuk Karangasem",
+    "latitude": -7.69942,
+    "longitude": 110.36896,
+    "ip": "10.239.3.142"
+  },
+  {
+    "id": 198,
+    "id_ccbs": "XM004981",
+    "name": "Karangtanjung",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.711036,
+    "longitude": 110.36747,
+    "ip": "10.239.2.255"
+  },
+  {
+    "id": 199,
+    "id_ccbs": "XM004982",
+    "name": "Kleben/Mancasan RW 24 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.69867,
+    "longitude": 110.36593,
+    "ip": "10.239.3.49"
+  },
+  {
+    "id": 200,
+    "id_ccbs": "XM004983",
+    "name": "Kleben/Mancasan RW 24 RT 1",
+    "lokasi": "Ruang Akses Publik Lingkup RT 01",
+    "latitude": -7.69996,
+    "longitude": 110.36538,
+    "ip": "10.239.3.53"
+  },
+  {
+    "id": 201,
+    "id_ccbs": "XM004984",
+    "name": "Kleben/Mancasan RW 25 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.69902,
+    "longitude": 110.36445,
+    "ip": "10.239.3.41"
+  },
+  {
+    "id": 202,
+    "id_ccbs": "XM004985",
+    "name": "Kleben/Mancasan RW 25",
+    "lokasi": "Ruang Akses Publik Lingkup RW 25",
+    "latitude": -7.6981,
+    "longitude": 110.36428,
+    "ip": "10.239.3.117"
+  },
+  {
+    "id": 203,
+    "id_ccbs": "XM004986",
+    "name": "Kleben/Mancasan RW 25 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.69768,
+    "longitude": 110.36528,
+    "ip": "10.239.3.119"
+  },
+  {
+    "id": 204,
+    "id_ccbs": "XM004987",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Ruang Akses Publik Carik",
+    "latitude": -7.69909,
+    "longitude": 110.36677,
+    "ip": "10.239.3.51"
+  },
+  {
+    "id": 205,
+    "id_ccbs": "XM004988",
+    "name": "Jembulan",
+    "lokasi": "Pos Ronda",
+    "latitude": -7.688434,
+    "longitude": 110.379389,
+    "ip": "10.239.3.98"
+  },
+  {
+    "id": 206,
+    "id_ccbs": "XM004989",
+    "name": "Toino Jetakan",
+    "lokasi": "Posyandu Teratai",
+    "latitude": -7.704791,
+    "longitude": 110.366089,
+    "ip": "10.239.3.67"
+  },
+  {
+    "id": 207,
+    "id_ccbs": "XM004990",
+    "name": "Temon",
+    "lokasi": "Posyandu Melati",
+    "latitude": -7.697135,
+    "longitude": 110.363178,
+    "ip": "10.239.3.114"
+  },
+  {
+    "id": 208,
+    "id_ccbs": "XM004991",
+    "name": "Jembulan",
+    "lokasi": "Ruang Olahraga Publik",
+    "latitude": -7.689218,
+    "longitude": 110.379152,
+    "ip": "10.239.3.95"
+  },
+  {
+    "id": 209,
+    "id_ccbs": "XM004992",
+    "name": "Sawahan",
+    "lokasi": "Posyandu Tresno Yogo",
+    "latitude": -7.70825,
+    "longitude": 110.36167,
+    "ip": "10.239.3.42"
+  },
+  {
+    "id": 210,
+    "id_ccbs": "XM004993",
+    "name": "Saragan",
+    "lokasi": "Posyandu Cempaka",
+    "latitude": -7.712621,
+    "longitude": 110.373549,
+    "ip": "10.239.3.122"
+  },
+  {
+    "id": 211,
+    "id_ccbs": "XM004994",
+    "name": "Plalangan Gajahkuning",
+    "lokasi": "Gedung Batik Arimbi",
+    "latitude": -7.6801373,
+    "longitude": 110.3682788,
+    "ip": "10.239.3.74"
+  },
+  {
+    "id": 212,
+    "id_ccbs": "XM004995",
+    "name": "Jembulan",
+    "lokasi": "Ruang Akses Publik Lingkup LPMD",
+    "latitude": -7.688938,
+    "longitude": 110.380146,
+    "ip": "10.239.3.108"
+  },
+  {
+    "id": 213,
+    "id_ccbs": "XM004996",
+    "name": "Nyaen Ngelo",
+    "lokasi": "Posyandu Anggrek",
+    "latitude": -7.693034,
+    "longitude": 110.368535,
+    "ip": "10.239.2.9"
+  },
+  {
+    "id": 214,
+    "id_ccbs": "XM004997",
+    "name": "Niron Dukuh",
+    "lokasi": "Posyandu Dahlia",
+    "latitude": -7.704563,
+    "longitude": 110.360434,
+    "ip": "10.239.3.39"
+  },
+  {
+    "id": 215,
+    "id_ccbs": "XM004998",
+    "name": "Majegan",
+    "lokasi": "Posyandu Nusa Indah",
+    "latitude": -7.692417,
+    "longitude": 110.370889,
+    "ip": "10.239.3.131"
+  },
+  {
+    "id": 216,
+    "id_ccbs": "XM004999",
+    "name": "Krandon",
+    "lokasi": "Posyandu Mekar",
+    "latitude": -7.683562,
+    "longitude": 110.371448,
+    "ip": "10.239.3.72"
+  },
+  {
+    "id": 217,
+    "id_ccbs": "XM005000",
+    "name": "Nyaen/Ngelo",
+    "lokasi": "SDN Nyaen",
+    "latitude": -7.69138,
+    "longitude": 110.36852,
+    "ip": "10.239.3.93"
+  },
+  {
+    "id": 218,
+    "id_ccbs": "XM005001",
+    "name": "Kleben Mancasan",
+    "lokasi": "Posyandu Lotus",
+    "latitude": -7.69924,
+    "longitude": 110.36533,
+    "ip": "10.239.3.94"
+  },
+  {
+    "id": 219,
+    "id_ccbs": "XM005002",
+    "name": "Karangasem",
+    "lokasi": "Posyandu Teratai Putih",
+    "latitude": -7.6999341,
+    "longitude": 110.3678108,
+    "ip": "10.239.3.15"
+  },
+  {
+    "id": 220,
+    "id_ccbs": "XM005003",
+    "name": "Jetis jogopaten",
+    "lokasi": "Posyandu Kantil",
+    "latitude": -7.6968129,
+    "longitude": 110.3770232,
+    "ip": "10.239.3.64"
+  },
+  {
+    "id": 221,
+    "id_ccbs": "XM005004",
+    "name": "Nyaen/Ngelo",
+    "lokasi": "Gereja Katolik Santo Venantius",
+    "latitude": -7.69259,
+    "longitude": 110.36805,
+    "ip": "10.239.2.169"
+  },
+  {
+    "id": 222,
+    "id_ccbs": "XM005005",
+    "name": "Nyaen/Ngelo",
+    "lokasi": "Ruang Akses Publik LPMD",
+    "latitude": -7.69348,
+    "longitude": 110.36792,
+    "ip": "10.239.2.180"
+  },
+  {
+    "id": 223,
+    "id_ccbs": "XM005006",
+    "name": "Jembulan",
+    "lokasi": "Posyandu Kenanga",
+    "latitude": -7.6893516,
+    "longitude": 110.379841,
+    "ip": "10.239.3.100"
+  },
+  {
+    "id": 224,
+    "id_ccbs": "XM005008",
+    "name": "Jabung",
+    "lokasi": "Masjid At-Taubah",
+    "latitude": -7.6847877,
+    "longitude": 110.3692186,
+    "ip": "10.239.3.116"
+  },
+  {
+    "id": 225,
+    "id_ccbs": "XM005009",
+    "name": "Grojogan Tlacap",
+    "lokasi": "Posyandu Melati",
+    "latitude": -7.716203,
+    "longitude": 110.36946,
+    "ip": "10.239.3.2"
+  },
+  {
+    "id": 226,
+    "id_ccbs": "XM005011",
+    "name": "Niron/Dukuh Lor RW 20 RT 1",
+    "lokasi": "Ruang Akses Publik LPMD",
+    "latitude": -7.70598,
+    "longitude": 110.35976,
+    "ip": "10.239.3.40"
+  },
+  {
+    "id": 227,
+    "id_ccbs": "XM005015",
+    "name": "Gawar",
+    "lokasi": "Posyandu Suka Maju",
+    "latitude": -7.689442,
+    "longitude": 110.364653,
+    "ip": "10.239.3.107"
+  },
+  {
+    "id": 228,
+    "id_ccbs": "XM005016",
+    "name": "Temon",
+    "lokasi": "Masjid Baiturrahman",
+    "latitude": -7.69745,
+    "longitude": 110.36316,
+    "ip": "10.239.2.170"
+  },
+  {
+    "id": 229,
+    "id_ccbs": "XM005018",
+    "name": "Temon",
+    "lokasi": "Pos Ronda",
+    "latitude": -7.69879,
+    "longitude": 110.36297,
+    "ip": "10.239.2.142"
+  },
+  {
+    "id": 230,
+    "id_ccbs": "XM005019",
+    "name": "Temon",
+    "lokasi": "Ruang Akses Publik BPKal",
+    "latitude": -7.69637,
+    "longitude": 110.36319,
+    "ip": "10.239.3.115"
+  },
+  {
+    "id": 231,
+    "id_ccbs": "XM005020",
+    "name": "Temon",
+    "lokasi": "Ruang Akses Publik LPMD",
+    "latitude": -7.6967222,
+    "longitude": 110.3631565,
+    "ip": "10.239.2.172"
+  },
+  {
+    "id": 232,
+    "id_ccbs": "XM005021",
+    "name": "Sawahan",
+    "lokasi": "Masjid AT TAQWA",
+    "latitude": -7.70737,
+    "longitude": 110.36018,
+    "ip": "10.239.3.28"
+  },
+  {
+    "id": 233,
+    "id_ccbs": "XM005022",
+    "name": "Saragan",
+    "lokasi": "Ruang Akses Publik BPKal",
+    "latitude": -7.712972,
+    "longitude": 110.372993,
+    "ip": "10.239.3.9"
+  },
+  {
+    "id": 234,
+    "id_ccbs": "XM005023",
+    "name": "Niron/Dukuh Lor RW 20 RT 2",
+    "lokasi": "Ruang Akses Publik Lingkup RT 02",
+    "latitude": -7.70499,
+    "longitude": 110.35956,
+    "ip": "10.239.3.38"
+  },
+  {
+    "id": 235,
+    "id_ccbs": "XM005024",
+    "name": "Saragan",
+    "lokasi": "Masjid Muhajirin",
+    "latitude": -7.70855,
+    "longitude": 110.37564,
+    "ip": "10.239.3.129"
+  },
+  {
+    "id": 236,
+    "id_ccbs": "XM005025",
+    "name": "Saragan",
+    "lokasi": "Masjid Al-Ikhsan",
+    "latitude": -7.7133,
+    "longitude": 110.37242,
+    "ip": "10.239.3.8"
+  },
+  {
+    "id": 237,
+    "id_ccbs": "XM005026",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Ruang kelompok Ikan",
+    "latitude": -7.6801,
+    "longitude": 110.36816,
+    "ip": ""
+  },
+  {
+    "id": 238,
+    "id_ccbs": "XM005027",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Ruang UMKM Sentra Batik",
+    "latitude": -7.68026,
+    "longitude": 110.36826,
+    "ip": "10.239.3.73"
+  },
+  {
+    "id": 239,
+    "id_ccbs": "XM005028",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Ruang Akses Publik Pangripta",
+    "latitude": -7.682759,
+    "longitude": 110.36882,
+    "ip": "10.239.3.81"
+  },
+  {
+    "id": 240,
+    "id_ccbs": "XM005029",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Ruang Akses Publik Jagabaya",
+    "latitude": -7.683185,
+    "longitude": 110.367081,
+    "ip": "10.239.3.87"
+  },
+  {
+    "id": 241,
+    "id_ccbs": "XM005030",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "SD Negeri Nyaen 2",
+    "latitude": -7.68067,
+    "longitude": 110.36783,
+    "ip": "10.239.3.80"
+  },
+  {
+    "id": 242,
+    "id_ccbs": "XM005031",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Masjid Arohman",
+    "latitude": -7.68252,
+    "longitude": 110.36874,
+    "ip": "10.239.3.82"
+  },
+  {
+    "id": 243,
+    "id_ccbs": "XM005032",
+    "name": "Plalangan/Gajahkuning",
+    "lokasi": "Ruang Akses Publik BUMDES AMARTA",
+    "latitude": -7.68161,
+    "longitude": 110.36929,
+    "ip": "10.239.3.84"
+  },
+  {
+    "id": 244,
+    "id_ccbs": "XM005034",
+    "name": "Niron/Dukuh Lor",
+    "lokasi": "Ruang Akses Publik BPkal",
+    "latitude": -7.70143,
+    "longitude": 110.36145,
+    "ip": "10.239.3.48"
+  },
+  {
+    "id": 245,
+    "id_ccbs": "XM005035",
+    "name": "Niron/Dukuh Lor RW 21 RT 4",
+    "lokasi": "Ruang Akses Publik Lingkup RT 04",
+    "latitude": -7.69946,
+    "longitude": 110.36013,
+    "ip": "10.239.3.92"
+  },
+  {
+    "id": 246,
+    "id_ccbs": "XM005042",
+    "name": "Niron/Dukuh Lor RW 21 RT 3",
+    "lokasi": "Ruang Akses Publik Lingkup RT 03",
+    "latitude": -7.70128,
+    "longitude": 110.36008,
+    "ip": "10.239.3.44"
+  },
+  {
+    "id": 247,
+    "id_ccbs": "XM005044",
+    "name": "Niron/Dukuh Lor RW 21",
+    "lokasi": "Ruang Akses Publik Lingkup RW 21",
+    "latitude": -7.70096,
+    "longitude": 110.36003,
+    "ip": "10.239.3.45"
+  },
+  {
+    "id": 248,
+    "id_ccbs": "XM005053",
+    "name": "Majegan",
+    "lokasi": "Balai Padukuhan Majegan",
+    "latitude": -7.6919,
+    "longitude": 110.37283,
+    "ip": "10.239.3.132"
+  },
+  {
+    "id": 249,
+    "id_ccbs": "XM005055",
+    "name": "Majegan",
+    "lokasi": "Ruang Alkses Publik BPKal",
+    "latitude": -7.692,
+    "longitude": 110.37085,
+    "ip": "10.239.3.133"
+  },
+  {
+    "id": 250,
+    "id_ccbs": "XM005056",
+    "name": "Majegan",
+    "lokasi": "Ruang Akses Publik Kamituwo",
+    "latitude": -7.69207,
+    "longitude": 110.37043,
+    "ip": "10.239.2.181"
+  },
+  {
+    "id": 251,
+    "id_ccbs": "XM005058",
+    "name": "Majegan",
+    "lokasi": "Ruang Akses Publik LPMD",
+    "latitude": -7.69067,
+    "longitude": 110.37297,
+    "ip": "10.239.3.130"
+  },
+  {
+    "id": 252,
+    "id_ccbs": "XM005060",
+    "name": "Krandon",
+    "lokasi": "Ruang Akses Publik Danarta kalurahan",
+    "latitude": -7.68344,
+    "longitude": 110.37268,
+    "ip": "10.239.3.76"
+  },
+  {
+    "id": 253,
+    "id_ccbs": "XM005062",
+    "name": "Krandon",
+    "lokasi": "Pos Ronda RW 44",
+    "latitude": -7.68391,
+    "longitude": 110.3734,
+    "ip": "10.239.1.227"
+  },
+  {
+    "id": 254,
+    "id_ccbs": "XM005064",
+    "name": "Krandon",
+    "lokasi": "Pos Ronda RW 43",
+    "latitude": -7.6842,
+    "longitude": 110.37099,
+    "ip": "10.239.3.135"
+  },
+  {
+    "id": 255,
+    "id_ccbs": "XM005066",
+    "name": "Krandon",
+    "lokasi": "Ruang Akses Publik PKK",
+    "latitude": -7.683551,
+    "longitude": 110.3728748,
+    "ip": "10.239.3.77"
+  },
+  {
+    "id": 256,
+    "id_ccbs": "XM005067",
+    "name": "Krandon",
+    "lokasi": "Ruang Akses Publik Kamituwo",
+    "latitude": -7.6920101,
+    "longitude": 110.3710261,
+    "ip": "10.239.3.136"
+  },
+  {
+    "id": 257,
+    "id_ccbs": "XM005070",
+    "name": "Krandon",
+    "lokasi": "Ruang Akses Publik LPMD",
+    "latitude": -7.683928,
+    "longitude": 110.372579,
+    "ip": "10.239.3.69"
+  },
+  {
+    "id": 258,
+    "id_ccbs": "XM005072",
+    "name": "Krandon",
+    "lokasi": "Musholla Krandon",
+    "latitude": -7.68444,
+    "longitude": 110.37271,
+    "ip": "10.239.3.71"
+  },
+  {
+    "id": 259,
+    "id_ccbs": "XM005074",
+    "name": "Krandon",
+    "lokasi": "Masjid Ash-Shamad",
+    "latitude": -7.68357,
+    "longitude": 110.37262,
+    "ip": "10.239.3.78"
+  },
+  {
+    "id": 260,
+    "id_ccbs": "XM005076",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Ruang Askes Publik Kaur Tata Laksana",
+    "latitude": -7.69924,
+    "longitude": 110.3653,
+    "ip": "10.239.3.140"
+  },
+  {
+    "id": 261,
+    "id_ccbs": "XM005077",
+    "name": "Kleben/Mancasan",
+    "lokasi": "GOR Bimoseno Pandowoharjo",
+    "latitude": -7.70299,
+    "longitude": 110.3649,
+    "ip": "10.239.2.192"
+  },
+  {
+    "id": 262,
+    "id_ccbs": "XM005079",
+    "name": "Kleben/Mancasan",
+    "lokasi": "RTH Kalurahan",
+    "latitude": -7.70313,
+    "longitude": 110.3642,
+    "ip": "10.239.3.85"
+  },
+  {
+    "id": 263,
+    "id_ccbs": "XM005084",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Balai Pertemuan Kalurahan",
+    "latitude": -7.70063,
+    "longitude": 110.36513,
+    "ip": "10.239.2.225"
+  },
+  {
+    "id": 264,
+    "id_ccbs": "XM005085",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Masjid Darussalam Kleben",
+    "latitude": -7.70061,
+    "longitude": 110.36474,
+    "ip": "10.239.2.226"
+  },
+  {
+    "id": 265,
+    "id_ccbs": "XM005091",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Ruang Akses Publik LPMKal",
+    "latitude": -7.69865,
+    "longitude": 110.36643,
+    "ip": "10.239.3.50"
+  },
+  {
+    "id": 266,
+    "id_ccbs": "XM005092",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Masjid Al Djauhari",
+    "latitude": -7.70076,
+    "longitude": 110.36598,
+    "ip": "10.239.2.239"
+  },
+  {
+    "id": 267,
+    "id_ccbs": "XM005093",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Kantor Kalurahan pandowoharjo",
+    "latitude": -7.70048,
+    "longitude": 110.365,
+    "ip": "10.239.3.91"
+  },
+  {
+    "id": 268,
+    "id_ccbs": "XM005094",
+    "name": "Kleben/Mancasan",
+    "lokasi": "SDN Pandowoharjo",
+    "latitude": -7.70109,
+    "longitude": 110.36483,
+    "ip": "10.239.2.224"
+  },
+  {
+    "id": 269,
+    "id_ccbs": "XM005096",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Gereja GKJ Medari Wil 4 Mancasan",
+    "latitude": -7.6992,
+    "longitude": 110.36478,
+    "ip": "10.239.3.46"
+  },
+  {
+    "id": 270,
+    "id_ccbs": "XM005098",
+    "name": "Kleben/Mancasan",
+    "lokasi": "Pos Ronda RW 25",
+    "latitude": -7.69867,
+    "longitude": 110.36566,
+    "ip": "10.239.3.47"
+  },
+  {
+    "id": 271,
+    "id_ccbs": "XM005113",
+    "name": "Jetis Jogopaten RW 30",
+    "lokasi": "Ruang Akses Publik Lingkup RW 30",
+    "latitude": -7.696888,
+    "longitude": 110.378252,
+    "ip": "10.239.3.56"
+  },
+  {
+    "id": 272,
+    "id_ccbs": "XM003651",
+    "name": "Krandon RW 14 RT 1",
+    "lokasi": "Pos Ronda RT 01",
+    "latitude": -7.766384,
+    "longitude": 110.31902,
+    "ip": "10.239.2.227"
+  },
+  {
+    "id": 273,
+    "id_ccbs": "XM003652",
+    "name": "Krandon RW 14 RT 2",
+    "lokasi": "Ruang Publik RT 02",
+    "latitude": -7.76564,
+    "longitude": 110.318131,
+    "ip": "10.239.3.58"
+  },
+  {
+    "id": 274,
+    "id_ccbs": "XM003654",
+    "name": "Krandon RW 15 RT 3",
+    "lokasi": "pos ronda RT 03",
+    "latitude": -7.764158,
+    "longitude": 110.318367,
+    "ip": "10.239.2.153"
+  },
+  {
+    "id": 275,
+    "id_ccbs": "XM003655",
+    "name": "Krandon RW 15 RT 4",
+    "lokasi": "Pos ronda RT 04",
+    "latitude": -7.763738,
+    "longitude": 110.319984,
+    "ip": "10.239.2.156"
+  },
+  {
+    "id": 276,
+    "id_ccbs": "XM003656",
+    "name": "Krandon RW 14 RT 5",
+    "lokasi": "Pos ronda RT 05",
+    "latitude": -7.765016,
+    "longitude": 110.320358,
+    "ip": "10.239.2.157"
+  },
+  {
+    "id": 277,
+    "id_ccbs": "XM003657",
+    "name": "Krandon RW 14 RT 5",
+    "lokasi": "Masjid ainul yakin",
+    "latitude": -7.76423,
+    "longitude": 110.319389,
+    "ip": "10.239.2.159"
+  },
+  {
+    "id": 278,
+    "id_ccbs": "XM003659",
+    "name": "Krandon RW 14 RT 5",
+    "lokasi": "Posyandu Melati",
+    "latitude": -7.764534,
+    "longitude": 110.319496,
+    "ip": "10.239.2.161"
+  },
+  {
+    "id": 279,
+    "id_ccbs": "XM003661",
+    "name": "Pete RW 16 RT 1",
+    "lokasi": "Pos ronda 01",
+    "latitude": -7.770607,
+    "longitude": 110.316152,
+    "ip": "10.239.2.228"
+  },
+  {
+    "id": 280,
+    "id_ccbs": "XM003662",
+    "name": "Pete RW 16 RT 2",
+    "lokasi": "Pos ronda 02",
+    "latitude": -7.769659,
+    "longitude": 110.316742,
+    "ip": "10.239.2.243"
+  },
+  {
+    "id": 281,
+    "id_ccbs": "XM003664",
+    "name": "Pete RW 17 RT 3",
+    "lokasi": "Pos ronda 03",
+    "latitude": -7.76854,
+    "longitude": 110.317246,
+    "ip": "10.239.2.163"
+  },
+  {
+    "id": 282,
+    "id_ccbs": "XM003665",
+    "name": "Pete RW 17 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.767701,
+    "longitude": 110.317918,
+    "ip": "10.239.2.164"
+  },
+  {
+    "id": 283,
+    "id_ccbs": "XM003666",
+    "name": "Pete RW 16 RT 1",
+    "lokasi": "Masjid al-muistaqim",
+    "latitude": -7.771219,
+    "longitude": 110.316841,
+    "ip": "10.239.2.253"
+  },
+  {
+    "id": 284,
+    "id_ccbs": "XM003668",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Pos ronda 01",
+    "latitude": -7.765174,
+    "longitude": 110.31514,
+    "ip": "10.239.2.165"
+  },
+  {
+    "id": 285,
+    "id_ccbs": "XM003670",
+    "name": "Sawahan RW 18 RT 2",
+    "lokasi": "Masjid istiqomah",
+    "latitude": -7.768214,
+    "longitude": 110.314552,
+    "ip": "10.239.3.33"
+  },
+  {
+    "id": 286,
+    "id_ccbs": "XM003672",
+    "name": "Sawahan RW 19 RT 3",
+    "lokasi": "Aula makam ngasem",
+    "latitude": -7.769417,
+    "longitude": 110.31427,
+    "ip": "10.239.2.194"
+  },
+  {
+    "id": 287,
+    "id_ccbs": "XM003673",
+    "name": "Sawahan RW 18 RT 2",
+    "lokasi": "Pos ronda 02",
+    "latitude": -7.766848,
+    "longitude": 110.314987,
+    "ip": "10.239.2.195"
+  },
+  {
+    "id": 288,
+    "id_ccbs": "XM003674",
+    "name": "Sawahan RW 19 RT 4",
+    "lokasi": "Pos ronda 04",
+    "latitude": -7.769915,
+    "longitude": 110.314423,
+    "ip": "10.239.3.32"
+  },
+  {
+    "id": 289,
+    "id_ccbs": "XM003675",
+    "name": "Ngrenak Lor RW 23 RT 1",
+    "lokasi": "Masjid mutosoromin",
+    "latitude": -7.752562,
+    "longitude": 110.314827,
+    "ip": "10.239.2.197"
+  },
+  {
+    "id": 290,
+    "id_ccbs": "XM003676",
+    "name": "Ngrenak Lor RW 23 RT 2",
+    "lokasi": "Pos ronda 02",
+    "latitude": -7.752832,
+    "longitude": 110.315697,
+    "ip": "10.239.2.198"
+  },
+  {
+    "id": 291,
+    "id_ccbs": "XM003677",
+    "name": "Ngrenak Lor RW 24 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.751818,
+    "longitude": 110.316467,
+    "ip": "10.239.2.199"
+  },
+  {
+    "id": 292,
+    "id_ccbs": "XM003679",
+    "name": "Ngrenak Lor RW 24 RT 4",
+    "lokasi": "Mushola nur okta",
+    "latitude": -7.750547,
+    "longitude": 110.316429,
+    "ip": "10.239.2.200"
+  },
+  {
+    "id": 293,
+    "id_ccbs": "XM003680",
+    "name": "Simping RW 1 RT 1",
+    "lokasi": "Aula RT 01",
+    "latitude": -7.749441,
+    "longitude": 110.316773,
+    "ip": "10.239.2.254"
+  },
+  {
+    "id": 294,
+    "id_ccbs": "XM003681",
+    "name": "Simping RW 1 RT 2",
+    "lokasi": "Fasum sps RT 02",
+    "latitude": -7.748193,
+    "longitude": 110.316773,
+    "ip": "10.239.2.223"
+  },
+  {
+    "id": 295,
+    "id_ccbs": "XM003682",
+    "name": "Simping RW 2 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.748205,
+    "longitude": 110.31498,
+    "ip": "10.239.2.201"
+  },
+  {
+    "id": 296,
+    "id_ccbs": "XM003683",
+    "name": "Simping RW 2 RT 4",
+    "lokasi": "pos ronda RT 04",
+    "latitude": -7.746506,
+    "longitude": 110.316628,
+    "ip": "10.239.3.0"
+  },
+  {
+    "id": 297,
+    "id_ccbs": "XM003684",
+    "name": "Dukuh RW 9 RT 3",
+    "lokasi": "Pos ronda 03",
+    "latitude": -7.756332,
+    "longitude": 110.320503,
+    "ip": "10.239.2.202"
+  },
+  {
+    "id": 298,
+    "id_ccbs": "XM003685",
+    "name": "Dukuh RW 9 RT 4",
+    "lokasi": "Masjid nurul yaqin",
+    "latitude": -7.758815,
+    "longitude": 110.318962,
+    "ip": "10.239.2.203"
+  },
+  {
+    "id": 299,
+    "id_ccbs": "XM003686",
+    "name": "Dukuh RW 9 RT 4",
+    "lokasi": "Pos ronda 04",
+    "latitude": -7.758967,
+    "longitude": 110.320038,
+    "ip": "10.239.2.251"
+  },
+  {
+    "id": 300,
+    "id_ccbs": "XM003687",
+    "name": "Tegalan RW 10 RT 1",
+    "lokasi": "pos ronda 01",
+    "latitude": -7.762892,
+    "longitude": 110.322273,
+    "ip": "10.239.2.204"
+  },
+  {
+    "id": 301,
+    "id_ccbs": "XM003688",
+    "name": "Tegalan RW 10 RT 2",
+    "lokasi": "pos ronda 02",
+    "latitude": -7.76295,
+    "longitude": 110.320953,
+    "ip": "10.239.2.205"
+  },
+  {
+    "id": 302,
+    "id_ccbs": "XM003689",
+    "name": "Tegalan RW 11 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.760055,
+    "longitude": 110.319557,
+    "ip": "10.239.2.207"
+  },
+  {
+    "id": 303,
+    "id_ccbs": "XM003690",
+    "name": "Tegalan RW 11 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.761298,
+    "longitude": 110.320862,
+    "ip": "10.239.2.208"
+  },
+  {
+    "id": 304,
+    "id_ccbs": "XM003691",
+    "name": "Tegalan RW 11 RT 3",
+    "lokasi": "masjid darrussalam",
+    "latitude": -7.759441,
+    "longitude": 110.320465,
+    "ip": "10.239.2.209"
+  },
+  {
+    "id": 305,
+    "id_ccbs": "XM003692",
+    "name": "Ngrenak kidul RW 20 RT 1",
+    "lokasi": "pos ronda 01",
+    "latitude": -7.760913,
+    "longitude": 110.314377,
+    "ip": "10.239.2.214"
+  },
+  {
+    "id": 306,
+    "id_ccbs": "XM003693",
+    "name": "Ngrenak kidul RW 20 RT 2",
+    "lokasi": "masjid attaqwa",
+    "latitude": -7.760134,
+    "longitude": 110.314697,
+    "ip": "10.239.2.228"
+  },
+  {
+    "id": 307,
+    "id_ccbs": "XM003694",
+    "name": "Ngrenak kidul RW 21 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.758123,
+    "longitude": 110.313049,
+    "ip": "10.239.2.222"
+  },
+  {
+    "id": 308,
+    "id_ccbs": "XM003695",
+    "name": "Ngrenak kidul RW 21 RT 4",
+    "lokasi": "pos ronda 04",
+    "latitude": -7.757653,
+    "longitude": 110.314911,
+    "ip": "10.239.2.221"
+  },
+  {
+    "id": 309,
+    "id_ccbs": "XM003696",
+    "name": "Ngrenak kidul RW 22 RT 6",
+    "lokasi": "pos ronda 06",
+    "latitude": -7.75656,
+    "longitude": 110.315025,
+    "ip": "10.239.3.43"
+  },
+  {
+    "id": 310,
+    "id_ccbs": "XM003697",
+    "name": "Ngrenak kidul RW 22 RT 5",
+    "lokasi": "joglo RT 5",
+    "latitude": -7.756688,
+    "longitude": 110.314018,
+    "ip": "10.239.2.220"
+  },
+  {
+    "id": 311,
+    "id_ccbs": "XM003698",
+    "name": "Ngrenak kidul RW 21 RT 3",
+    "lokasi": "Gereja ngrenak kidul",
+    "latitude": -7.758486,
+    "longitude": 110.314591,
+    "ip": "10.239.2.219"
+  },
+  {
+    "id": 312,
+    "id_ccbs": "XM005013",
+    "name": "Ngrenak kidul RW 22 RT 6",
+    "lokasi": "Ruang Publik RT 06",
+    "latitude": -7.761161,
+    "longitude": 110.313736,
+    "ip": "10.239.2.191"
+  },
+  {
+    "id": 313,
+    "id_ccbs": "XM003700",
+    "name": "Beluran RW 3 RT 1",
+    "lokasi": "Ruang Publik RT 01",
+    "latitude": -7.745819,
+    "longitude": 110.32231,
+    "ip": "10.239.3.5"
+  },
+  {
+    "id": 314,
+    "id_ccbs": "XM003701",
+    "name": "Beluran RW 3 RT 2",
+    "lokasi": "Pos ronda RT 02",
+    "latitude": -7.746649,
+    "longitude": 110.32267,
+    "ip": "10.239.2.235"
+  },
+  {
+    "id": 315,
+    "id_ccbs": "XM003702",
+    "name": "Beluran RW 4 RT 3",
+    "lokasi": "pos ronda RT 03",
+    "latitude": -7.74869,
+    "longitude": 110.321907,
+    "ip": "10.239.2.230"
+  },
+  {
+    "id": 316,
+    "id_ccbs": "XM003704",
+    "name": "Beluran RW 4 RT 4",
+    "lokasi": "pos ronda 04",
+    "latitude": -7.749306,
+    "longitude": 110.319252,
+    "ip": "10.239.3.26"
+  },
+  {
+    "id": 317,
+    "id_ccbs": "XM003705",
+    "name": "Beluran RW 4 RT 3",
+    "lokasi": "Paud bina Melati 2",
+    "latitude": -7.746922,
+    "longitude": 110.323448,
+    "ip": "10.239.2.233"
+  },
+  {
+    "id": 318,
+    "id_ccbs": "XM003706",
+    "name": "Karanglo RW 5 RT 1",
+    "lokasi": "Ruang Publik RT 01",
+    "latitude": -7.750028,
+    "longitude": 110.318977,
+    "ip": "10.239.3.16"
+  },
+  {
+    "id": 319,
+    "id_ccbs": "XM003707",
+    "name": "Karanglo RW 5 RT 2",
+    "lokasi": "Ruang Publik RT 02",
+    "latitude": -7.750442,
+    "longitude": 110.319405,
+    "ip": "10.239.2.216"
+  },
+  {
+    "id": 320,
+    "id_ccbs": "XM003708",
+    "name": "Karanglo RW 6 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.750781,
+    "longitude": 110.321533,
+    "ip": "10.239.3.7"
+  },
+  {
+    "id": 321,
+    "id_ccbs": "XM003709",
+    "name": "Karanglo RW 6 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.750022,
+    "longitude": 110.323654,
+    "ip": "10.239.2.215"
+  },
+  {
+    "id": 322,
+    "id_ccbs": "XM003710",
+    "name": "Karanglo RW 7 RT 5",
+    "lokasi": "Ruang Publik RT 05",
+    "latitude": -7.750993,
+    "longitude": 110.321205,
+    "ip": "10.239.3.18"
+  },
+  {
+    "id": 323,
+    "id_ccbs": "XM003711",
+    "name": "Karanglo RW 7 RT 6",
+    "lokasi": "Ruang Publik RT 06",
+    "latitude": -7.752114,
+    "longitude": 110.321877,
+    "ip": "10.239.2.229"
+  },
+  {
+    "id": 324,
+    "id_ccbs": "XM005010",
+    "name": "Dukuh RW 8 RT 1",
+    "lokasi": "Pos ronda 01",
+    "latitude": -7.755014,
+    "longitude": 110.321625,
+    "ip": "10.239.2.186"
+  },
+  {
+    "id": 325,
+    "id_ccbs": "XM005012",
+    "name": "Dukuh RW 8 RT 2",
+    "lokasi": "Balai serbaguna",
+    "latitude": -7.756508,
+    "longitude": 110.321312,
+    "ip": "10.239.2.185"
+  },
+  {
+    "id": 326,
+    "id_ccbs": "XM005014",
+    "name": "Karakan RW 12 RT 1",
+    "lokasi": "masjid Al ikhlas",
+    "latitude": -7.761548,
+    "longitude": 110.320267,
+    "ip": "10.239.2.184"
+  },
+  {
+    "id": 327,
+    "id_ccbs": "XM005038",
+    "name": "Ngrenak Kidul RW 20 RT 1",
+    "lokasi": "Gedung Serbaguna Tajen",
+    "latitude": -7.761742,
+    "longitude": 110.314036,
+    "ip": "10.239.3.21"
+  },
+  {
+    "id": 328,
+    "id_ccbs": "XM005039",
+    "name": "Ngrenak Kidul RW 20 RT 4",
+    "lokasi": "Tempat Kumpul Warga RT 04",
+    "latitude": -7.757497,
+    "longitude": 110.314908,
+    "ip": "10.239.3.20"
+  },
+  {
+    "id": 329,
+    "id_ccbs": "XM005040",
+    "name": "Ngrenak Kidul RW 20 RT 3",
+    "lokasi": "Fasum Pemuda Ngrenak Kidul ( Lap Volley )",
+    "latitude": -7.758364,
+    "longitude": 110.313777,
+    "ip": "10.239.2.128"
+  },
+  {
+    "id": 330,
+    "id_ccbs": "XM005041",
+    "name": "Ngrenak Kidul RW 20 RT 2",
+    "lokasi": "Fasum Pemuda Tajen",
+    "latitude": -7.760572,
+    "longitude": 110.314357,
+    "ip": "10.239.2.155"
+  },
+  {
+    "id": 331,
+    "id_ccbs": "XM005043",
+    "name": "Ngrenak Kidul RW 20 RT 1",
+    "lokasi": "TK Pusposari 2",
+    "latitude": -7.762041,
+    "longitude": 110.313708,
+    "ip": "10.239.3.19"
+  },
+  {
+    "id": 332,
+    "id_ccbs": "XM005046",
+    "name": "Ngrenak Kidul RW 20 RT 1",
+    "lokasi": "Ruang Umum",
+    "latitude": -7.760694,
+    "longitude": 110.314016,
+    "ip": "10.239.2.154"
+  },
+  {
+    "id": 333,
+    "id_ccbs": "XM005047",
+    "name": "Ngrenak Kidul RW 20 RT 1",
+    "lokasi": "Gedung Serbaguna Perikanan Tajen",
+    "latitude": -7.761813,
+    "longitude": 110.313329,
+    "ip": "10.239.3.52"
+  },
+  {
+    "id": 334,
+    "id_ccbs": "XM005048",
+    "name": "Beluran RW 4 RT 4",
+    "lokasi": "Ruang Terbuka Hijau RT04",
+    "latitude": -7.748693,
+    "longitude": 110.319807,
+    "ip": ""
+  },
+  {
+    "id": 335,
+    "id_ccbs": "XM005049",
+    "name": "Beluran RW 3 RT 3",
+    "lokasi": "Tempat PeRTemuan Sinoman",
+    "latitude": -7.749166,
+    "longitude": 110.321347,
+    "ip": ""
+  },
+  {
+    "id": 336,
+    "id_ccbs": "XM005050",
+    "name": "Beluran RW 4 RT 4",
+    "lokasi": "Tempat Pengajian Bapak-bapak",
+    "latitude": -7.747093,
+    "longitude": 110.322833,
+    "ip": ""
+  },
+  {
+    "id": 337,
+    "id_ccbs": "XM005051",
+    "name": "Beluran RW 3 RT 1",
+    "lokasi": "Tempat PeRTemuan Ibu-ibu RT01",
+    "latitude": -7.745687,
+    "longitude": 110.32242,
+    "ip": ""
+  },
+  {
+    "id": 338,
+    "id_ccbs": "XM005052",
+    "name": "Simping RW 2 RT 2",
+    "lokasi": "Tempat Kumpul Warga Pak Paryoto",
+    "latitude": -7.748335,
+    "longitude": 110.316354,
+    "ip": "10.239.2.134"
+  },
+  {
+    "id": 339,
+    "id_ccbs": "XM005054",
+    "name": "Simping RW 1 RT 1",
+    "lokasi": "Tempat Kumpul Warga RT 01",
+    "latitude": -7.749343,
+    "longitude": 110.316216,
+    "ip": "10.239.2.129"
+  },
+  {
+    "id": 340,
+    "id_ccbs": "XM005057",
+    "name": "Simping RW 2 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.746381,
+    "longitude": 110.317554,
+    "ip": "10.239.2.135"
+  },
+  {
+    "id": 341,
+    "id_ccbs": "XM005059",
+    "name": "Simping RW 2 RT 3",
+    "lokasi": "Kandang kebo RT 03/02",
+    "latitude": -7.748076,
+    "longitude": 110.316746,
+    "ip": "10.239.2.132"
+  },
+  {
+    "id": 342,
+    "id_ccbs": "XM005063",
+    "name": "Simping RW 2 RT 3",
+    "lokasi": "Fasum RT 03",
+    "latitude": -7.747962762,
+    "longitude": 110.3157198,
+    "ip": "10.239.2.133"
+  },
+  {
+    "id": 343,
+    "id_ccbs": "XM005065",
+    "name": "Ngrenak Lor RW 24 RT 3",
+    "lokasi": "KWT Kemuning RT 03 RW 24",
+    "latitude": -7.75172,
+    "longitude": 110.315959,
+    "ip": "10.239.2.152"
+  },
+  {
+    "id": 344,
+    "id_ccbs": "XM005069",
+    "name": "Ngrenak Lor RW 24 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.748231,
+    "longitude": 110.316061,
+    "ip": "10.239.3.22"
+  },
+  {
+    "id": 345,
+    "id_ccbs": "XM005071",
+    "name": "Ngrenak Lor RW 24 RT 4",
+    "lokasi": "Poskampling 04 RW 24",
+    "latitude": -7.750433,
+    "longitude": 110.317069,
+    "ip": "10.239.3.23"
+  },
+  {
+    "id": 346,
+    "id_ccbs": "XM005073",
+    "name": "Ngrenak Lor RW 24 RT 3",
+    "lokasi": "Tempat berkumpul warga RT 03",
+    "latitude": -7.75206977,
+    "longitude": 110.3167917,
+    "ip": "10.239.3.24"
+  },
+  {
+    "id": 347,
+    "id_ccbs": "XM005078",
+    "name": "Ngrenak Lor RW 24 RT 3",
+    "lokasi": "Musholla Al Muhtarom",
+    "latitude": -7.7550184,
+    "longitude": 110.3181329,
+    "ip": "10.239.2.193"
+  },
+  {
+    "id": 348,
+    "id_ccbs": "XM005083",
+    "name": "Karanglo RW 5 RT 1",
+    "lokasi": "masjid pandanaran",
+    "latitude": -7.75127,
+    "longitude": 110.31956,
+    "ip": "10.239.2.139"
+  },
+  {
+    "id": 349,
+    "id_ccbs": "XM005086",
+    "name": "Karanglo RW 5 RT 5",
+    "lokasi": "pos ronda kragilan RT 06",
+    "latitude": -7.75255,
+    "longitude": 110.3222,
+    "ip": "10.239.2.144"
+  },
+  {
+    "id": 350,
+    "id_ccbs": "XM005087",
+    "name": "Karanglo RW 5 RT 5",
+    "lokasi": "Ruang Publik RT 05",
+    "latitude": -7.7517,
+    "longitude": 110.32173,
+    "ip": "10.239.2.146"
+  },
+  {
+    "id": 351,
+    "id_ccbs": "XM005088",
+    "name": "Karanglo RW 5 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.75031,
+    "longitude": 110.32375,
+    "ip": "10.239.2.145"
+  },
+  {
+    "id": 352,
+    "id_ccbs": "XM005089",
+    "name": "Karanglo RW 5 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.750992,
+    "longitude": 110.3226139,
+    "ip": "10.239.2.143"
+  },
+  {
+    "id": 353,
+    "id_ccbs": "XM005095",
+    "name": "Pete RW 17 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.7681225,
+    "longitude": 110.3173199,
+    "ip": "10.239.2.149"
+  },
+  {
+    "id": 354,
+    "id_ccbs": "XM005097",
+    "name": "Karanglo RW 5 RT 3",
+    "lokasi": "pos ronda RT02",
+    "latitude": -7.750180999,
+    "longitude": 110.3194609,
+    "ip": "10.239.2.138"
+  },
+  {
+    "id": 355,
+    "id_ccbs": "XM005099",
+    "name": "Karanglo RW 5 RT 4",
+    "lokasi": "Masjid Fathul Iman",
+    "latitude": -7.7508139,
+    "longitude": 110.3217911,
+    "ip": "10.239.2.140"
+  },
+  {
+    "id": 356,
+    "id_ccbs": "XM005115",
+    "name": "Pete RW 16 RT 1",
+    "lokasi": "Masjid Uswatun Hasanah",
+    "latitude": -7.7683843,
+    "longitude": 110.3178915,
+    "ip": "10.239.2.190"
+  },
+  {
+    "id": 357,
+    "id_ccbs": "XM005117",
+    "name": "Pete RW 17 RT 4",
+    "lokasi": "cakruk RT 04",
+    "latitude": -7.7677232,
+    "longitude": 110.3183703,
+    "ip": "10.239.2.168"
+  },
+  {
+    "id": 358,
+    "id_ccbs": "XM005118",
+    "name": "Pete RW 16 RT 2",
+    "lokasi": "Tempat Berkumpul warga RT 02",
+    "latitude": -7.7702009,
+    "longitude": 110.3165089,
+    "ip": "10.239.2.179"
+  },
+  {
+    "id": 359,
+    "id_ccbs": "XM005121",
+    "name": "Krandon RW 14 RT 1",
+    "lokasi": "Ruang Publik RT 01",
+    "latitude": -7.766759661,
+    "longitude": 110.318569,
+    "ip": "10.239.2.173"
+  },
+  {
+    "id": 360,
+    "id_ccbs": "XM005122",
+    "name": "Krandon RW 14 RT 2",
+    "lokasi": "Ruang Publik RT 02",
+    "latitude": -7.766201069,
+    "longitude": 110.3180014,
+    "ip": "10.239.2.171"
+  },
+  {
+    "id": 361,
+    "id_ccbs": "XM005124",
+    "name": "Krandon RW 15 RT 3",
+    "lokasi": "Ruang Publik RT 03",
+    "latitude": -7.765044,
+    "longitude": 110.318021,
+    "ip": "10.239.2.174"
+  },
+  {
+    "id": 362,
+    "id_ccbs": "XM005125",
+    "name": "Krandon RW 15 RT 4",
+    "lokasi": "Ruang Publik RT 04",
+    "latitude": -7.7635322,
+    "longitude": 110.3187876,
+    "ip": "10.239.2.175"
+  },
+  {
+    "id": 363,
+    "id_ccbs": "XM005127",
+    "name": "Krandon RW 15 RT 5",
+    "lokasi": "Ruang Publik RT 05",
+    "latitude": -7.764454,
+    "longitude": 110.319308,
+    "ip": "10.239.2.176"
+  },
+  {
+    "id": 364,
+    "id_ccbs": "XM005128",
+    "name": "Tegalan RW 10 RT 1",
+    "lokasi": "Ruang PeRTemuan RT 01",
+    "latitude": -7.760067,
+    "longitude": 110.320241,
+    "ip": "10.239.2.148"
+  },
+  {
+    "id": 365,
+    "id_ccbs": "XM005129",
+    "name": "Tegalan RW 11 RT 4",
+    "lokasi": "Ruang PeRTemuan RT 04",
+    "latitude": -7.761154,
+    "longitude": 110.320885,
+    "ip": "10.239.2.177"
+  },
+  {
+    "id": 366,
+    "id_ccbs": "XM005131",
+    "name": "Tegalan RW 10 RT 1",
+    "lokasi": "Gardu Ronda RT.01",
+    "latitude": -7.759985,
+    "longitude": 110.31956,
+    "ip": "10.239.2.147"
+  },
+  {
+    "id": 367,
+    "id_ccbs": "XM005132",
+    "name": "Tegalan RW 11 RT 1",
+    "lokasi": "Posko LINMAS Sidomoyo",
+    "latitude": -7.764522,
+    "longitude": 110.320872,
+    "ip": "10.239.2.182"
+  },
+  {
+    "id": 368,
+    "id_ccbs": "XM005133",
+    "name": "Tegalan RW 11 RT 4",
+    "lokasi": "Sidomoyo Farm",
+    "latitude": -7.7503797,
+    "longitude": 110.3145912,
+    "ip": "10.239.2.130"
+  },
+  {
+    "id": 369,
+    "id_ccbs": "XM005134",
+    "name": "Tegalan RW 10 RT 2",
+    "lokasi": "Gapoktan Sidomoyo",
+    "latitude": -7.764562,
+    "longitude": 110.320824,
+    "ip": "10.239.2.183"
+  },
+  {
+    "id": 370,
+    "id_ccbs": "XM005135",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Ruang PeRTemuan Padukuhan",
+    "latitude": -7.7689803,
+    "longitude": 110.3150487,
+    "ip": "10.239.2.241"
+  },
+  {
+    "id": 371,
+    "id_ccbs": "XM005136",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Ruang PeRTemuan RT 01",
+    "latitude": -7.7651131,
+    "longitude": 110.3147242,
+    "ip": "10.239.2.245"
+  },
+  {
+    "id": 372,
+    "id_ccbs": "XM005137",
+    "name": "Sawahan RW 18 RT 2",
+    "lokasi": "Pos ronda RT 02",
+    "latitude": -7.7686803,
+    "longitude": 110.3146501,
+    "ip": "10.239.2.246"
+  },
+  {
+    "id": 373,
+    "id_ccbs": "XM005138",
+    "name": "Sawahan RW 19 RT 3",
+    "lokasi": "Ruang PeRTemuan RT 03",
+    "latitude": -7.76916,
+    "longitude": 110.3146471,
+    "ip": "10.239.2.247"
+  },
+  {
+    "id": 374,
+    "id_ccbs": "XM005139",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Jalan peRTigaan / Fasum",
+    "latitude": -7.768928,
+    "longitude": 110.314651,
+    "ip": "10.239.2.160"
+  },
+  {
+    "id": 375,
+    "id_ccbs": "XM005140",
+    "name": "Sawahan RW 19 RT 3",
+    "lokasi": "Musola al aqsa ( Dalam SD Sidomoyo )",
+    "latitude": -7.764156,
+    "longitude": 110.315458,
+    "ip": "10.239.2.160"
+  },
+  {
+    "id": 376,
+    "id_ccbs": "XM005141",
+    "name": "Sawahan RW 18 RT 1",
+    "lokasi": "Masjid Al Barokah",
+    "latitude": -7.7692926,
+    "longitude": 110.315675,
+    "ip": "10.239.2.158"
+  },
+  {
+    "id": 377,
+    "id_ccbs": "XM005142",
+    "name": "Dukuh RW 8 RT 1",
+    "lokasi": "Masjid Nurul Hidayah",
+    "latitude": -7.7554497,
+    "longitude": 110.3206109,
+    "ip": "10.239.2.187"
+  },
+  {
+    "id": 378,
+    "id_ccbs": "XM005143",
+    "name": "Beluran",
+    "lokasi": "Balai Padukuhan Beluran",
+    "latitude": -7.7468283,
+    "longitude": 110.3224781,
+    "ip": ""
+  },
+  {
+    "id": 379,
+    "id_ccbs": "XM005144",
+    "name": "Krandon",
+    "lokasi": "Pos Kampling/Balai RT",
+    "latitude": -7.768639,
+    "longitude": 110.314288,
+    "ip": "10.239.2.188"
+  },
+  {
+    "id": 380,
+    "id_ccbs": "XM005145",
+    "name": "Pete",
+    "lokasi": "Pos Ronda",
+    "latitude": -7.767694,
+    "longitude": 110.318415,
+    "ip": "10.239.2.189"
+  },
+  {
+    "id": 381,
+    "id_ccbs": "XM005146",
+    "name": "Sawahan",
+    "lokasi": "Posyandu Seroja",
+    "latitude": "-7. 7689876",
+    "longitude": 110.3150243,
+    "ip": "10.239.2.248"
+  },
+  {
+    "id": 382,
+    "id_ccbs": "XM005147",
+    "name": "Ngrenak Kidul",
+    "lokasi": "Posyandu Teratai",
+    "latitude": -7.758196,
+    "longitude": 110.313507,
+    "ip": "10.239.2.150"
+  },
+  {
+    "id": 383,
+    "id_ccbs": "XM005148",
+    "name": "Ngrenak Lor",
+    "lokasi": "Posyandu Anggrek",
+    "latitude": -7.749974,
+    "longitude": 110.31682,
+    "ip": "10.239.3.25"
+  }
+]

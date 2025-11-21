@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analitik Penggunaan Hotspot</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/logo.png') }}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    
+    <style>
+        /* Variabel CSS untuk manajemen tema yang mudah */
+        :root {
+            --primary-color: #4a56e2;
+            --secondary-color: #8961d1;
+            --accent-color: #ff6b35;
+            --text-color-light: #f8f9fa;
+            --text-color-dark: #343a40;
+            --card-bg-color: rgba(255, 255, 255, 0.65);
+            --card-border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        body {
+            background-image: url("{{ url_for('static', filename='images/Candi Ijo, Prambanan, Sleman.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            /* Overlay gradien halus untuk meningkatkan keterbacaan teks */
+            background-color: rgba(0,0,0,0.25);
+            background-blend-mode: overlay;
+        }
+
+        .analytics-container {
+            padding: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--text-color-light);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        
+        .header h1 i {
+            color: #d1c4e9; /* Warna ikon yang lebih lembut */
+            margin-right: 10px;
+        }
+
+        /* Tampilan "Glassmorphism" yang disempurnakan */
+        .card {
+            background: var(--card-bg-color);
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--card-border-color);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--text-color-dark);
+            margin-bottom: 2rem;
+            text-align: left;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-item {
+            border-radius: 15px;
+            padding: 1.5rem;
+            color: var(--text-color-light);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        /* Latar Belakang Gradien untuk setiap item statistik */
+        .stat-item:nth-child(1) { background: linear-gradient(45deg, #f97794, #623aa2); }
+        .stat-item:nth-child(2) { background: linear-gradient(45deg, #288cba, #91c34a); }
+        .stat-item:nth-child(3) { background: linear-gradient(45deg, #ffc371, #ff5f6d); }
+        .stat-item:nth-child(4) { background: linear-gradient(45deg, #56ab2f, #a8e063); }
+
+        .stat-item i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .chart-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        .chart-box { min-height: 400px; }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            border: none;
+            font-weight: 500;
+        }
+        .back-button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        
+        /* Kustomisasi DataTables agar sesuai tema */
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate {
+             margin-bottom: 1rem;
+        }
+        table.dataTable {
+            border-collapse: collapse !important;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        table.dataTable thead th {
+            background-color: rgba(74, 86, 226, 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        table.dataTable tbody tr:hover {
+            background-color: rgba(74, 86, 226, 0.05);
+        }
+
+        /* Responsivitas */
+        @media (max-width: 992px) {
+            .chart-section { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .analytics-container { padding: 1rem; }
+            .header { margin-top: 5rem; }
+            .back-button { top: 1rem; left: 1rem; padding: 8px 16px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="analytics-container">
+        <a href="/dashboard" class="back-button"><i class="fas fa-arrow-left"></i> Kembali</a>
+        <div class="header">
+            <h1><i class="fas fa-chart-pie"></i>Analitik Penggunaan Hotspot</h1>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-tachometer-alt me-2"></i>Ringkasan Statistik</h2>
+            <div id="summaryStats" class="stats-grid">
+                <div class="stat-item"><i class="fas fa-users-rays"></i><div class="stat-value" id="peakUsers">-</div><div class="stat-label">Pengguna Puncak</div></div>
+                <div class="stat-item"><i class="fas fa-wifi"></i><div class="stat-value" id="troughUsers">-</div><div class="stat-label">Pengguna Terendah</div></div>
+                <div class="stat-item"><i class="fas fa-wave-square"></i><div class="stat-value" id="averageUsers">-</div><div class="stat-label">Rata-rata Pengguna</div></div>
+                <div class="stat-item"><i class="fas fa-mobile-screen-button"></i><div class="stat-value" id="uniqueDevices">-</div><div class="stat-label">Perangkat Unik</div></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-chart-line me-2"></i>Visualisasi Data</h2>
+            <div class="chart-section">
+                <div class="chart-box">
+                    <canvas id="dailyBarChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <canvas id="topUsersChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-table-list me-2"></i>Log Sesi Pengguna (100 Terakhir)</h2>
+            <div class="table-responsive">
+                <table id="userSessionTable" class="table table-hover" style="width:100%">
+                    <thead><tr><th>Waktu</th><th>IP Address</th><th>MAC Address</th><th>Uptime</th><th>Data Masuk</th><th>Data Keluar</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-users-viewfinder me-2"></i>Ringkasan per Perangkat Unik</h2>
+            <div class="table-responsive">
+                <table id="userSummaryTable" class="table table-hover" style="width:100%">
+                    <thead><tr><th>MAC Address</th><th>Total Sesi</th><th>Total Penggunaan Data</th><th>Terakhir Terlihat</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let userHistoryChartInstance;
+        let topUsersChartInstance;
+        
+        // Palet warna baru untuk grafik agar konsisten dengan tema
+        const chartColors = {
+            peak: 'rgba(231, 76, 60, 0.7)',
+            average: 'rgba(241, 196, 15, 0.7)',
+            trough: 'rgba(52, 152, 219, 0.7)',
+            pie: ['#623aa2', '#4a56e2', '#288cba', '#91c34a', '#ffc371']
+        };
+
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function loadAnalyticsData() {
+            fetch('/api/analytics-data')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        $('#summaryStats').html(`<p class="text-center text-danger col-12">${data.error}</p>`);
+                        return;
+                    }
+
+                    $('#peakUsers').text(data.summary.peak_users);
+                    $('#troughUsers').text(data.summary.trough_users);
+                    $('#averageUsers').text(parseFloat(data.summary.average_users).toFixed(2));
+                    $('#uniqueDevices').text(data.summary.unique_devices);
+
+                    updateDailyBarChart(data.daily_summary);
+                    
+                    const userSummary = calculateUserSummary(data.raw_logs);
+                    updateTopUsersChart(userSummary);
+                    populateUserSummaryTable(userSummary);
+                    
+                    populateUserSessionTable(data.raw_logs);
+                })
+                .catch(error => {
+                    console.error('Error fetching analytics data:', error);
+                    $('#summaryStats').html(`<p class="text-center text-danger col-12">Gagal memuat data analitik.</p>`);
+                });
+        }
+
+        function updateDailyBarChart(dailySummary) {
+            if (userHistoryChartInstance) userHistoryChartInstance.destroy();
+
+            const labels = dailySummary.map(d => new Date(d.date).toLocaleDateString('id-ID', { weekday: 'short', day: 'numeric', month: 'short' }));
+            const peakData = dailySummary.map(d => d.peak);
+            const troughData = dailySummary.map(d => d.trough);
+            const averageData = dailySummary.map(d => d.average);
+
+            const ctx = document.getElementById('dailyBarChart').getContext('2d');
+            userHistoryChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        { label: 'User Puncak', data: peakData, backgroundColor: chartColors.peak, borderWidth: 1 },
+                        { label: 'Rata-rata User', data: averageData, backgroundColor: chartColors.average, borderWidth: 1 },
+                        { label: 'User Terendah', data: troughData, backgroundColor: chartColors.trough, borderWidth: 1 }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: { display: true, text: 'Statistik Pengguna Harian', font: { size: 16, family: 'Poppins' } },
+                        tooltip: { mode: 'index', intersect: false, bodyFont: { family: 'Poppins' } }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, title: { display: true, text: 'Jumlah Pengguna' }, ticks: { font: { family: 'Poppins' } } },
+                        x: { ticks: { font: { family: 'Poppins' } } }
+                    }
+                }
+            });
+        }
+        
+        function calculateUserSummary(rawLogs) {
+            const summary = {};
+            rawLogs.forEach(log => {
+                const logTime = new Date(log.timestamp);
+                log.users.forEach(user => {
+                    if (!summary[user.mac]) {
+                        summary[user.mac] = { mac: user.mac, sessions: 0, totalBytesIn: 0, totalBytesOut: 0, lastSeen: new Date(0) };
+                    }
+                    const s = summary[user.mac];
+                    s.sessions++;
+                    s.totalBytesIn += Number(user.bytes_in || 0);
+                    s.totalBytesOut += Number(user.bytes_out || 0);
+                    if (logTime > s.lastSeen) s.lastSeen = logTime;
+                });
+            });
+            return Object.values(summary);
+        }
+        
+        function updateTopUsersChart(userSummary) {
+            const sortedUsers = userSummary.sort((a, b) => (b.totalBytesIn + b.totalBytesOut) - (a.totalBytesIn + a.totalBytesOut)).slice(0, 5);
+            const labels = sortedUsers.map(u => u.mac);
+            const data = sortedUsers.map(u => u.totalBytesIn + u.totalBytesOut);
+            
+            if (topUsersChartInstance) topUsersChartInstance.destroy();
+            const ctx = document.getElementById('topUsersChart').getContext('2d');
+            topUsersChartInstance = new Chart(ctx, {
+                type: 'doughnut', /* Diubah ke doughnut untuk tampilan modern */
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Total Penggunaan Data',
+                        data: data,
+                        backgroundColor: chartColors.pie,
+                        hoverOffset: 8,
+                        borderColor: 'rgba(255,255,255,0.7)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: { display: true, text: 'Top 5 Pengguna Data Teratas', font: { size: 16, family: 'Poppins' } },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += formatBytes(context.parsed);
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function populateUserSessionTable(rawLogs) {
+             if ($.fn.DataTable.isDataTable('#userSessionTable')) {
+                $('#userSessionTable').DataTable().destroy();
+            }
+            const tableBody = $('#userSessionTable tbody');
+            tableBody.empty(); // Kosongkan tabel sebelum diisi ulang
+            rawLogs.forEach(log => {
+                const logTime = new Date(log.timestamp).toLocaleString('id-ID', { hour12: false });
+                log.users.forEach(user => {
+                    const row = `<tr>
+                        <td>${logTime}</td>
+                        <td>${user.ip || '-'}</td>
+                        <td>${user.mac || '-'}</td>
+                        <td>${user.uptime || '-'}</td>
+                        <td>${formatBytes(user.bytes_in || 0)}</td>
+                        <td>${formatBytes(user.bytes_out || 0)}</td>
+                    </tr>`;
+                    tableBody.append(row);
+                });
+            });
+             $('#userSessionTable').DataTable({ "order": [[0, "desc"]], "pageLength": 10 });
+        }
+        
+        function populateUserSummaryTable(userSummary) {
+            if ($.fn.DataTable.isDataTable('#userSummaryTable')) {
+                $('#userSummaryTable').DataTable().destroy();
+            }
+            const tableBody = $('#userSummaryTable tbody');
+            tableBody.empty();
+            userSummary.forEach(s => {
+                const row = `<tr>
+                    <td>${s.mac}</td>
+                    <td>${s.sessions}</td>
+                    <td>${formatBytes(s.totalBytesIn + s.totalBytesOut)}</td>
+                    <td>${s.lastSeen.toLocaleString('id-ID', { hour12: false })}</td>
+                </tr>`;
+                tableBody.append(row);
+            });
+            $('#userSummaryTable').DataTable({ "order": [[2, "desc"]], "pageLength": 10 });
+        }
+
+        $(document).ready(function() {
+            // Inisialisasi DataTables dengan pesan "memuat"
+            $('#userSessionTable').DataTable({ "order": [[0, "desc"]], "pageLength": 10 });
+            $('#userSummaryTable').DataTable({ "order": [[2, "desc"]], "pageLength": 10 });
+            
+            loadAnalyticsData();
+            setInterval(loadAnalyticsData, 60000); // Interval diperbarui menjadi 60 detik untuk mengurangi beban
+        });
+    </script>
+</body>
+</html>

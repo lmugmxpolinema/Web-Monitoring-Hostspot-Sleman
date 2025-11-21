@@ -1,0 +1,2852 @@
+[
+  {
+    "no": 1,
+    "ID": "JP000816",
+    "Nama": "Baciro",
+    "Lokasi": "Kantor PSSI Kelurahan Baciro",
+    "Latitude": "",
+    "Longitude": "",
+    "IP": "10.239.1.53",
+    "Status": ""
+  },
+  {
+    "no": 2,
+    "ID": "LM000893",
+    "Nama": "Baciro RW 1-1",
+    "Lokasi": "Pos Ronda RW 1 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.797608,
+    "Longitude": 110.379941,
+    "IP": "10.239.0.161",
+    "Status": ""
+  },
+  {
+    "no": 3,
+    "ID": "LM002054",
+    "Nama": "Baciro RW 1-2",
+    "Lokasi": "Rumah belajar (SPS tunas Baciro) RW 1 Kelurahan Baciro",
+    "Latitude": -7.79749,
+    "Longitude": 110.378929,
+    "IP": "10.239.1.129",
+    "Status": ""
+  },
+  {
+    "no": 4,
+    "ID": "LM000896",
+    "Nama": "Baciro RW 10-1",
+    "Lokasi": "Balai RW 10 Kelurahan Baciro",
+    "Latitude": -7.789864,
+    "Longitude": 110.37969,
+    "IP": "10.239.2.79",
+    "Status": ""
+  },
+  {
+    "no": 5,
+    "ID": "JP003250",
+    "Nama": "Baciro RW 11",
+    "Lokasi": "Mushola Aisyiyah",
+    "Latitude": -7.791659,
+    "Longitude": 110.384466,
+    "IP": "10.239.0.168",
+    "Status": ""
+  },
+  {
+    "no": 6,
+    "ID": "XM000362",
+    "Nama": "Baciro RW 11-1",
+    "Lokasi": "Masjid Pasarean Sonyoragi RW 011 Kelurahan Baciro",
+    "Latitude": -7.792968,
+    "Longitude": 110.385587,
+    "IP": "10.239.0.138",
+    "Status": ""
+  },
+  {
+    "no": 7,
+    "ID": "XM001239",
+    "Nama": "Baciro RW 12-1",
+    "Lokasi": "Musholla Al Manar RT 46 RW 012 Kelurahan Baciro",
+    "Latitude": -7.793988,
+    "Longitude": 110.385533,
+    "IP": "10.239.1.133",
+    "Status": ""
+  },
+  {
+    "no": 8,
+    "ID": "JP000007",
+    "Nama": "Baciro RW 12-1",
+    "Lokasi": "Pos Ronda RT 43 RW 12 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.792915,
+    "Longitude": 110.384444,
+    "IP": "10.239.0.169",
+    "Status": ""
+  },
+  {
+    "no": 9,
+    "ID": "XM000463",
+    "Nama": "Baciro RW 13",
+    "Lokasi": "Pos ronda RT 50",
+    "Latitude": -7.792379,
+    "Longitude": 110.38645,
+    "IP": "10.239.0.170",
+    "Status": ""
+  },
+  {
+    "no": 10,
+    "ID": "JP000009",
+    "Nama": "Baciro RW 14-1",
+    "Lokasi": "Pos Ronda RW 14 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.792688,
+    "Longitude": 110.389208,
+    "IP": "10.239.0.171",
+    "Status": ""
+  },
+  {
+    "no": 11,
+    "ID": "JP000010",
+    "Nama": "Baciro RW 15-1",
+    "Lokasi": "Rumah Bu Yudi RW 15 Kelurahan Baciro",
+    "Latitude": -7.7896256,
+    "Longitude": 110.3873507,
+    "IP": "10.239.0.172",
+    "Status": ""
+  },
+  {
+    "no": 12,
+    "ID": "JP002293",
+    "Nama": "Baciro RW 15-1",
+    "Lokasi": "Lapangan RT 58 RW 15 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.790513,
+    "Longitude": 110.387596,
+    "IP": "10.239.1.66",
+    "Status": ""
+  },
+  {
+    "no": 13,
+    "ID": "JP000011",
+    "Nama": "Baciro RW 16-1",
+    "Lokasi": "Rumah Pak Margono RW 016 Kelurahan Baciro",
+    "Latitude": -7.790402,
+    "Longitude": 110.388012,
+    "IP": "10.239.0.173",
+    "Status": ""
+  },
+  {
+    "no": 14,
+    "ID": "JP000012",
+    "Nama": "Baciro RW 17-1",
+    "Lokasi": "Rumah Pak Aris RW 017 Kelurahan Baciro",
+    "Latitude": -7.789588,
+    "Longitude": 110.389242,
+    "IP": "10.239.0.174",
+    "Status": ""
+  },
+  {
+    "no": 15,
+    "ID": "JP002756",
+    "Nama": "Baciro RW 18",
+    "Lokasi": "RTHP Baciro RW 18",
+    "Latitude": -7.789033,
+    "Longitude": 110.391725,
+    "IP": "10.239.1.144",
+    "Status": ""
+  },
+  {
+    "no": 16,
+    "ID": "JP002112",
+    "Nama": "Baciro RW 18-1",
+    "Lokasi": "Pos Ronda RT 74 RW 018 Kelurahan Baciro",
+    "Latitude": -7.791005,
+    "Longitude": 110.391213,
+    "IP": "10.239.1.64",
+    "Status": ""
+  },
+  {
+    "no": 17,
+    "ID": "JP001978",
+    "Nama": "Baciro RW 18-2",
+    "Lokasi": "Rumah Warga RW 18 Kelurahan Baciro",
+    "Latitude": -7.789774,
+    "Longitude": 110.391703,
+    "IP": "10.239.1.61",
+    "Status": ""
+  },
+  {
+    "no": 18,
+    "ID": "XM000324",
+    "Nama": "Baciro RW 19",
+    "Lokasi": "Gedung serbaguna gereja Baciro",
+    "Latitude": -7.7919944,
+    "Longitude": 110.3895583,
+    "IP": "10.239.0.14",
+    "Status": ""
+  },
+  {
+    "no": 19,
+    "ID": "JP002294",
+    "Nama": "Baciro RW 19-1",
+    "Lokasi": "POS Ronda RT 81  RW 019, Kelurahan Baciro",
+    "Latitude": -7.791125,
+    "Longitude": 110.393137,
+    "IP": "10.239.1.67",
+    "Status": ""
+  },
+  {
+    "no": 20,
+    "ID": "JP003057",
+    "Nama": "Baciro RW 19-2",
+    "Lokasi": "Pos Kampling RT 80 RW 019, Kelurahan Baciro",
+    "Latitude": -7.790382,
+    "Longitude": 110.392192,
+    "IP": "10.239.1.79",
+    "Status": ""
+  },
+  {
+    "no": 21,
+    "ID": "JP002749",
+    "Nama": "Baciro RW 2-1",
+    "Lokasi": "Balai RW 02 Kelurahan Baciro",
+    "Latitude": -7.796264,
+    "Longitude": 110.378344,
+    "IP": "10.239.1.73",
+    "Status": ""
+  },
+  {
+    "no": 22,
+    "ID": "JP001855",
+    "Nama": "Baciro RW 20-1",
+    "Lokasi": "Balai Manunggal Karso Gajah Wong RW 020 Kelurahan Baciro",
+    "Latitude": -7.789536,
+    "Longitude": 110.394946,
+    "IP": "10.239.0.125",
+    "Status": ""
+  },
+  {
+    "no": 23,
+    "ID": "LM000855",
+    "Nama": "Baciro RW 20-1",
+    "Lokasi": "Balai RW 20 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.790224,
+    "Longitude": 110.394924,
+    "IP": "10.239.0.124",
+    "Status": ""
+  },
+  {
+    "no": 24,
+    "ID": "JP001133",
+    "Nama": "Baciro RW 20-2",
+    "Lokasi": "Pos kamling RW 20 Kelurahan Baciro",
+    "Latitude": -7.78925,
+    "Longitude": 110.394806,
+    "IP": "172.16.177.179",
+    "Status": ""
+  },
+  {
+    "no": 25,
+    "ID": "JP000014",
+    "Nama": "Baciro RW 21-1",
+    "Lokasi": "Vihara Vimalakirti RW 21 Kelurahan Baciro",
+    "Latitude": -7.794623,
+    "Longitude": 110.381072,
+    "IP": "10.239.0.186",
+    "Status": ""
+  },
+  {
+    "no": 26,
+    "ID": "LM001710",
+    "Nama": "Baciro RW 3-1",
+    "Lokasi": "Pos ronda RW 03 Kelurahan Baciro",
+    "Latitude": -7.796536,
+    "Longitude": 110.379298,
+    "IP": "10.239.0.162",
+    "Status": ""
+  },
+  {
+    "no": 27,
+    "ID": "LM001188",
+    "Nama": "Baciro RW 4-1",
+    "Lokasi": "Masjid Mustaqiem Danukusuman RW 004 Kelurahan Baciro",
+    "Latitude": -7.794246,
+    "Longitude": 110.379714,
+    "IP": "10.239.0.164",
+    "Status": ""
+  },
+  {
+    "no": 28,
+    "ID": "JP000004",
+    "Nama": "Baciro RW 5-1",
+    "Lokasi": "Fasum RW 5 Danukusuman",
+    "Latitude": -7.792297,
+    "Longitude": 110.378739,
+    "IP": "10.239.0.165",
+    "Status": ""
+  },
+  {
+    "no": 29,
+    "ID": "JP002288",
+    "Nama": "Baciro RW 5-2",
+    "Lokasi": "Fasum taman pinggir kali RW 5",
+    "Latitude": -7.79224,
+    "Longitude": 110.379655,
+    "IP": "10.239.2.73",
+    "Status": ""
+  },
+  {
+    "no": 30,
+    "ID": "XM000465",
+    "Nama": "Baciro RW 6-1",
+    "Lokasi": "Tempat belajar dan kumpul warga RW 006 Kelurahan Baciro",
+    "Latitude": -7.793335,
+    "Longitude": 110.379373,
+    "IP": "10.239.0.166",
+    "Status": ""
+  },
+  {
+    "no": 31,
+    "ID": "JP000003",
+    "Nama": "Baciro RW 7-1",
+    "Lokasi": "Balai RW 7 Kelurahan baciro",
+    "Latitude": -7.793684,
+    "Longitude": 110.380578,
+    "IP": "10.239.1.23",
+    "Status": ""
+  },
+  {
+    "no": 32,
+    "ID": "JP003256",
+    "Nama": "Baciro RW 8-1",
+    "Lokasi": "Pos Ronda RT 30 RW 8 Gondokusuman Kelurahan Baciro",
+    "Latitude": -7.792041,
+    "Longitude": 110.381059,
+    "IP": "10.239.1.170",
+    "Status": ""
+  },
+  {
+    "no": 33,
+    "ID": "LM002852",
+    "Nama": "Baciro RW 8-2",
+    "Lokasi": "RTHP Baciro RW 08 taman bakung",
+    "Latitude": -7.792663,
+    "Longitude": 110.381443,
+    "IP": "10.239.1.140",
+    "Status": ""
+  },
+  {
+    "no": 34,
+    "ID": "XM000414",
+    "Nama": "Bausasran RW 10-1",
+    "Lokasi": "Rumah Belajar Warga RW 010 Kelurahan Bausasran",
+    "Latitude": -7.795992,
+    "Longitude": 110.375398,
+    "IP": "10.239.0.71",
+    "Status": ""
+  },
+  {
+    "no": 35,
+    "ID": "XM000415",
+    "Nama": "Bausasran RW 11-1",
+    "Lokasi": "Balai warga RW 011 Kelurahan Bausasran",
+    "Latitude": -7.796028,
+    "Longitude": 110.374135,
+    "IP": "10.239.0.70",
+    "Status": ""
+  },
+  {
+    "no": 36,
+    "ID": "XM000406",
+    "Nama": "Bausasran RW 2-1",
+    "Lokasi": "Balai RW 002 Kelurahan Bausasran",
+    "Latitude": -7.791564,
+    "Longitude": 110.374718,
+    "IP": "10.239.0.40",
+    "Status": ""
+  },
+  {
+    "no": 37,
+    "ID": "XM000363",
+    "Nama": "Bausasran RW 3-1",
+    "Lokasi": "Balai Lempuyangan Bausasran",
+    "Latitude": -7.792049,
+    "Longitude": 110.375314,
+    "IP": "10.239.0.139",
+    "Status": ""
+  },
+  {
+    "no": 38,
+    "ID": "XM000407",
+    "Nama": "Bausasran RW 3-2",
+    "Lokasi": "Balai Karangtaruna RW 003 Kelurahan Bausasran",
+    "Latitude": -7.7922615,
+    "Longitude": 110.374924,
+    "IP": "10.239.0.98",
+    "Status": ""
+  },
+  {
+    "no": 39,
+    "ID": "XM000409",
+    "Nama": "Bausasran RW 5-1",
+    "Lokasi": "Komplek Masjid Lempuyangan RW 005 Kelurahan Bausasran",
+    "Latitude": -7.793149,
+    "Longitude": 110.374935,
+    "IP": "10.239.0.65",
+    "Status": ""
+  },
+  {
+    "no": 40,
+    "ID": "XM000412",
+    "Nama": "Bausasran RW 8-1",
+    "Lokasi": "Balai Warga RW 008 Kelurahan Baciro  Kelurahan Bausasran",
+    "Latitude": -7.793163,
+    "Longitude": 110.377392,
+    "IP": "10.239.0.66",
+    "Status": ""
+  },
+  {
+    "no": 41,
+    "ID": "XM000413",
+    "Nama": "Bausasran RW 9-1",
+    "Lokasi": "Pos Pertemuan Warga RW 009 Kelurahan Bausasran",
+    "Latitude": -7.794883,
+    "Longitude": 110.373955,
+    "IP": "10.239.0.69",
+    "Status": ""
+  },
+  {
+    "no": 42,
+    "ID": "XM001909",
+    "Nama": "Bausasran RW 9-2",
+    "Lokasi": "Gedung Serbaguna Lt.2 depan Masjid Al-Amna RT 035 RW 009 Kelurahan Bausasran",
+    "Latitude": -7.79435,
+    "Longitude": 110.375432,
+    "IP": "10.239.1.139",
+    "Status": ""
+  },
+  {
+    "no": 43,
+    "ID": "XM000408",
+    "Nama": "Bausasran-1",
+    "Lokasi": "Pos ronda rt 14",
+    "Latitude": -7.793268,
+    "Longitude": 110.37616,
+    "IP": "10.239.0.64",
+    "Status": ""
+  },
+  {
+    "no": 44,
+    "ID": "XM000410",
+    "Nama": "Bausasran-2",
+    "Lokasi": "Balai Macanan",
+    "Latitude": -7.794443130493164,
+    "Longitude": 110.37593841552734,
+    "IP": "10.239.0.67",
+    "Status": ""
+  },
+  {
+    "no": 45,
+    "ID": "XM000411",
+    "Nama": "Bausasran-3",
+    "Lokasi": "Masjid al Ma'ruf",
+    "Latitude": -7.794433,
+    "Longitude": 110.377233,
+    "IP": "10.239.0.68",
+    "Status": ""
+  },
+  {
+    "no": 46,
+    "ID": "XM000416",
+    "Nama": "Bausasran-4",
+    "Lokasi": "Rumah warga",
+    "Latitude": "7.796687°S",
+    "Longitude": "110.376908°E",
+    "IP": "10.239.0.72",
+    "Status": ""
+  },
+  {
+    "no": 47,
+    "ID": "XM000405",
+    "Nama": "Bausasran-5",
+    "Lokasi": "Balai sumeh rt2",
+    "Latitude": -7.79075,
+    "Longitude": 110.376139,
+    "IP": "10.239.0.39",
+    "Status": ""
+  },
+  {
+    "no": 48,
+    "ID": "LM000898",
+    "Nama": "Bener RW 2",
+    "Lokasi": "Gedung serbaguna",
+    "Latitude": -7.776112,
+    "Longitude": 110.35242,
+    "IP": "10.239.255.18",
+    "Status": ""
+  },
+  {
+    "no": 49,
+    "ID": "XM000404",
+    "Nama": "Bener RW 4-1",
+    "Lokasi": "Masjid Fisabillilah RW 4, Kelurahan Bener",
+    "Latitude": -7.775898,
+    "Longitude": 110.356567,
+    "IP": "10.239.0.57",
+    "Status": ""
+  },
+  {
+    "no": 50,
+    "ID": "XM000417",
+    "Nama": "Bener RW 4-2",
+    "Lokasi": "Pos Ronda RT 16 RW 04",
+    "Latitude": -7.7765,
+    "Longitude": 110.357113,
+    "IP": "10.239.0.87",
+    "Status": ""
+  },
+  {
+    "no": 51,
+    "ID": "LM001287",
+    "Nama": "Bener RW 4-3",
+    "Lokasi": "Rumah Susun Bener",
+    "Latitude": -7.777623,
+    "Longitude": 110.35304,
+    "IP": "172.16.220.19",
+    "Status": ""
+  },
+  {
+    "no": 52,
+    "ID": "LM000899",
+    "Nama": "Bener RW 7",
+    "Lokasi": "BALAI SERBAGUNA RW07 :",
+    "Latitude": -7.777623,
+    "Longitude": 110.35304,
+    "IP": "10.239.0.135",
+    "Status": ""
+  },
+  {
+    "no": 53,
+    "ID": "LM001303",
+    "Nama": "Brontokusuman",
+    "Lokasi": "Polsek Mergangsan",
+    "Latitude": -7.817965,
+    "Longitude": 110.364812,
+    "IP": "10.239.255.13",
+    "Status": ""
+  },
+  {
+    "no": 54,
+    "ID": "XM000341",
+    "Nama": "Brontokusuman RW 18",
+    "Lokasi": "Pos Ronda",
+    "Latitude": -7.8171094,
+    "Longitude": 110.3735393,
+    "IP": "172.16.117.143",
+    "Status": ""
+  },
+  {
+    "no": 55,
+    "ID": "LM001292",
+    "Nama": "Brontokusuman RW 19",
+    "Lokasi": "Fasum RW 19",
+    "Latitude": -7.815977,
+    "Longitude": 110.373485,
+    "IP": "10.239.1.82",
+    "Status": ""
+  },
+  {
+    "no": 56,
+    "ID": "LM000862",
+    "Nama": "Brontokusuman RW 7",
+    "Lokasi": "Pos Ronda RT 24",
+    "Latitude": -7.818771,
+    "Longitude": 110.371116,
+    "IP": "10.239.0.25",
+    "Status": ""
+  },
+  {
+    "no": 57,
+    "ID": "LM001307",
+    "Nama": "Bumij-1",
+    "Lokasi": "Polantas Pingit",
+    "Latitude": -7.783009,
+    "Longitude": 110.360613,
+    "IP": "10.239.1.95",
+    "Status": ""
+  },
+  {
+    "no": 58,
+    "ID": "LM001309",
+    "Nama": "Bumijo-2",
+    "Lokasi": "Polsek Jetis",
+    "Latitude": -7.783178,
+    "Longitude": 110.359609,
+    "IP": "10.239.255.12",
+    "Status": ""
+  },
+  {
+    "no": 59,
+    "ID": "LM001293",
+    "Nama": "Bumijo RW 10-1",
+    "Lokasi": "Balai Serbaguna RT 44 RW 10 badran, Kelurahan Bumijo",
+    "Latitude": -7.787379,
+    "Longitude": 110.357073,
+    "IP": "10.239.1.93",
+    "Status": ""
+  },
+  {
+    "no": 60,
+    "ID": "LM001294",
+    "Nama": "Bumijo RW 10-2",
+    "Lokasi": "Pos Ronda RT 43 RW 010, Kelurahan Bumijo",
+    "Latitude": -7.7878132,
+    "Longitude": 110.3570411,
+    "IP": "10.239.1.94",
+    "Status": ""
+  },
+  {
+    "no": 61,
+    "ID": "XM000327",
+    "Nama": "Bumijo RW 12-1",
+    "Lokasi": "Balai RT 52, 53, 54 Badran RW 12",
+    "Latitude": -7.785407,
+    "Longitude": 110.358016,
+    "IP": "10.239.0.42",
+    "Status": ""
+  },
+  {
+    "no": 62,
+    "ID": "LM000900",
+    "Nama": "Bumijo RW 12-2",
+    "Lokasi": "Balai RT 56 RW 12",
+    "Latitude": -7.787182,
+    "Longitude": 110.358413,
+    "IP": "10.239.0.187",
+    "Status": ""
+  },
+  {
+    "no": 63,
+    "ID": "LM000863",
+    "Nama": "Bumijo RW 4",
+    "Lokasi": "Balai RW 4 Bumijo",
+    "Latitude": -7.782111,
+    "Longitude": 110.359604,
+    "IP": "10.239.1.176",
+    "Status": ""
+  },
+  {
+    "no": 64,
+    "ID": "XM000357",
+    "Nama": "Bumijo RW 8",
+    "Lokasi": "Balai RT 35 RW 08 Bumijo",
+    "Latitude": -7.7840472,
+    "Longitude": 110.3596806,
+    "IP": "10.239.0.55",
+    "Status": ""
+  },
+  {
+    "no": 65,
+    "ID": "LM002853",
+    "Nama": "Bumijo RW 9",
+    "Lokasi": "RTHP BUMIJO RW09",
+    "Latitude": -7.787732415158566,
+    "Longitude": 110.35626203753068,
+    "IP": "10.239.0.223",
+    "Status": ""
+  },
+  {
+    "no": 66,
+    "ID": "LM000901",
+    "Nama": "Cokrodiningratan RW 3",
+    "Lokasi": "Pos Ronda RT 13 RW 03",
+    "Latitude": -7.78018,
+    "Longitude": 110.364989,
+    "IP": "10.239.0.178",
+    "Status": ""
+  },
+  {
+    "no": 67,
+    "ID": "LM000864",
+    "Nama": "Cokrodiningratan RW 4",
+    "Lokasi": "Balai Serba Guna Cokrodiningratan",
+    "Latitude": -7.778792,
+    "Longitude": 110.36605,
+    "IP": "10.239.0.140",
+    "Status": ""
+  },
+  {
+    "no": 68,
+    "ID": "XM000358",
+    "Nama": "Cokrodiningratan RW 6-1",
+    "Lokasi": "Balai Anjangsih RW 006, Kelurahan Cokrodiningratan",
+    "Latitude": -7.776555,
+    "Longitude": 110.368882,
+    "IP": "10.239.0.82",
+    "Status": ""
+  },
+  {
+    "no": 69,
+    "ID": "LM000902",
+    "Nama": "Cokrodiningratan RW 7",
+    "Lokasi": "Rumah Pak Sugiyana",
+    "Latitude": -7.77825,
+    "Longitude": 110.370252,
+    "IP": "10.239.0.179",
+    "Status": ""
+  },
+  {
+    "no": 70,
+    "ID": "LM000657",
+    "Nama": "Cokrodiningratan RW 9-1",
+    "Lokasi": "Rumah pak Bayu Neba Asmara",
+    "Latitude": -7.780249,
+    "Longitude": 110.369719,
+    "IP": "172.16.116.30",
+    "Status": ""
+  },
+  {
+    "no": 71,
+    "ID": "LM001200",
+    "Nama": "Cokrodiningratan RW 9-2",
+    "Lokasi": "Kantor RW / Gedung Pemuda",
+    "Latitude": -7.780261,
+    "Longitude": 110.369031,
+    "IP": "10.239.1.80",
+    "Status": ""
+  },
+  {
+    "no": 72,
+    "ID": "LM000903",
+    "Nama": "Cokrodiningratan RW 9-3",
+    "Lokasi": "Kantor RW 9, Kelurahan Cokrodiningratan",
+    "Latitude": -7.779991,
+    "Longitude": 110.368733,
+    "IP": "10.239.0.180",
+    "Status": ""
+  },
+  {
+    "no": 73,
+    "ID": "LM000865",
+    "Nama": "Demangan RW 12-1",
+    "Lokasi": "Balai RW 12, Kelurahan Demangan",
+    "Latitude": -7.786492,
+    "Longitude": 110.385749,
+    "IP": "10.239.0.141",
+    "Status": ""
+  },
+  {
+    "no": 74,
+    "ID": "JP000760",
+    "Nama": "Demangan RW 4-1",
+    "Lokasi": "Rumah Warga RW 004, Kelurahan Demangan",
+    "Latitude": "",
+    "Longitude": "",
+    "IP": "10.239.1.26",
+    "Status": ""
+  },
+  {
+    "no": 75,
+    "ID": "JP000761",
+    "Nama": "Demangan RW 5-1",
+    "Lokasi": "Rumah ketua RW 5, Kelurahan Demangan",
+    "Latitude": -7.786381,
+    "Longitude": 110.389323,
+    "IP": "10.239.1.27",
+    "Status": ""
+  },
+  {
+    "no": 76,
+    "ID": "JP000762",
+    "Nama": "Demangan RW 6-1",
+    "Lokasi": "Rumah Ketua RT 20 RW 006, Kelurahan Demangan",
+    "Latitude": -7.787892,
+    "Longitude": 110.390804,
+    "IP": "10.239.1.28",
+    "Status": ""
+  },
+  {
+    "no": 77,
+    "ID": "LM000904",
+    "Nama": "Demangan RW 8-1",
+    "Lokasi": "Pos Ronda RT 26 RW 008, Kelurahan Demangan",
+    "Latitude": -7.7885331,
+    "Longitude": 110.3926266,
+    "IP": "10.239.0.183",
+    "Status": ""
+  },
+  {
+    "no": 78,
+    "ID": "JP001750",
+    "Nama": "Demangan RW 8-2",
+    "Lokasi": "Balai RW 008, Kelurahan Demangan",
+    "Latitude": -7.787851,
+    "Longitude": 110.39336,
+    "IP": "10.239.1.60",
+    "Status": ""
+  },
+  {
+    "no": 79,
+    "ID": "JP000763",
+    "Nama": "Demangan RW 9-1",
+    "Lokasi": "Balai RT 33, Kelurahan Demangan",
+    "Latitude": -7.788401,
+    "Longitude": 110.389799,
+    "IP": "10.239.1.29",
+    "Status": ""
+  },
+  {
+    "no": 80,
+    "ID": "XM000548",
+    "Nama": "Gedongkiwo  RW 2-1",
+    "Lokasi": "Posko PPKM RT 013 RW 002 Kelurahan Gedongkiwo",
+    "Latitude": "",
+    "Longitude": "",
+    "IP": "10.239.0.219",
+    "Status": ""
+  },
+  {
+    "no": 81,
+    "ID": "LM000905",
+    "Nama": "Gedongkiwo RW 1-1",
+    "Lokasi": "Masjid Hidayat RT 001 RW 001 Kelurahan Gedongkiwo",
+    "Latitude": "",
+    "Longitude": "",
+    "IP": "10.239.0.188",
+    "Status": ""
+  },
+  {
+    "no": 82,
+    "ID": "XM000420",
+    "Nama": "Gedongkiwo RW 17-1",
+    "Lokasi": "Pos ronda RT 079 RW 017 Kelurahan Gedongkiwo",
+    "Latitude": -7.82178,
+    "Longitude": 110.351924,
+    "IP": "192.168.252.6",
+    "Status": ""
+  },
+  {
+    "no": 83,
+    "ID": "XM000418",
+    "Nama": "Godongkiwo RW 11-1",
+    "Lokasi": "Balai RW 11 Kelurahan Gedongkiwo",
+    "Latitude": -7.815965,
+    "Longitude": 110.355446,
+    "IP": "192.168.252.45",
+    "Status": ""
+  },
+  {
+    "no": 84,
+    "ID": "XM000384",
+    "Nama": "Godongkiwo RW 14-1",
+    "Lokasi": "Rumah Ketua RW 14 Kelurahan Gedongkiwo",
+    "Latitude": -7.818432,
+    "Longitude": 110.352889,
+    "IP": "192.168.252.29",
+    "Status": ""
+  },
+  {
+    "no": 85,
+    "ID": "XM001172",
+    "Nama": "Gowongan RW 11-1",
+    "Lokasi": "Balai RW 11 Jogoyudan, Kelurahan Gowongan",
+    "Latitude": -7.786845,
+    "Longitude": 110.367943,
+    "IP": "10.239.0.150",
+    "Status": ""
+  },
+  {
+    "no": 86,
+    "ID": "LM002005",
+    "Nama": "Gowongan RW 3-1",
+    "Lokasi": "Masjid At Tauhid RW 003, Kelurahan Gowongan",
+    "Latitude": -7.784558,
+    "Longitude": 110.365873,
+    "IP": "10.239.1.175",
+    "Status": ""
+  },
+  {
+    "no": 87,
+    "ID": "LM000867",
+    "Nama": "Gowongan RW 3-2",
+    "Lokasi": "Balai RW 3, Kelurahan Gowongan",
+    "Latitude": -7.784687,
+    "Longitude": 110.365704,
+    "IP": "10.239.0.144",
+    "Status": ""
+  },
+  {
+    "no": 88,
+    "ID": "XM000376",
+    "Nama": "Gowongan RW 7",
+    "Lokasi": "Balai RW 07",
+    "Latitude": -7.783818,
+    "Longitude": 110.370059,
+    "IP": "10.239.0.76",
+    "Status": ""
+  },
+  {
+    "no": 89,
+    "ID": "XM000674",
+    "Nama": "Gowongan RW 9-1",
+    "Lokasi": "Balai RW 09 Jogoyudan, Kelurahan Gowongan",
+    "Latitude": -7.7846619,
+    "Longitude": 110.367605,
+    "IP": "10.239.0.151",
+    "Status": ""
+  },
+  {
+    "no": 90,
+    "ID": "LM000906",
+    "Nama": "Gungkentur RW 6-1",
+    "Lokasi": "Omah Kreatif Loedji 16 RW 006 Kelurahan Gunungketur",
+    "Latitude": -7.800566,
+    "Longitude": 110.377135,
+    "IP": "10.239.255.15",
+    "Status": ""
+  },
+  {
+    "no": 91,
+    "ID": "LM001190",
+    "Nama": "Gunungkentur RW 1-1",
+    "Lokasi": "Rumah (mantan) Ketua RW 01 Kelurahan Gunungketur",
+    "Latitude": -7.797975,
+    "Longitude": 110.376797,
+    "IP": "10.239.1.87",
+    "Status": ""
+  },
+  {
+    "no": 92,
+    "ID": "LM001289",
+    "Nama": "Gunungkentur RW 2-1",
+    "Lokasi": "Pos Ronda RT 07 RW 002 Kelurahan Gunungkentur",
+    "Latitude": -7.798995,
+    "Longitude": 110.378694,
+    "IP": "10.239.1.112",
+    "Status": ""
+  },
+  {
+    "no": 93,
+    "ID": "LM000907",
+    "Nama": "Gunungkentur RW 9-1",
+    "Lokasi": "Yayasan Putra Kauman RW 009 Kelurahan Gunungketur",
+    "Latitude": -7.800828,
+    "Longitude": 110.37525,
+    "IP": "10.239.0.73",
+    "Status": ""
+  },
+  {
+    "no": 94,
+    "ID": "XM000328",
+    "Nama": "Gunungketur RW 4-1",
+    "Lokasi": "Balai Giri Arum RW 004 Kelurahan Gunungketur",
+    "Latitude": -7.800327,
+    "Longitude": 110.378156,
+    "IP": "10.239.0.13",
+    "Status": ""
+  },
+  {
+    "no": 95,
+    "ID": "XM000364",
+    "Nama": "Gunungketur RW 7-1",
+    "Lokasi": "Balai RW7 Margoyasan Kelurahan Gunungketur",
+    "Latitude": -7.802762,
+    "Longitude": 110.377764,
+    "IP": "10.239.0.27",
+    "Status": ""
+  },
+  {
+    "no": 96,
+    "ID": "LM001201",
+    "Nama": "Gunungketur RW 9-2",
+    "Lokasi": "Jamu Ginggang RW 009, Kelurahan Gunungketur",
+    "Latitude": -7.800819,
+    "Longitude": 110.374761,
+    "IP": "10.239.1.81",
+    "Status": ""
+  },
+  {
+    "no": 97,
+    "ID": "LM000913",
+    "Nama": "Kadipaten RW 11",
+    "Lokasi": "Balai Pracimosono",
+    "Latitude": -7.8060965,
+    "Longitude": 110.3635042,
+    "IP": "10.239.0.74",
+    "Status": ""
+  },
+  {
+    "no": 98,
+    "ID": "XM000360",
+    "Nama": "Kadipaten RW 13",
+    "Lokasi": "Gedung balai RW 13",
+    "Latitude": -7.806121,
+    "Longitude": 110.36112,
+    "IP": "10.239.0.52",
+    "Status": ""
+  },
+  {
+    "no": 99,
+    "ID": "LM000908",
+    "Nama": "Kadipaten RW 2",
+    "Lokasi": "Rumah Bu Intan RW 02",
+    "Latitude": -7.809458,
+    "Longitude": 110.356361,
+    "IP": "10.239.0.189",
+    "Status": ""
+  },
+  {
+    "no": 100,
+    "ID": "LM001191",
+    "Nama": "Kadipaten RW 3-1",
+    "Lokasi": "Pendopo Kaneman RW 3, Kelurahan Kadipaten",
+    "Latitude": -7.8082333,
+    "Longitude": 110.3570344,
+    "IP": "10.239.1.88",
+    "Status": ""
+  },
+  {
+    "no": 101,
+    "ID": "LM000909",
+    "Nama": "Kadipaten RW 4",
+    "Lokasi": "Kantor PRM",
+    "Latitude": -7.806746,
+    "Longitude": 110.356402,
+    "IP": "10.239.0.195",
+    "Status": ""
+  },
+  {
+    "no": 102,
+    "ID": "LM000868",
+    "Nama": "Kadipaten RW 5-1",
+    "Lokasi": "Balai RW 5, Kelurahan Kadipaten",
+    "Latitude": -7.8046802,
+    "Longitude": 110.356915,
+    "IP": "10.239.0.100",
+    "Status": ""
+  },
+  {
+    "no": 103,
+    "ID": "XM000428",
+    "Nama": "Kadipaten RW 6-1",
+    "Lokasi": "Balai Serbaguna RW 6, Kelurahan Kadipaten",
+    "Latitude": -7.805447,
+    "Longitude": 110.35847,
+    "IP": "10.239.0.88",
+    "Status": ""
+  },
+  {
+    "no": 104,
+    "ID": "XM000427",
+    "Nama": "Kadipaten RW 6-2",
+    "Lokasi": "Pos Ronda Kadipaten",
+    "Latitude": -7.8047203,
+    "Longitude": 110.3582444,
+    "IP": "10.239.0.84",
+    "Status": ""
+  },
+  {
+    "no": 105,
+    "ID": "XM000680",
+    "Nama": "Kadipaten RW 6-3",
+    "Lokasi": "Rumah wakaf RW 6",
+    "Latitude": -7.8050894,
+    "Longitude": 110.357949,
+    "IP": "10.239.1.106",
+    "Status": ""
+  },
+  {
+    "no": 106,
+    "ID": "LM000911",
+    "Nama": "Kadipaten RW 7",
+    "Lokasi": "Gardu Ronda RT 25",
+    "Latitude": -7.8073777,
+    "Longitude": 110.3590343,
+    "IP": "10.239.0.190",
+    "Status": ""
+  },
+  {
+    "no": 107,
+    "ID": "LM000912",
+    "Nama": "Kadipaten RW 8-1",
+    "Lokasi": "Masjid Moelyo Utomo RW 8, Kelurahan Kadipaten",
+    "Latitude": -7.8063184,
+    "Longitude": 110.3598178,
+    "IP": "10.239.0.191",
+    "Status": ""
+  },
+  {
+    "no": 108,
+    "ID": "LM002150",
+    "Nama": "Karangwaru RW 1-1",
+    "Lokasi": "Masjid Baiturrahman  RW 001 Kelurahan Karangwaru",
+    "Latitude": -7.770092,
+    "Longitude": 110.364066,
+    "IP": "10.239.1.111",
+    "Status": ""
+  },
+  {
+    "no": 109,
+    "ID": "XM001267",
+    "Nama": "Karangwaru RW 11-1",
+    "Lokasi": "Pos Ronda RT 39 RW 011 Kelurahan Karangwaru",
+    "Latitude": -7.779324,
+    "Longitude": 110.364907,
+    "IP": "10.239.1.134",
+    "Status": ""
+  },
+  {
+    "no": 110,
+    "ID": "LM001300",
+    "Nama": "Karangwaru RW 12-1",
+    "Lokasi": "Masjid Almisbaahu RW 012 Kelurahan Karangwaru",
+    "Latitude": -7.779477,
+    "Longitude": 110.361298,
+    "IP": "10.239.1.101",
+    "Status": ""
+  },
+  {
+    "no": 111,
+    "ID": "LM000914",
+    "Nama": "Karangwaru RW 13-1",
+    "Lokasi": "Gedung RW 13, Kelurahan Karangwaru",
+    "Latitude": -7.772757,
+    "Longitude": 110.362177,
+    "IP": "10.239.0.196",
+    "Status": ""
+  },
+  {
+    "no": 112,
+    "ID": "LM002073",
+    "Nama": "Karangwaru RW 2-1",
+    "Lokasi": "Riverside RW 002, Kelurahan Karangwaru",
+    "Latitude": -7.774076,
+    "Longitude": 110.364595,
+    "IP": "10.239.1.109",
+    "Status": ""
+  },
+  {
+    "no": 113,
+    "ID": "LM000915",
+    "Nama": "Karangwaru RW 3",
+    "Lokasi": "Gedung Serbaguna Karangwaru Lor",
+    "Latitude": -7.771238,
+    "Longitude": 110.361553,
+    "IP": "10.239.2.68",
+    "Status": ""
+  },
+  {
+    "no": 114,
+    "ID": "XM000355",
+    "Nama": "Karangwaru RW 4-1",
+    "Lokasi": "Masjid Al-Fajar",
+    "Latitude": -7.7713139,
+    "Longitude": 110.3651,
+    "IP": "10.239.0.54",
+    "Status": ""
+  },
+  {
+    "no": 115,
+    "ID": "XM000377",
+    "Nama": "Karangwaru RW 4-2",
+    "Lokasi": "Balai RK Blunyahrejo",
+    "Latitude": -7.774306,
+    "Longitude": 110.365528,
+    "IP": "10.239.255.19",
+    "Status": ""
+  },
+  {
+    "no": 116,
+    "ID": "XM000570",
+    "Nama": "Karangwaru RW 5",
+    "Lokasi": "Kebun Markisa",
+    "Latitude": -7.774262,
+    "Longitude": 110.364608,
+    "IP": "10.239.0.153",
+    "Status": ""
+  },
+  {
+    "no": 117,
+    "ID": "XM000354",
+    "Nama": "Karangwaru RW 9",
+    "Lokasi": "Balai Petinggen",
+    "Latitude": -7.7717833,
+    "Longitude": 110.3680472,
+    "IP": "10.239.0.53",
+    "Status": ""
+  },
+  {
+    "no": 118,
+    "ID": "LM001193",
+    "Nama": "Klitren RW 12-1",
+    "Lokasi": "Masjid Asy Syifa RW 12, Kelurahan Klitren",
+    "Latitude": -7.781437,
+    "Longitude": 110.386145,
+    "IP": "10.239.0.159",
+    "Status": ""
+  },
+  {
+    "no": 119,
+    "ID": "LM001192",
+    "Nama": "Klitren RW 12-2",
+    "Lokasi": "Tempat kumpul warga RW 012, Kelurahan Klitren",
+    "Latitude": -7.781762,
+    "Longitude": 110.386402,
+    "IP": "10.239.0.158",
+    "Status": ""
+  },
+  {
+    "no": 120,
+    "ID": "LM003584",
+    "Nama": "Klitren RW 12-3",
+    "Lokasi": "Gudang RW 12 RT 48, Kelurahan Klitren",
+    "Latitude": -7.780518,
+    "Longitude": 110.385736,
+    "IP": "10.239.0.160",
+    "Status": ""
+  },
+  {
+    "no": 121,
+    "ID": "LM000917",
+    "Nama": "Klitren RW 13-1",
+    "Lokasi": "Balai RW 13 Kepuh, Kelurahan Klitren",
+    "Latitude": -7.781257,
+    "Longitude": 110.387231,
+    "IP": "10.239.0.157",
+    "Status": ""
+  },
+  {
+    "no": 122,
+    "ID": "JP000968",
+    "Nama": "Klitren RW 2-1",
+    "Lokasi": "Balai RW 02, Kelurahan Klitren",
+    "Latitude": -7.788566,
+    "Longitude": 110.379219,
+    "IP": "10.239.1.57",
+    "Status": ""
+  },
+  {
+    "no": 123,
+    "ID": "XM001246",
+    "Nama": "Klitren RW 4-1",
+    "Lokasi": "Rumah Warga RW 004, Kelurahan Klitren",
+    "Latitude": -7.785878,
+    "Longitude": 110.379739,
+    "IP": "10.239.1.126",
+    "Status": ""
+  },
+  {
+    "no": 124,
+    "ID": "XM000356",
+    "Nama": "Klitren RW 9-1",
+    "Lokasi": "Balai RW 09 Iromejan, Kelurahan Klitren",
+    "Latitude": -7.780794,
+    "Longitude": 110.383303,
+    "IP": "10.239.0.81",
+    "Status": ""
+  },
+  {
+    "no": 125,
+    "ID": "LM002243",
+    "Nama": "Kotabaru RW 3-1",
+    "Lokasi": "Omah Kotabaru RW 003, Kelurahan Kotabaru",
+    "Latitude": -7.785687,
+    "Longitude": 110.373109,
+    "IP": "10.239.1.132",
+    "Status": ""
+  },
+  {
+    "no": 126,
+    "ID": "LM001296",
+    "Nama": "Kricak RW 10-1",
+    "Lokasi": "Masjid Al Furqon RT 46 RW 10, Kelurahan Kricak",
+    "Latitude": -7.778961,
+    "Longitude": 110.360498,
+    "IP": "10.239.1.99",
+    "Status": ""
+  },
+  {
+    "no": 127,
+    "ID": "LM002643",
+    "Nama": "Kricak RW 5-1",
+    "Lokasi": "TK Jatimulyo Kricak Tegalrejo RW 005, Kelurahan Kricak",
+    "Latitude": -7.774175,
+    "Longitude": 110.35948,
+    "IP": "10.239.0.222",
+    "Status": ""
+  },
+  {
+    "no": 128,
+    "ID": "XM000326",
+    "Nama": "Kricak RW 9-1",
+    "Lokasi": "Balai Serbaguna Kricak Kudul RT 40 RW 009, Kelurahan Kricak",
+    "Latitude": -7.7771191,
+    "Longitude": 110.3586256,
+    "IP": "10.239.0.32",
+    "Status": ""
+  },
+  {
+    "no": 129,
+    "ID": "LM003954",
+    "Nama": "Mantrijeron RW 10-1",
+    "Lokasi": "Balai RK RW 10, Kelurahan Mantrijeron",
+    "Latitude": -7.824459,
+    "Longitude": 110.36433,
+    "IP": "10.239.1.172",
+    "Status": ""
+  },
+  {
+    "no": 130,
+    "ID": "LM001514",
+    "Nama": "Mantrijeron RW 17-1",
+    "Lokasi": "Rumah Ketua RW 17, Kelurahan Mantrijeron",
+    "Latitude": -7.817967,
+    "Longitude": 110.365947,
+    "IP": "10.239.1.116",
+    "Status": ""
+  },
+  {
+    "no": 131,
+    "ID": "LM001515",
+    "Nama": "Mantrijeron RW 18-1",
+    "Lokasi": "Rumah Warga (Depan Angkringan) RW 018, Kelurahan Mantrijeron",
+    "Latitude": -7.817211,
+    "Longitude": 110.366714,
+    "IP": "10.239.1.117",
+    "Status": ""
+  },
+  {
+    "no": 132,
+    "ID": "LM001516",
+    "Nama": "Mantrijeron RW 19-1",
+    "Lokasi": "Rumah Pak RW 019 (Tempat Kumpul Warga), Kelurahan Mantrijeron",
+    "Latitude": -7.816194,
+    "Longitude": 110.367972,
+    "IP": "10.239.1.118",
+    "Status": ""
+  },
+  {
+    "no": 133,
+    "ID": "LM001513",
+    "Nama": "Mantrijeron RW 19-2",
+    "Lokasi": "Masjid Danunegaran RW 019, Kelurahan Mantrijeron",
+    "Latitude": -7.816548,
+    "Longitude": 110.368213,
+    "IP": "10.239.1.115",
+    "Status": ""
+  },
+  {
+    "no": 134,
+    "ID": "XM000335",
+    "Nama": "Mantrijeron RW 2-1",
+    "Lokasi": "Kantor RW 02 Ngadinegaran, Kelurahan Mantrijeron",
+    "Latitude": -7.814542,
+    "Longitude": 110.363923,
+    "IP": "10.239.0.61",
+    "Status": ""
+  },
+  {
+    "no": 135,
+    "ID": "LM001512",
+    "Nama": "Mantrijeron RW 20-1",
+    "Lokasi": "Pos Kampling RW 20, Kelurahan Mantrijeron",
+    "Latitude": -7.81634,
+    "Longitude": 110.366157,
+    "IP": "10.239.1.114",
+    "Status": ""
+  },
+  {
+    "no": 136,
+    "ID": "JP002310",
+    "Nama": "Muja Muju RW 8-1",
+    "Lokasi": "Gardu Pandang RT 54 RW 008, Sidobali, Kelurahan Mujamuju",
+    "Latitude": -7.799819,
+    "Longitude": 110.398323,
+    "IP": "10.239.1.71",
+    "Status": ""
+  },
+  {
+    "no": 137,
+    "ID": "JP000960",
+    "Nama": "Mujamuju RW 1-1",
+    "Lokasi": "Pos Ronda RT 1 RW 1, Kelurahan Mujamuju",
+    "Latitude": -7.793685,
+    "Longitude": 110.389429,
+    "IP": "172.16.127.238",
+    "Status": ""
+  },
+  {
+    "no": 138,
+    "ID": "JP004150",
+    "Nama": "MujaMuju RW 12-1",
+    "Lokasi": "Sekber Pemuda Kota Yogyakarta RW 012, Kelurahan Mujamuju",
+    "Latitude": -7.805057114,
+    "Longitude": 110.3917118,
+    "IP": "10.239.1.168",
+    "Status": ""
+  },
+  {
+    "no": 139,
+    "ID": "JP001612",
+    "Nama": "Mujamuju RW 2-1",
+    "Lokasi": "Kelompok Belajar (Rumah Pak Mulyono Sulaeman) RW 2, Kelurahan Mujamuju",
+    "Latitude": -7.798309,
+    "Longitude": 110.388719,
+    "IP": "10.239.0.199",
+    "Status": ""
+  },
+  {
+    "no": 140,
+    "ID": "JP001492",
+    "Nama": "Mujamuju RW 5-1",
+    "Lokasi": "Balai RT 52 RW 5, Kelurahan Mujamuju",
+    "Latitude": -7.796158,
+    "Longitude": 110.396124,
+    "IP": "10.239.1.55",
+    "Status": ""
+  },
+  {
+    "no": 141,
+    "ID": "JP000017",
+    "Nama": "Mujamuju RW 5-2",
+    "Lokasi": "Pendopo Balai Pertemuan Warga Ledok Timoho RW 5, Kelurahan Mujamuju",
+    "Latitude": -7.7924355,
+    "Longitude": 110.3953688,
+    "IP": "172.16.127.248",
+    "Status": ""
+  },
+  {
+    "no": 142,
+    "ID": "XM000438",
+    "Nama": "Mujamuju-1",
+    "Lokasi": "Posyandu Sidobali, Kelurahan Mujamuju",
+    "Latitude": -7.799861,
+    "Longitude": 110.397361,
+    "IP": "10.239.0.198",
+    "Status": ""
+  },
+  {
+    "no": 143,
+    "ID": "JP001434",
+    "Nama": "Mujamuju-2",
+    "Lokasi": "Mushola Al Fathon, Kelurahan Mujamuju",
+    "Latitude": -7.803613,
+    "Longitude": 110.393766,
+    "IP": "10.239.1.54",
+    "Status": ""
+  },
+  {
+    "no": 144,
+    "ID": "JP001894",
+    "Nama": "Mujamuju-3",
+    "Lokasi": "Masjid Al Badar, Kelurahan Mujamuju",
+    "Latitude": -7.803306,
+    "Longitude": 110.392594,
+    "IP": "10.239.1.59",
+    "Status": ""
+  },
+  {
+    "no": 145,
+    "ID": "LM000875",
+    "Nama": "Ngampilan-1",
+    "Lokasi": "Masjid Ar-Rahmat RW 1, kelurahan Ngampilan",
+    "Latitude": -7.797634,
+    "Longitude": 110.35566,
+    "IP": "10.239.0.102",
+    "Status": ""
+  },
+  {
+    "no": 146,
+    "ID": "LM002192",
+    "Nama": "Ngampilan-2",
+    "Lokasi": "Balai RW 13, Kelurahan Ngampilan",
+    "Latitude": -7.799386,
+    "Longitude": 110.359961,
+    "IP": "10.239.0.220",
+    "Status": ""
+  },
+  {
+    "no": 147,
+    "ID": "LM000922",
+    "Nama": "Ngupasan RW 10-1",
+    "Lokasi": "Balai warga kampung kauman RW 10, Kelurahan Ngupasan",
+    "Latitude": -7.801822,
+    "Longitude": 110.361434,
+    "IP": "10.239.0.105",
+    "Status": ""
+  },
+  {
+    "no": 148,
+    "ID": "LM000857",
+    "Nama": "Ngupasan RW 11-1",
+    "Lokasi": "Balai warga RW 11, Kelurahan Ngupasan",
+    "Latitude": -7.802287,
+    "Longitude": 110.363352,
+    "IP": "10.239.0.22",
+    "Status": ""
+  },
+  {
+    "no": 149,
+    "ID": "LM000876",
+    "Nama": "Ngupasan RW 11-2",
+    "Lokasi": "Depan rumah bapak Syaifudin RW 11, Kelurahan Ngupasan",
+    "Latitude": -7.801988,
+    "Longitude": 110.362913,
+    "IP": "10.239.0.28",
+    "Status": ""
+  },
+  {
+    "no": 150,
+    "ID": "LM001297",
+    "Nama": "Ngupasan RW 13-1",
+    "Lokasi": "Langgar Adz Dzikirin RW 13, Kelurahan Ngupasan",
+    "Latitude": -7.802908,
+    "Longitude": 110.361193,
+    "IP": "172.16.115.161",
+    "Status": ""
+  },
+  {
+    "no": 151,
+    "ID": "LM000924",
+    "Nama": "Ngupasan RW 8-1",
+    "Lokasi": "Pos ronda RW 8 RT 28,, Kelurahan Ngupasan",
+    "Latitude": -7.800428,
+    "Longitude": 110.370881,
+    "IP": "10.239.0.89",
+    "Status": ""
+  },
+  {
+    "no": 152,
+    "ID": "LM001206",
+    "Nama": "Notoprajan RW 1-1",
+    "Lokasi": "pos ronda RT 05 RW 001, sebelah barat masjid nur huda, Kelurahan Notoprajan",
+    "Latitude": -7.801963,
+    "Longitude": 110.354428,
+    "IP": "10.239.1.91",
+    "Status": ""
+  },
+  {
+    "no": 153,
+    "ID": "LM001208",
+    "Nama": "Notoprajan RW 4-1",
+    "Lokasi": "Balai RW 04, Kelurahan Notoprajan",
+    "Latitude": -7.808239,
+    "Longitude": 110.353943,
+    "IP": "10.239.1.92",
+    "Status": ""
+  },
+  {
+    "no": 154,
+    "ID": "LM000851",
+    "Nama": "Notoprajan RW 5-1",
+    "Lokasi": "Balai RW 05, Kelurahan Notoprajan",
+    "Latitude": -7.801817,
+    "Longitude": 110.357382,
+    "IP": "10.239.0.34",
+    "Status": ""
+  },
+  {
+    "no": 155,
+    "ID": "XM000349",
+    "Nama": "Pakuncen RW 05-1",
+    "Lokasi": "Balai RW 5, Kelurahan Pakuncen",
+    "Latitude": -7.798173,
+    "Longitude": 110.349377,
+    "IP": "10.239.0.48",
+    "Status": ""
+  },
+  {
+    "no": 156,
+    "ID": "XM000394",
+    "Nama": "Pandeyan RW 10-1",
+    "Lokasi": "Balai RW 10, Kelurahan Pandeyan",
+    "Latitude": -7.823014,
+    "Longitude": 110.391597,
+    "IP": "192.168.251.29",
+    "Status": ""
+  },
+  {
+    "no": 157,
+    "ID": "XM000348",
+    "Nama": "Pandeyan RW 13-1",
+    "Lokasi": "Balai RW 13, Kelurahan Pandeyan",
+    "Latitude": -7.8210639,
+    "Longitude": 110.3934889,
+    "IP": "10.239.0.20",
+    "Status": ""
+  },
+  {
+    "no": 158,
+    "ID": "XM000450",
+    "Nama": "Pandeyan RW 4-1",
+    "Lokasi": "Balai RW 04 Kelurahan Pandeyan",
+    "Latitude": -7.812611,
+    "Longitude": 110.387444,
+    "IP": "192.168.251.16",
+    "Status": ""
+  },
+  {
+    "no": 159,
+    "ID": "XM000451",
+    "Nama": "Pandeyan RW 8-1",
+    "Lokasi": "Pos Ronda RT 31 RW 008, Kelurahan Pandeyan",
+    "Latitude": -7.818056,
+    "Longitude": 110.393279,
+    "IP": "192.168.251.43",
+    "Status": ""
+  },
+  {
+    "no": 160,
+    "ID": "XM001177",
+    "Nama": "Pandeyan RW 8-2",
+    "Lokasi": "Rumah Warga (Pak Susilo)  RW 008, Kelurahan Pandeyan",
+    "Latitude": -7.817751,
+    "Longitude": 110.392178,
+    "IP": "10.239.1.130",
+    "Status": ""
+  },
+  {
+    "no": 161,
+    "ID": "LM001205",
+    "Nama": "Panembahan-1",
+    "Lokasi": "Koramil 11/KT",
+    "Latitude": -7.806347,
+    "Longitude": 110.363486,
+    "IP": "172.16.125.248",
+    "Status": ""
+  },
+  {
+    "no": 162,
+    "ID": "XM000573",
+    "Nama": "Panembahan-2",
+    "Lokasi": "Polsek Kraton",
+    "Latitude": -7.809505,
+    "Longitude": 110.364906,
+    "IP": "10.239.0.152",
+    "Status": ""
+  },
+  {
+    "no": 163,
+    "ID": "LM002642",
+    "Nama": "Panembahan RW 13-1",
+    "Lokasi": "Balai RW 13, Kelurahan Panembahan",
+    "Latitude": -7.807984,
+    "Longitude": 110.367784,
+    "IP": "10.239.1.138",
+    "Status": ""
+  },
+  {
+    "no": 164,
+    "ID": "LM000930",
+    "Nama": "Panembahan RW 15",
+    "Lokasi": "Pos Ronda RW 15",
+    "Latitude": -7.805595,
+    "Longitude": 110.364812,
+    "IP": "10.239.1.191",
+    "Status": ""
+  },
+  {
+    "no": 165,
+    "ID": "LM000931",
+    "Nama": "Panembahan RW 16",
+    "Lokasi": "Masjid Condrokiranan",
+    "Latitude": -7.804389,
+    "Longitude": 110.365894,
+    "IP": "10.239.0.108",
+    "Status": ""
+  },
+  {
+    "no": 166,
+    "ID": "LM000928",
+    "Nama": "Panembahan RW 3-1",
+    "Lokasi": "Pendopo RW 003, Kelurahan Panembahan",
+    "Latitude": -7.811689,
+    "Longitude": 110.365301,
+    "IP": "192.168.252.108",
+    "Status": ""
+  },
+  {
+    "no": 167,
+    "ID": "XM000661",
+    "Nama": "Panembahan RW 5-1",
+    "Lokasi": "Rumah Warga (Angkringan), RW 5 Kelurahan Panembahan",
+    "Latitude": -7.8126505,
+    "Longitude": 110.3674536,
+    "IP": "10.239.0.155",
+    "Status": ""
+  },
+  {
+    "no": 168,
+    "ID": "XM000456",
+    "Nama": "Patangpuluhan RW 2-1",
+    "Lokasi": "Tempat Kumpul Warga (Warung Bu Kis) RT 10 RW 002, Kelurahan Patangpuluhan",
+    "Latitude": -7.809984,
+    "Longitude": 110.354065,
+    "IP": "192.168.252.76",
+    "Status": ""
+  },
+  {
+    "no": 169,
+    "ID": "LM000854",
+    "Nama": "Patangpuluhan RW 7-1",
+    "Lokasi": "Pos Ronda RT 38 RW 07, Kelurahan Patangpuluhan",
+    "Latitude": -7.810102,
+    "Longitude": 110.350353,
+    "IP": "10.239.0.123",
+    "Status": ""
+  },
+  {
+    "no": 170,
+    "ID": "LM000878",
+    "Nama": "Patehan RW 2-1",
+    "Lokasi": "Rumah Ketua RW 2, Kelurahan Patehan",
+    "Latitude": -7.809098,
+    "Longitude": 110.36341,
+    "IP": "10.239.0.130",
+    "Status": ""
+  },
+  {
+    "no": 171,
+    "ID": "LM001939",
+    "Nama": "Patehan RW 4-1",
+    "Lokasi": "Rumah Warga RW 004, Kelurahan Patehan",
+    "Latitude": -7.812013,
+    "Longitude": 110.361491,
+    "IP": "10.239.0.228",
+    "Status": ""
+  },
+  {
+    "no": 172,
+    "ID": "LM001202",
+    "Nama": "Patehan RW 8-1",
+    "Lokasi": "Masjid Sokotunggal RW 008, Kelurahan Patehan",
+    "Latitude": -7.810226,
+    "Longitude": 110.36058,
+    "IP": "10.239.1.90",
+    "Status": ""
+  },
+  {
+    "no": 173,
+    "ID": "LM000933",
+    "Nama": "Patehan RW 8-2",
+    "Lokasi": "Balai Aisyiyah RW 008, Kelurahan Patehan",
+    "Latitude": -7.811146,
+    "Longitude": 110.359678,
+    "IP": "10.239.0.205",
+    "Status": ""
+  },
+  {
+    "no": 174,
+    "ID": "LM001195",
+    "Nama": "Patehan RW 9-1",
+    "Lokasi": "Rumah Ketua RW 09, Kelurahan Patehan",
+    "Latitude": -7.809201,
+    "Longitude": 110.359399,
+    "IP": "10.239.1.89",
+    "Status": ""
+  },
+  {
+    "no": 175,
+    "ID": "LM000879",
+    "Nama": "Prawirodirjan RW 10-1",
+    "Lokasi": "Pos Ronda Balai Pasar Sawo RW 10 Kelurahan Prawirodirjan",
+    "Latitude": -7.805961,
+    "Longitude": 110.370222,
+    "IP": "10.239.0.29",
+    "Status": ""
+  },
+  {
+    "no": 176,
+    "ID": "LM000938",
+    "Nama": "Prawirodirjan RW 11-1",
+    "Lokasi": "RTHP RW011 Kelurahan Prawirodirjan",
+    "Latitude": -7.806685,
+    "Longitude": 110.371513,
+    "IP": "10.239.0.96",
+    "Status": ""
+  },
+  {
+    "no": 177,
+    "ID": "LM000939",
+    "Nama": "Prawirodirjan RW 12-1",
+    "Lokasi": "Sekretariat Kampung KB RW 12, Kelurahan Prawirodirjan",
+    "Latitude": -7.806785,
+    "Longitude": 110.372215,
+    "IP": "10.239.0.97",
+    "Status": ""
+  },
+  {
+    "no": 178,
+    "ID": "LM001196",
+    "Nama": "Prawirodirjan RW 14-1",
+    "Lokasi": "PAUD RW 14 Kelurahan Prawirodirjan",
+    "Latitude": -7.804303,
+    "Longitude": 110.372211,
+    "IP": "10.239.1.167",
+    "Status": ""
+  },
+  {
+    "no": 179,
+    "ID": "XM000332",
+    "Nama": "Prawirodirjan RW 5-1",
+    "Lokasi": "Balai Pertemuan Warga Sayidan RW 5 Kelurahan Prawirodirjan",
+    "Latitude": -7.8025639,
+    "Longitude": 110.3709583,
+    "IP": "10.239.1.216",
+    "Status": ""
+  },
+  {
+    "no": 180,
+    "ID": "LM000936",
+    "Nama": "Prawirodirjan RW 7-1",
+    "Lokasi": "Pos Ronda RW 7, Kelurahan Prawirodirjan",
+    "Latitude": -7.804833,
+    "Longitude": 110.370472,
+    "IP": "10.239.0.94",
+    "Status": ""
+  },
+  {
+    "no": 181,
+    "ID": "LM000937",
+    "Nama": "Prawirodirjan RW 8-1",
+    "Lokasi": "Pos Ronda RW 08 Kelurahan Prawirodirjan",
+    "Latitude": -7.804464,
+    "Longitude": 110.371506,
+    "IP": "10.239.0.95",
+    "Status": ""
+  },
+  {
+    "no": 182,
+    "ID": "LM001305",
+    "Nama": "Prawirodirjan-1",
+    "Lokasi": "Polsek Gondomanan, Kelurahan Prawirodirjan",
+    "Latitude": -7.803837,
+    "Longitude": 110.370067,
+    "IP": "10.239.1.85",
+    "Status": ""
+  },
+  {
+    "no": 183,
+    "ID": "LM001197",
+    "Nama": "Prenggan RW 1-1",
+    "Lokasi": "Gazebo kumpul RW 001, Kelurahan Prenggan",
+    "Latitude": -7.818395,
+    "Longitude": 110.394451,
+    "IP": "10.239.1.122",
+    "Status": ""
+  },
+  {
+    "no": 184,
+    "ID": "JP000018",
+    "Nama": "Prenggan RW 1-2",
+    "Lokasi": "Balai Serbaguna Masjid Al Kiraam RW 001, Kelurahan Prenggan",
+    "Latitude": -7.814477,
+    "Longitude": 110.392878,
+    "IP": "10.239.0.229",
+    "Status": ""
+  },
+  {
+    "no": 185,
+    "ID": "XM001181",
+    "Nama": "Prenggan RW 10",
+    "Lokasi": "Kantor PCM Kota Gede",
+    "Latitude": -7.827382,
+    "Longitude": 110.397347,
+    "IP": "10.239.1.145",
+    "Status": ""
+  },
+  {
+    "no": 186,
+    "ID": "JP002582",
+    "Nama": "Prenggan RW 10-1",
+    "Lokasi": "Warung Rakyat RW 10, Kelurahan Prenggan",
+    "Latitude": -7.826318,
+    "Longitude": 110.398713,
+    "IP": "10.239.1.65",
+    "Status": ""
+  },
+  {
+    "no": 187,
+    "ID": "JP002064",
+    "Nama": "Prenggan RW 11",
+    "Lokasi": "Pos Ronda RT 53",
+    "Latitude": -7.827345,
+    "Longitude": 110.391762,
+    "IP": "10.239.1.62",
+    "Status": ""
+  },
+  {
+    "no": 188,
+    "ID": "JP000772",
+    "Nama": "Prenggan RW 11-1",
+    "Lokasi": "Balai RW 11, Kelurahan Prenggan",
+    "Latitude": -7.823611,
+    "Longitude": 110.391111,
+    "IP": "10.239.1.39",
+    "Status": ""
+  },
+  {
+    "no": 189,
+    "ID": "JP000019",
+    "Nama": "Prenggan RW 12-1",
+    "Lokasi": "Masjid Al Anab RW 12, Kelurahan Prenggan",
+    "Latitude": -7.820344,
+    "Longitude": 110.39939,
+    "IP": "10.239.0.182",
+    "Status": ""
+  },
+  {
+    "no": 190,
+    "ID": "JP002053",
+    "Nama": "Prenggan RW 2",
+    "Lokasi": "Pos Ronda RT 08",
+    "Latitude": -7.817159,
+    "Longitude": 110.395948,
+    "IP": "10.239.1.63",
+    "Status": ""
+  },
+  {
+    "no": 191,
+    "ID": "JP001608",
+    "Nama": "Prenggan RW 3-1",
+    "Lokasi": "Balai RW 3, Kelurahan Prenggan",
+    "Latitude": -7.821667,
+    "Longitude": 110.396111,
+    "IP": "10.239.0.63",
+    "Status": ""
+  },
+  {
+    "no": 192,
+    "ID": "JP002754",
+    "Nama": "Prenggan RW 4",
+    "Lokasi": "RTHP Prenggan RW 04",
+    "Latitude": -7.821061,
+    "Longitude": 110.398025,
+    "IP": "10.239.1.77",
+    "Status": ""
+  },
+  {
+    "no": 193,
+    "ID": "JP000779",
+    "Nama": "Prenggan RW 5",
+    "Lokasi": "Pos ronda rt 21 RW 005",
+    "Latitude": -7.8225389,
+    "Longitude": 110.3946453,
+    "IP": "10.239.1.49",
+    "Status": ""
+  },
+  {
+    "no": 194,
+    "ID": "JP001610",
+    "Nama": "Prenggan RW 5-1",
+    "Lokasi": "Balai RW 05, Kelurahan Prenggan",
+    "Latitude": -7.823611,
+    "Longitude": 110.396822,
+    "IP": "10.239.0.145",
+    "Status": ""
+  },
+  {
+    "no": 195,
+    "ID": "JP000023",
+    "Nama": "Prenggan RW 6-1",
+    "Lokasi": "Sanggar Belajar Teratai Biru RW 006, Kelurahan Prenggan",
+    "Latitude": 7.824492,
+    "Longitude": 110.398466,
+    "IP": "10.239.0.234",
+    "Status": ""
+  },
+  {
+    "no": 196,
+    "ID": "JP000781",
+    "Nama": "Prenggan RW 6-2",
+    "Lokasi": "Balai RW 6, Kelurahan Prenggan",
+    "Latitude": -7.826237,
+    "Longitude": 110.396764,
+    "IP": "10.239.1.52",
+    "Status": ""
+  },
+  {
+    "no": 197,
+    "ID": "JP000021",
+    "Nama": "Prenggan RW 7-1",
+    "Lokasi": "Pos Ronda / Balai RW 07, Kelurahan Prenggan",
+    "Latitude": -7.826046,
+    "Longitude": 110.393263,
+    "IP": "10.239.0.232",
+    "Status": ""
+  },
+  {
+    "no": 198,
+    "ID": "JP001609",
+    "Nama": "Prenggan RW 9-1",
+    "Lokasi": "Balai RW 09, Kelurahan Prenggan",
+    "Latitude": -7.826667,
+    "Longitude": 110.4,
+    "IP": "10.239.0.75",
+    "Status": ""
+  },
+  {
+    "no": 199,
+    "ID": "JP000770",
+    "Nama": "Prenggan-1",
+    "Lokasi": "Masjid AlBarokah",
+    "Latitude": -7.82066147578807,
+    "Longitude": 110.39741673225265,
+    "IP": "10.239.1.36",
+    "Status": ""
+  },
+  {
+    "no": 200,
+    "ID": "JP000769",
+    "Nama": "Prenggan-2",
+    "Lokasi": "Masjid Depokan",
+    "Latitude": -7.817693,
+    "Longitude": 110.395873,
+    "IP": "10.239.1.35",
+    "Status": ""
+  },
+  {
+    "no": 201,
+    "ID": "JP000022",
+    "Nama": "Prenggan-3",
+    "Lokasi": "Mushola Radlatul Jannah",
+    "Latitude": -7.825302,
+    "Longitude": 110.393618,
+    "IP": "10.239.0.233",
+    "Status": ""
+  },
+  {
+    "no": 202,
+    "ID": "JP000970",
+    "Nama": "Prenggan-4",
+    "Lokasi": "Polsek Kotagede",
+    "Latitude": -7.822623,
+    "Longitude": 110.398941,
+    "IP": "10.239.1.51",
+    "Status": ""
+  },
+  {
+    "no": 203,
+    "ID": "XM000329",
+    "Nama": "Pringgokusuman RW 17-1",
+    "Lokasi": "Rumah pak JatiRW 017, Kelurahan Pringgokusuman",
+    "Latitude": -7.796054,
+    "Longitude": 110.36024,
+    "IP": "10.239.0.59",
+    "Status": ""
+  },
+  {
+    "no": 204,
+    "ID": "XM001111",
+    "Nama": "Pringgokusuman RW 21-1",
+    "Lokasi": "Balai RW 21 Sutodirjan, Kelurahan Pringgokusuman",
+    "Latitude": -7.795391,
+    "Longitude": 110.359664,
+    "IP": "10.239.0.149",
+    "Status": ""
+  },
+  {
+    "no": 205,
+    "ID": "LM000881",
+    "Nama": "Pringgokusuman RW 22-1",
+    "Lokasi": "Masjid Aisyiyah Notoyudan RW 009, Kelurahan Pringgokusuman",
+    "Latitude": -7.794555,
+    "Longitude": 110.356363,
+    "IP": "10.239.0.132",
+    "Status": ""
+  },
+  {
+    "no": 206,
+    "ID": "LM002157",
+    "Nama": "Pringgokusuman RW 22-2",
+    "Lokasi": "Tempat Kumpul Warga RW 22, Kelurahan Pringgokusuman",
+    "Latitude": -7.794549,
+    "Longitude": 110.356359,
+    "IP": "10.239.0.221",
+    "Status": ""
+  },
+  {
+    "no": 207,
+    "ID": "LM000944",
+    "Nama": "Pringgokusuman RW 3-1",
+    "Lokasi": "Balai RW 03, Kelurahan Pringgokusuman",
+    "Latitude": -7.7921,
+    "Longitude": 110.35639,
+    "IP": "10.239.0.208",
+    "Status": ""
+  },
+  {
+    "no": 208,
+    "ID": "LM000947",
+    "Nama": "Pringgokusuman RW 5-1",
+    "Lokasi": "Balai RW 05, Kelurahan Pringgokusuman",
+    "Latitude": -7.789767,
+    "Longitude": 110.359953,
+    "IP": "10.239.0.211",
+    "Status": ""
+  },
+  {
+    "no": 209,
+    "ID": "LM001540",
+    "Nama": "Pringgokusuman RW 7-1",
+    "Lokasi": "Gereja Kemetiran RW 7, Kelurahan Pringgokusuman",
+    "Latitude": -7.79253,
+    "Longitude": 110.359816,
+    "IP": "10.239.1.104",
+    "Status": ""
+  },
+  {
+    "no": 210,
+    "ID": "JP000024",
+    "Nama": "Purbayan RW 1-1",
+    "Lokasi": "Musholla Al Hidayah RW 1, Kelurahan Purbayan",
+    "Latitude": -7.820061,
+    "Longitude": 110.402145,
+    "IP": "10.239.0.235",
+    "Status": ""
+  },
+  {
+    "no": 211,
+    "ID": "JP000028",
+    "Nama": "Purbayan RW 11-1",
+    "Lokasi": "Musholla Nurul Salam RW 1, Kelurahan Purbayan",
+    "Latitude": -7.830915,
+    "Longitude": 110.401002,
+    "IP": "10.239.0.239",
+    "Status": ""
+  },
+  {
+    "no": 212,
+    "ID": "JP000964",
+    "Nama": "Purbayan RW 13 - 1",
+    "Lokasi": "Balai RW 13, Kelurahan Purbayan",
+    "Latitude": -7.829656,
+    "Longitude": 110.403918,
+    "IP": "10.239.1.42",
+    "Status": ""
+  },
+  {
+    "no": 213,
+    "ID": "JP000773",
+    "Nama": "Purbayan RW 3-1",
+    "Lokasi": "Bank Sampah Sumirat RW 3, Kelurahan Purbayan",
+    "Latitude": -7.8225,
+    "Longitude": 110.401944,
+    "IP": "10.239.1.40",
+    "Status": ""
+  },
+  {
+    "no": 214,
+    "ID": "JP002750",
+    "Nama": "Purbayan RW 3-1",
+    "Lokasi": "RTHP Purbayan RW 3, Kelurahan Purbayan",
+    "Latitude": -7.8223645,
+    "Longitude": 110.402237,
+    "IP": "10.239.1.78",
+    "Status": ""
+  },
+  {
+    "no": 215,
+    "ID": "JP000025",
+    "Nama": "Purbayan RW 5-1",
+    "Lokasi": "Sanggar Sukowati RW 05, Kelurahan Purbayan",
+    "Latitude": -7.826897,
+    "Longitude": 110.401796,
+    "IP": "10.239.0.236",
+    "Status": ""
+  },
+  {
+    "no": 216,
+    "ID": "JP002041",
+    "Nama": "Purbayan RW 7-1",
+    "Lokasi": "Balai RW 07, Kelurahan Purbayan",
+    "Latitude": -7.828117,
+    "Longitude": 110.401511,
+    "IP": "10.239.0.62",
+    "Status": ""
+  },
+  {
+    "no": 217,
+    "ID": "JP002360",
+    "Nama": "Purbayan RW 9 -2",
+    "Lokasi": "Fasum Cokroyudan RT 39, Kelurahan Purbayan",
+    "Latitude": -7.830833,
+    "Longitude": 110.398333,
+    "IP": "10.239.1.68",
+    "Status": ""
+  },
+  {
+    "no": 218,
+    "ID": "JP000029",
+    "Nama": "Purbayan RW 9-1",
+    "Lokasi": "Rumah Pak Agus RW 9, KelurhanPurbayan",
+    "Latitude": -7.830556,
+    "Longitude": 110.399167,
+    "IP": "10.239.0.240",
+    "Status": ""
+  },
+  {
+    "no": 219,
+    "ID": "JP000026",
+    "Nama": "Purbayan-1",
+    "Lokasi": "Rumah Wakaf RT 32, Kelurahan Purbayan",
+    "Latitude": -7.829051,
+    "Longitude": 110.401735,
+    "IP": "10.239.0.237",
+    "Status": ""
+  },
+  {
+    "no": 220,
+    "ID": "JP002309",
+    "Nama": "Purbayan-2",
+    "Lokasi": "Balai RW 05, Kelurahan Purbayan",
+    "Latitude": -7.8249882,
+    "Longitude": 110.4010632,
+    "IP": "10.239.1.69",
+    "Status": ""
+  },
+  {
+    "no": 221,
+    "ID": "LM001288",
+    "Nama": "Purbayan-3",
+    "Lokasi": "Pos Ronda 02, Kelurahan Purbayan Kotagede",
+    "Latitude": -7.820694,
+    "Longitude": 110.401731,
+    "IP": "10.239.0.230",
+    "Status": ""
+  },
+  {
+    "no": 222,
+    "ID": "LM000949",
+    "Nama": "Purwokinanti RW 5-1",
+    "Lokasi": "Pos Ronda Kenthongan RW 5, Kelurahan Purwokinanti",
+    "Latitude": -7.798752,
+    "Longitude": 110.372267,
+    "IP": "10.239.0.109",
+    "Status": ""
+  },
+  {
+    "no": 223,
+    "ID": "LM000951",
+    "Nama": "Purwokinanti RW 6-1",
+    "Lokasi": "Balai Pos Ronda RW 006, Kelurahan Purwokinanti",
+    "Latitude": -7.797333,
+    "Longitude": 110.372528,
+    "IP": "10.239.0.247",
+    "Status": ""
+  },
+  {
+    "no": 224,
+    "ID": "LM000952",
+    "Nama": "Purwokinanti RW 7-1",
+    "Lokasi": "Pos Ronda RT 32 RW 007, Kelurahan Purwokinanti",
+    "Latitude": -7.79746,
+    "Longitude": 110.373662,
+    "IP": "10.239.0.112",
+    "Status": ""
+  },
+  {
+    "no": 225,
+    "ID": "LM000955",
+    "Nama": "Purwokinanti RW 8-1",
+    "Lokasi": "Sekretariat KTB Kepatihan (Alkemist By Matakupi, Jalan Purwanggan No.14) RW 008, Kelurahan Purwokinanti",
+    "Latitude": -7.798097,
+    "Longitude": 110.373927,
+    "IP": "10.239.0.115",
+    "Status": ""
+  },
+  {
+    "no": 226,
+    "ID": "LM000953",
+    "Nama": "Purwokinanti RW 9-1",
+    "Lokasi": "Rumah Pak RT 43 RW 009, Kelurahan Purwokinanti",
+    "Latitude": -7.798827,
+    "Longitude": 110.373941,
+    "IP": "10.239.0.113",
+    "Status": ""
+  },
+  {
+    "no": 227,
+    "ID": "LM001304",
+    "Nama": "Purwokinanti-1",
+    "Lokasi": "Polsek Pakualaman, Kelurahan Purwokinanti",
+    "Latitude": -7.797974,
+    "Longitude": 110.376483,
+    "IP": "10.253.130.226",
+    "Status": ""
+  },
+  {
+    "no": 228,
+    "ID": "JP002383",
+    "Nama": "Rejowinangun RW 1-1",
+    "Lokasi": "Balai Panca Gedongkuning RW 01, Kelurahan Rejowinangun",
+    "Latitude": -7.8033883,
+    "Longitude": 110.4002826,
+    "IP": "10.239.1.76",
+    "Status": ""
+  },
+  {
+    "no": 229,
+    "ID": "XM000399",
+    "Nama": "Rejowinangun RW 12-1",
+    "Lokasi": "Masjid Al-Ishlah RW 012, Kelurahan Rejowinangun",
+    "Latitude": -7.81573,
+    "Longitude": 110.399381,
+    "IP": "192.168.252.72",
+    "Status": ""
+  },
+  {
+    "no": 230,
+    "ID": "JP000778",
+    "Nama": "Rejowinangun RW 12-2",
+    "Lokasi": "RTHP RW 12, Kelurahan Rejowinangun",
+    "Latitude": -7.8150248,
+    "Longitude": 110.4004593,
+    "IP": "10.239.1.47",
+    "Status": ""
+  },
+  {
+    "no": 231,
+    "ID": "LM000956",
+    "Nama": "Rejowinangun RW 13-1",
+    "Lokasi": "Masjid Al Muhsinin RW 13, Kelurahan Rejowinangun",
+    "Latitude": -7.818218,
+    "Longitude": 110.401423,
+    "IP": "10.239.0.246",
+    "Status": ""
+  },
+  {
+    "no": 232,
+    "ID": "JP000966",
+    "Nama": "Rejowinangun RW 2-1",
+    "Lokasi": "Balai RW 002, Kelurahan Rejowinangun",
+    "Latitude": -7.804056,
+    "Longitude": 110.40165,
+    "IP": "10.239.1.44",
+    "Status": ""
+  },
+  {
+    "no": 233,
+    "ID": "JP000775",
+    "Nama": "Rejowinangun RW 3-1",
+    "Lokasi": "Rumah Pak RW 3, Kelurahan Rejowinangun",
+    "Latitude": -7.8050515,
+    "Longitude": 110.4001485,
+    "IP": "10.239.1.45",
+    "Status": ""
+  },
+  {
+    "no": 234,
+    "ID": "XM000467",
+    "Nama": "Rejowinangun RW 7-1",
+    "Lokasi": "Masjid Al-Fatah RW 007, Kelurahan Rejowinangun",
+    "Latitude": -7.810352,
+    "Longitude": 110.39772,
+    "IP": "10.239.0.116",
+    "Status": ""
+  },
+  {
+    "no": 235,
+    "ID": "JP000782",
+    "Nama": "Rejowinangun RW 7-2",
+    "Lokasi": "Rumah Ketua RW 7 RT 022, Kelurahan Rejowinangun",
+    "Latitude": -7.809550559,
+    "Longitude": 110.3970879,
+    "IP": "10.239.1.50",
+    "Status": ""
+  },
+  {
+    "no": 236,
+    "ID": "JP000008",
+    "Nama": "Rejowinangun RW 9-1",
+    "Lokasi": "Balai RW 009, Kelurahan Rejowinangun",
+    "Latitude": -7.810749,
+    "Longitude": 110.396779,
+    "IP": "10.239.0.243",
+    "Status": ""
+  },
+  {
+    "no": 237,
+    "ID": "XM000472",
+    "Nama": "Semaki RW 2-1",
+    "Lokasi": "Masjid Nurul Fajri RW 002, Kelurahan Semaki",
+    "Latitude": -7.795522,
+    "Longitude": 110.386718,
+    "IP": "10.239.1.18",
+    "Status": ""
+  },
+  {
+    "no": 238,
+    "ID": "XM000474",
+    "Nama": "Semaki RW 5-1",
+    "Lokasi": "Masjid Nurul Jannah RW 005, Kelurahan Semaki",
+    "Latitude": -7.801389,
+    "Longitude": 110.386706,
+    "IP": "10.239.0.253",
+    "Status": ""
+  },
+  {
+    "no": 239,
+    "ID": "XM000475",
+    "Nama": "Semaki RW 6-1",
+    "Lokasi": "Pos Ronda RW 006, Kelurahan Semaki",
+    "Latitude": -7.800479,
+    "Longitude": 110.386221,
+    "IP": "10.239.0.254",
+    "Status": ""
+  },
+  {
+    "no": 240,
+    "ID": "XM000366",
+    "Nama": "Semaki RW 7-1",
+    "Lokasi": "Balai Gong Semaki RW 007, Kelurahan Semaki",
+    "Latitude": -7.80052,
+    "Longitude": 110.385397,
+    "IP": "10.239.0.147",
+    "Status": ""
+  },
+  {
+    "no": 241,
+    "ID": "XM000476",
+    "Nama": "Semaki RW 8-1",
+    "Lokasi": "Balai RW 008, Kelurahan Semaki",
+    "Latitude": -7.797812,
+    "Longitude": 110.381705,
+    "IP": "10.239.1.16",
+    "Status": ""
+  },
+  {
+    "no": 242,
+    "ID": "XM000478",
+    "Nama": "Sorosutan RW 10-1",
+    "Lokasi": "Musholla Al Huda RW 010, Kelurahan Sorosutan",
+    "Latitude": -7.826,
+    "Longitude": 110.384368,
+    "IP": "192.168.251.47",
+    "Status": ""
+  },
+  {
+    "no": 243,
+    "ID": "XM000693",
+    "Nama": "Sorosutan RW 12-1",
+    "Lokasi": "Mushola Al Barokah, Kelurahan Sorosutan",
+    "Latitude": -7.828332,
+    "Longitude": 110.382832,
+    "IP": "192.168.251.50",
+    "Status": ""
+  },
+  {
+    "no": 244,
+    "ID": "XM000400",
+    "Nama": "Sorosutan RW 15-1",
+    "Lokasi": "Musholla Adz-Dzikro Nalen RW 015 Kelurahan Sorosutan",
+    "Latitude": "",
+    "Longitude": "",
+    "IP": "192.168.251.24",
+    "Status": ""
+  },
+  {
+    "no": 245,
+    "ID": "LM001869",
+    "Nama": "Sorosutan RW 3-1",
+    "Lokasi": "Balai kumpul warga RT 11/03, Kelurahan Sorosutan",
+    "Latitude": -7.816835,
+    "Longitude": 110.379675,
+    "IP": "10.115.0.136",
+    "Status": ""
+  },
+  {
+    "no": 246,
+    "ID": "XM000353",
+    "Nama": "Sorosutan RW 5-1",
+    "Lokasi": "Balai RW 005, Kelurahan Sorosutan",
+    "Latitude": -7.82025,
+    "Longitude": 110.378556,
+    "IP": "10.239.0.18",
+    "Status": ""
+  },
+  {
+    "no": 247,
+    "ID": "XM000479",
+    "Nama": "Sorosutan RW 7-1",
+    "Lokasi": "Balai Warga RW 07 Kampung Dagaran, Kelurahan Sorosutan",
+    "Latitude": -7.822154,
+    "Longitude": 110.381013,
+    "IP": "192.168.251.55",
+    "Status": ""
+  },
+  {
+    "no": 248,
+    "ID": "LM000958",
+    "Nama": "Sosromenduran RW 14-1",
+    "Lokasi": "Balai RT 52 RW 14 Jogonegaran, Kelurahan Sosromeduran",
+    "Latitude": -7.794301,
+    "Longitude": 110.361602,
+    "IP": "10.239.0.213",
+    "Status": ""
+  },
+  {
+    "no": 249,
+    "ID": "LM001652",
+    "Nama": "Sosromenduran RW 4-1",
+    "Lokasi": "Posko PPKM RW 14,  Kelurahan Sosromeduran",
+    "Latitude": -7.792209,
+    "Longitude": 110.361971,
+    "IP": "10.239.1.102",
+    "Status": ""
+  },
+  {
+    "no": 250,
+    "ID": "LM000883",
+    "Nama": "Sosromenduran RW 6-1",
+    "Lokasi": "Balai RW 06 Sosrodipuran, Kelurahan Sosromeduran",
+    "Latitude": -7.793317,
+    "Longitude": 110.362265,
+    "IP": "10.239.0.133",
+    "Status": ""
+  },
+  {
+    "no": 251,
+    "ID": "XM000568",
+    "Nama": "Sosromenduran RW 6-2",
+    "Lokasi": "Rumah Pak Ervin RW 6,  Kelurahan Sosromeduran",
+    "Latitude": -7.792469,
+    "Longitude": 110.362047,
+    "IP": "172.16.114.217",
+    "Status": ""
+  },
+  {
+    "no": 252,
+    "ID": "LM000962",
+    "Nama": "Suryatmajan-1",
+    "Lokasi": "Balai RW 13, Kelurahan Suryatmajan",
+    "Latitude": -7.794736,
+    "Longitude": 110.369869,
+    "IP": "10.239.0.119",
+    "Status": ""
+  },
+  {
+    "no": 253,
+    "ID": "LM000884",
+    "Nama": "Suryatmajan-2",
+    "Lokasi": "Lorong Sayur, Kelurahan Suryatmajan",
+    "Latitude": -7.796277,
+    "Longitude": 110.36881,
+    "IP": "10.239.0.36",
+    "Status": ""
+  },
+  {
+    "no": 254,
+    "ID": "LM000961",
+    "Nama": "Suryatmajan-3",
+    "Lokasi": "Balai RW 09, Kelurahan Suryatmajan",
+    "Latitude": -7.794135,
+    "Longitude": 110.369487,
+    "IP": "10.239.0.118",
+    "Status": ""
+  },
+  {
+    "no": 255,
+    "ID": "XM000322",
+    "Nama": "Suryatmajan-4",
+    "Lokasi": "Gedung Serbaguna Rw14, Kelurahan Suryatmajan",
+    "Latitude": -7.795683,
+    "Longitude": 110.370075,
+    "IP": "10.239.0.11",
+    "Status": ""
+  },
+  {
+    "no": 256,
+    "ID": "LM003927",
+    "Nama": "Suryatmajan-5",
+    "Lokasi": "Pos polisi, Kelurahan Suryatmajan",
+    "Latitude": -7.794617,
+    "Longitude": 110.368687,
+    "IP": "10.239.255.14",
+    "Status": ""
+  },
+  {
+    "no": 257,
+    "ID": "LM000959",
+    "Nama": "Suryatmajan-6",
+    "Lokasi": "Rumah Publik, Kelurahan Suryatmajan",
+    "Latitude": -7.793444,
+    "Longitude": 110.368291,
+    "IP": "10.239.0.255",
+    "Status": ""
+  },
+  {
+    "no": 258,
+    "ID": "XM000486",
+    "Nama": "Suryodiningratan RW 12-1",
+    "Lokasi": "Balai RW 12, Kelurahan Suryodiningratan",
+    "Latitude": -7.818651,
+    "Longitude": 110.360224,
+    "IP": "192.168.252.59",
+    "Status": ""
+  },
+  {
+    "no": 259,
+    "ID": "LM000964",
+    "Nama": "Suryodiningratan RW 14-1",
+    "Lokasi": "Tempat Kumpul Warga RW 14, Kelurahan Suryodiningratan",
+    "Latitude": -7.82136,
+    "Longitude": 110.360247,
+    "IP": "192.168.252.161",
+    "Status": ""
+  },
+  {
+    "no": 260,
+    "ID": "LM001203",
+    "Nama": "Suryodiningratan RW 14-2",
+    "Lokasi": "PKBM Sejahtera Minggiran  RW 14, Kelurahan Suryodiningratan",
+    "Latitude": -7.820517,
+    "Longitude": 110.360175,
+    "IP": "10.239.0.216",
+    "Status": ""
+  },
+  {
+    "no": 261,
+    "ID": "LM003164",
+    "Nama": "Suryodiningratan RW 16-1",
+    "Lokasi": "Rumah warga (Aznur Yulainto) RW 016, Kelurahan Suryodiningratan",
+    "Latitude": -7.8256676,
+    "Longitude": 110.3583654,
+    "IP": "10.239.0.224",
+    "Status": ""
+  },
+  {
+    "no": 262,
+    "ID": "XM000336",
+    "Nama": "Suryodiningratan RW 6-1",
+    "Lokasi": "Balai Kampung Kumendaman RW 006, Kelurahan Suryodiningratan",
+    "Latitude": -7.815516,
+    "Longitude": 110.36145,
+    "IP": "10.239.0.33",
+    "Status": ""
+  },
+  {
+    "no": 263,
+    "ID": "LM003368",
+    "Nama": "Suryodiningratan RW 6-2",
+    "Lokasi": "Pos Ronda RT 20 RW 6, Kumendaman, Kelurahan Suryodiningratan",
+    "Latitude": -7.814846,
+    "Longitude": 110.361893,
+    "IP": "10.239.0.227",
+    "Status": ""
+  },
+  {
+    "no": 264,
+    "ID": "LM003366",
+    "Nama": "Suryodiningratan RW 6-3",
+    "Lokasi": "Fasum RT 18 RW 6, Kumendaman, Kelurahan Suryodiningratan",
+    "Latitude": -7.814698,
+    "Longitude": 110.360967,
+    "IP": "10.239.0.225",
+    "Status": ""
+  },
+  {
+    "no": 265,
+    "ID": "XM000488",
+    "Nama": "Tegalpanggung RW 16-1",
+    "Lokasi": "Pos pertemuan dan kamling RW 16, Kelurahan Tegalpanggung",
+    "Latitude": -7.796294,
+    "Longitude": 110.371652,
+    "IP": "10.239.0.175",
+    "Status": ""
+  },
+  {
+    "no": 266,
+    "ID": "XM000340",
+    "Nama": "Tegalpanggung RW 6-1",
+    "Lokasi": "Rumah warga RT 32 RW 06, Kelurahan Tegalpanggung",
+    "Latitude": -7.79057,
+    "Longitude": 110.369995,
+    "IP": "10.239.1.17",
+    "Status": ""
+  },
+  {
+    "no": 267,
+    "ID": "LM000969",
+    "Nama": "Tegalpanggung RW 7-1",
+    "Lokasi": "Musholla Al Hikmah RW 7, Kelurahan Tegalpanggung",
+    "Latitude": -7.790726,
+    "Longitude": 110.371491,
+    "IP": "10.239.0.122",
+    "Status": ""
+  },
+  {
+    "no": 268,
+    "ID": "LM001541",
+    "Nama": "Tegalpanggung RW 8-1",
+    "Lokasi": "Teras Rumah Bpk Sugiarto DN 2 / 847 RW 08, Kelurahan Tegalpanggung",
+    "Latitude": -7.791571,
+    "Longitude": 110.373218,
+    "IP": "10.239.1.121",
+    "Status": ""
+  },
+  {
+    "no": 269,
+    "ID": "LM000967",
+    "Nama": "Tegalpanggung RW 9-1",
+    "Lokasi": "Pos ronda RT 41 RW 09, Kelurahan Tegalpanggung",
+    "Latitude": -7.791129,
+    "Longitude": 110.372913,
+    "IP": "10.239.1.12",
+    "Status": ""
+  },
+  {
+    "no": 270,
+    "ID": "XM000387",
+    "Nama": "Tegalrejo RW 11-1",
+    "Lokasi": "Masjid Nur Muttaqien Sudagaran RW 011, Kelurahan Tegalrejo",
+    "Latitude": -7.792884,
+    "Longitude": 110.354852,
+    "IP": "192.168.252.20",
+    "Status": ""
+  },
+  {
+    "no": 271,
+    "ID": "XM000388",
+    "Nama": "Tegalrejo RW 5-1",
+    "Lokasi": "Masjid P. Diponegoro RW 005, Kelurahan Tegalrejo",
+    "Latitude": -7.787486,
+    "Longitude": 110.351123,
+    "IP": "192.168.252.27",
+    "Status": ""
+  },
+  {
+    "no": 272,
+    "ID": "XM000489",
+    "Nama": "Tegalrejo RW 6-1",
+    "Lokasi": "Rumah Warga RW 006, Kelurahan Tegalrejo",
+    "Latitude": -7.787465,
+    "Longitude": 110.352223,
+    "IP": "192.168.252.79",
+    "Status": ""
+  },
+  {
+    "no": 273,
+    "ID": "XM001290",
+    "Nama": "Tegalrejo RW 7-1",
+    "Lokasi": "Masjid RK Saudagaran RW 007, Kelurahan Tegalrejo",
+    "Latitude": -7.791558,
+    "Longitude": 110.350295,
+    "IP": "10.239.1.135",
+    "Status": ""
+  },
+  {
+    "no": 274,
+    "ID": "XM000572",
+    "Nama": "Tegalrejo RW 7-2",
+    "Lokasi": "Balai Rakyat Sena Bakti Pertiwi RW 007, Kelurahan Tegalrejo",
+    "Latitude": -7.790948,
+    "Longitude": 110.35062,
+    "IP": "10.239.0.154",
+    "Status": ""
+  },
+  {
+    "no": 275,
+    "ID": "XM000402",
+    "Nama": "Tegalrejo RW 8-1",
+    "Lokasi": "Pos Ronda RT 29 RW 008, Kelurahan Tegalrejo",
+    "Latitude": -7.791111,
+    "Longitude": 110.349722,
+    "IP": "192.168.252.19",
+    "Status": ""
+  },
+  {
+    "no": 276,
+    "ID": "XM002468",
+    "Nama": "Terban RW 6-1",
+    "Lokasi": "Balai RW 06, Kelurahan Terban",
+    "Latitude": -7.782392,
+    "Longitude": 110.372022,
+    "IP": "10.239.2.58",
+    "Status": ""
+  },
+  {
+    "no": 277,
+    "ID": "LM000888",
+    "Nama": "Warungboto RW 2-1",
+    "Lokasi": "Gor Glagahsari RW 002, Kelurahan Warungboto",
+    "Latitude": -7.804688,
+    "Longitude": 110.388025,
+    "IP": "10.239.0.143",
+    "Status": ""
+  },
+  {
+    "no": 278,
+    "ID": "XM000342",
+    "Nama": "Warungboto RW 5-1",
+    "Lokasi": "Balai RW 5, Kelurahan Warungboto",
+    "Latitude": -7.807325,
+    "Longitude": 110.3886333,
+    "IP": "10.239.0.17",
+    "Status": ""
+  },
+  {
+    "no": 279,
+    "ID": "LM000972",
+    "Nama": "Wirobrajan RW 5-1",
+    "Lokasi": "Pondok literasi RW 5, Kelurahan Wirobrajan",
+    "Latitude": -7.8015,
+    "Longitude": 110.350374,
+    "IP": "10.239.0.215",
+    "Status": ""
+  },
+  {
+    "no": 280,
+    "ID": "LM001313",
+    "Nama": "Wirobrajan-1",
+    "Lokasi": "Polsek Wirobrajan, Kelurahan Wirobrajan",
+    "Latitude": -7.8050097,
+    "Longitude": 110.3504314,
+    "IP": "10.239.1.180",
+    "Status": ""
+  },
+  {
+    "no": 281,
+    "ID": "LM000975",
+    "Nama": "Wirogunan RW 12-1",
+    "Lokasi": "RTHP Mandiri Joyonegaran RW 12, Kelurahan Wirogunan",
+    "Latitude": -7.8068758,
+    "Longitude": 110.3791294,
+    "IP": "10.239.1.21",
+    "Status": ""
+  },
+  {
+    "no": 282,
+    "ID": "XM000350",
+    "Nama": "Wirogunan RW 2-1",
+    "Lokasi": "Balai RW2 Kelurahan Wirogunan",
+    "Latitude": -7.8039194,
+    "Longitude": 110.3721028,
+    "IP": "10.239.0.21",
+    "Status": ""
+  },
+  {
+    "no": 283,
+    "ID": "LM000859",
+    "Nama": "Wirogunan-1",
+    "Lokasi": "Gedung islamic center, Kelurahan Wirogunan",
+    "Latitude": -7.8077839,
+    "Longitude": 110.3785886,
+    "IP": "10.239.0.128",
+    "Status": ""
+  },
+  {
+    "no": 284,
+    "ID": "LM001198",
+    "Nama": "Wirogunan-2",
+    "Lokasi": "Serambi masjid Al Ikhlas, Kelurahan Wirogunan",
+    "Latitude": -7.8089664,
+    "Longitude": 110.376704,
+    "IP": "10.239.1.123",
+    "Status": ""
+  },
+  {
+    "no": 285,
+    "ID": "LM000976",
+    "Nama": "Wirogunan-3",
+    "Lokasi": "Pos kamling rw 017",
+    "Latitude": -7.808621,
+    "Longitude": 110.37873,
+    "IP": "10.239.1.86",
+    "Status": ""
+  }
+]

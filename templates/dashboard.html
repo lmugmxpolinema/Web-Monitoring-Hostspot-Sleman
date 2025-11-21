@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/logo.png') }}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* === VARIABLES & GLOBAL STYLES === */
+        :root {
+            --primary-color: #5e5ce6;
+            --secondary-color: #007aff;
+            --accent-color: #ff6b35; 
+            --text-light: #f5f5f7;
+            --text-dark: #1d1d1f;
+            --card-bg: rgba(255, 255, 255, 0.55);
+            --card-bg-hover: rgba(255, 255, 255, 0.75);
+            --card-border: rgba(255, 255, 255, 0.2);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-image: url("{{ url_for('static', filename='images/background.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgba(10, 25, 47, 0.6);
+            background-blend-mode: overlay;
+            color: var(--text-dark);
+        }
+
+        .dashboard-container {
+            padding: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        /* === HEADER === */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-light);
+            animation: slideDown 1s ease-out;
+        }
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        .header h1 i { color: #bfbaff; margin-right: 10px; }
+        .header p { font-size: 1.2rem; opacity: 0.9; }
+
+        /* === "GLASSMORPHISM" CARDS === */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .menu-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            text-decoration: none;
+            color: inherit;
+        }
+        .menu-card:hover {
+            transform: translateY(-10px);
+            background: var(--card-bg-hover);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+        }
+        .menu-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.4s ease;
+        }
+        .menu-card:hover .menu-icon { transform: scale(1.1) rotate(-5deg); }
+        .menu-title { font-size: 1.5rem; font-weight: 600; color: var(--text-dark); }
+        .menu-description { color: #555; font-size: 1rem; }
+        
+        /* === STATS SECTION === */
+        .stats-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 3.5rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            animation: fadeIn 1.2s ease-out;
+        }
+        .stats-title {
+            color: var(--text-light);
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.8rem;
+        }
+        .stat-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        .stat-icon {
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius: 12px;
+            color: #fff;
+        }
+        .stat-card:nth-child(1) .stat-icon { background-color: #007aff; }
+        .stat-card:nth-child(2) .stat-icon { background-color: #34c759; }
+        .stat-card:nth-child(3) .stat-icon { background-color: #ff3b30; }
+        .stat-card:nth-child(4) .stat-icon { background-color: #ff9500; }
+        .stat-details { text-align: left; }
+        .stat-number { font-size: 2.2rem; font-weight: 700; color: var(--text-dark); line-height: 1; }
+        .stat-label { color: #6c757d; font-size: 0.9rem; font-weight: 500; }
+
+        /* === CHART === */
+        .chart-container {
+            margin-top: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .chart-header h2 {
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+        
+        /* === STICKY AXIS STYLES === */
+        .chart-sticky-container {
+            position: relative;
+        }
+        .sticky-y-axis {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-right: 10px;
+            box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+        }
+        .sticky-y-axis-label {
+            color: #6c757d;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            text-align: right;
+            white-space: nowrap; /* Mencegah teks patah */
+        }
+        /* Style baru untuk judul sumbu Y (BARU) */
+        .sticky-y-axis-title {
+            position: absolute;
+            top: 50%;
+            left: -20px; /* Sesuaikan posisi horizontal agar terlihat */
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: left center; /* Rotasi dari tengah-kiri */
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            white-space: nowrap;
+            z-index: 11; /* Pastikan di atas label angka */
+        }
+        .chart-wrapper {
+            overflow-x: auto;
+        }
+        .chart-canvas-container { height: 350px; }
+
+        /* Sisa style tetap sama */
+        .tips-section{background:var(--glass-bg);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--card-border);border-left:5px solid var(--primary-color);border-radius:15px;padding:2rem;margin-top:3rem;color:var(--text-light);animation:slideUp 1.2s ease-out}.tips-title{font-size:1.3rem;font-weight:600;margin-bottom:1rem}.tips-list{list-style:none;padding-left:0}.tip-item{padding:.4rem 0}.tip-item::before{content:"💡";margin-right:.8rem}.modal-content{border-radius:15px;border:none}.modal-header{background:linear-gradient(90deg,var(--primary-color),var(--secondary-color));color:#fff;border-top-left-radius:15px;border-top-right-radius:15px}.modal-body p{color:#555}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1><i class="fas fa-network-wired"></i> Dashboard Monitoring WiFi Padukuhan Sleman</h1>
+            <p>Sistem monitoring ONT dan User Aktif MikroTik secara Real-time</p>
+        </div>
+        
+        <div class="menu-grid">
+            <a href="/" class="menu-card">
+                <i class="fas fa-map-marked-alt menu-icon"></i>
+                <div class="menu-title">Peta Monitoring</div>
+                <div class="menu-description">Visualisasi lokasi ONT dalam peta interaktif.</div>
+            </a>
+            <a href="/admin" class="menu-card">
+                <i class="fas fa-tasks menu-icon"></i>
+                <div class="menu-title">Manajemen ONT</div>
+                <div class="menu-description">Kelola data dan status semua perangkat ONT.</div>
+            </a>
+            <a href="/notifications" class="menu-card">
+                <i class="fas fa-history menu-icon"></i>
+                <div class="menu-title">Histori Notifikasi</div>
+                <div class="menu-description">Lihat riwayat notifikasi dan aktivitas sistem.</div>
+            </a>
+        </div>
+        
+        <div class="stats-section">
+            <div class="stats-title"><i class="fas fa-tachometer-alt me-2"></i> Statistik Sistem</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-server"></i></div>
+                    <div class="stat-details"><div class="stat-number" id="total-onts">-</div><div class="stat-label">Total ONT</div></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-details"><div class="stat-number" id="online-onts">-</div><div class="stat-label">ONT Online</div></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="stat-details"><div class="stat-number" id="offline-onts">-</div><div class="stat-label">ONT Offline</div></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-details"><div class="stat-number" id="active-users">-</div><div class="stat-label">Users Aktif</div></div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2><i class="fas fa-wave-square me-2"></i>History Jumlah User Hotspot</h2>
+                    <div>
+                        <button class="btn btn-primary btn-sm" onclick="showActiveUsers()"><i class="fas fa-list-ul"></i> Detail User</button>
+                        <a href="/analytics" class="btn btn-info btn-sm text-white"><i class="fas fa-chart-pie"></i> Analytik</a>
+                    </div>
+                </div>
+                <div class="chart-sticky-container">
+                    <div class="chart-wrapper">
+                        <div class="chart-canvas-container">
+                            <canvas id="userHistoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tips-section">
+            <div class="tips-title">Tips Penggunaan</div>
+            <ul class="tips-list">
+                <li class="tip-item">Data statistik dan grafik diperbarui secara otomatis untuk monitoring real-time.</li>
+                <li class="tip-item">Gunakan tombol 'Detail User' untuk melihat daftar pengguna yang sedang aktif di jaringan hotspot.</li>
+                <li class="tip-item">Kunjungi halaman 'Analytik' untuk mendapatkan wawasan lebih mendalam tentang penggunaan jaringan.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="activeUsersModal" tabindex="-1" aria-labelledby="activeUsersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="activeUsersModalLabel"><i class="fas fa-users me-2"></i>Daftar User Aktif Saat Ini</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Menampilkan data terbaru dari MikroTik...</p>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead><tr><th>No</th><th>IP Address</th><th>MAC Address</th></tr></thead>
+                            <tbody id="activeUsersTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let userHistoryLineChart;
+
+        // === FUNGSI BARU UNTUK MEMBUAT SUMBU Y STICKY ===
+        function createStickyYAxis(chart) {
+            const stickyContainer = document.querySelector('.chart-sticky-container');
+            
+            // Hapus sumbu Y lama jika ada untuk pembaruan
+            const oldAxis = stickyContainer.querySelector('.sticky-y-axis');
+            if (oldAxis) oldAxis.remove();
+
+            // Buat elemen untuk sumbu Y sticky
+            const yAxisEl = document.createElement('div');
+            yAxisEl.className = 'sticky-y-axis';
+
+            // Ambil data dan posisi dari chart yang sudah ada
+            const yTicks = chart.scales.y.ticks;
+            
+            // Tentukan lebar minimum agar judul sumbu Y bisa masuk
+            const yAxisWidth = Math.max(chart.scales.y.width, 50); // Minimal 50px untuk judul
+            yAxisEl.style.width = `${yAxisWidth}px`;
+            
+            // Beri margin pada wrapper chart agar tidak tertutup sumbu Y sticky
+            // Margin disesuaikan dengan lebar yAxisEl agar grafik tidak tumpang tindih
+            document.querySelector('.chart-wrapper').style.marginLeft = `${yAxisWidth + 10}px`; // +10px untuk sedikit ruang
+            
+            // Tambahkan judul sumbu Y (BARU)
+            const yAxisTitle = document.createElement('div');
+            yAxisTitle.className = 'sticky-y-axis-title';
+            yAxisTitle.textContent = 'Jumlah User';
+            yAxisEl.appendChild(yAxisTitle);
+
+            // Buat label untuk setiap angka di sumbu Y
+            yTicks.forEach((tick, index) => {
+                const label = document.createElement('div');
+                label.className = 'sticky-y-axis-label';
+                label.textContent = tick.label;
+                
+                // Posisikan label secara absolut berdasarkan posisi piksel dari Chart.js
+                const tickPixelY = chart.scales.y.getPixelForTick(index);
+                label.style.position = 'absolute';
+                label.style.top = `${tickPixelY}px`;
+                label.style.right = '10px'; // Beri sedikit jarak dari tepi
+                label.style.transform = 'translateY(-50%)'; // Center vertikal
+                yAxisEl.appendChild(label);
+            });
+
+            // Tambahkan sumbu Y sticky ke kontainer
+            stickyContainer.prepend(yAxisEl);
+
+            // Sembunyikan sumbu Y asli pada chart utama
+            chart.options.scales.y.ticks.display = false;
+            chart.options.scales.y.title.display = false; // Sembunyikan judul sumbu Y asli
+            chart.update();
+        }
+
+        function loadStats() {
+            fetch('/api/onts').then(res => res.json()).then(data => {
+                document.getElementById('total-onts').textContent = data.length;
+                const onlineCount = data.filter(ont => ont.status === 'ON').length;
+                document.getElementById('online-onts').textContent = onlineCount;
+                document.getElementById('offline-onts').textContent = data.length - onlineCount;
+            });
+            fetch('/api/history').then(res => res.json()).then(data => {
+                if (data.length > 0) {
+                    document.getElementById('active-users').textContent = data[data.length - 1].users;
+                } else {
+                    document.getElementById('active-users').textContent = '0';
+                }
+            });
+        }
+
+        function updateChartScale(chart) {
+            const data = chart.data.datasets[0].data;
+            if (data.length < 2) {
+                chart.options.scales.y.min = 0;
+                chart.options.scales.y.max = undefined;
+                return;
+            };
+            const minValue = Math.min(...data);
+            const maxValue = Math.max(...data);
+            const range = maxValue - minValue;
+            let padding = range * 0.1;
+            if (padding === 0) { padding = 5; }
+            chart.options.scales.y.min = Math.floor(minValue - padding);
+            if (chart.options.scales.y.min < 0) chart.options.scales.y.min = 0;
+            chart.options.scales.y.max = Math.ceil(maxValue + padding);
+        }
+
+        function formatTimestamp(isoString) {
+            const date = new Date(isoString);
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${day}/${month} ${hours}:${minutes}`;
+        }
+
+        function addNewDataPoint() {
+            fetch('/api/history').then(res => res.json()).then(data => {
+                if (data.length > 0) {
+                    const latestRecord = data[data.length - 1];
+                    const chart = userHistoryLineChart;
+                    const newLabel = formatTimestamp(latestRecord.timestamp);
+                    if (chart.data.labels.length === 0 || chart.data.labels[chart.data.labels.length - 1] !== newLabel) {
+                        addDataToChart(newLabel, latestRecord.users, latestRecord.timestamp);
+                    }
+                }
+            });
+        }
+        
+        function addDataToChart(label, userData, fullTimestamp) {
+            const chart = userHistoryLineChart;
+            if (label !== null) {
+                chart.data.labels.push(label);
+                chart.data.datasets[0].data.push(userData);
+                chart.config.options.fullTimestamps.push(fullTimestamp);
+            }
+            updateChartScale(chart);
+            const dataCount = chart.data.labels.length;
+            const minVisibleData = 12;
+            if (dataCount > minVisibleData) {
+                const canvasContainer = document.querySelector('.chart-canvas-container');
+                canvasContainer.style.width = `${600 + (dataCount - minVisibleData) * 50}px`;
+            }
+            chart.update();
+            
+            // Panggil fungsi sticky axis lagi setiap kali chart diperbarui
+            createStickyYAxis(chart); 
+            
+            const chartWrapper = document.querySelector('.chart-wrapper');
+            chartWrapper.scrollLeft = chartWrapper.scrollWidth;
+        }
+
+        function initializeChart(initialData) {
+            const labels = initialData.map(d => formatTimestamp(d.timestamp));
+            const userData = initialData.map(d => d.users);
+            const fullTimestamps = initialData.map(d => d.timestamp);
+            
+            const verticalDayBands = {
+                id: 'verticalDayBands',
+                beforeDraw(chart) {
+                    const { ctx, chartArea: { top, bottom }, scales: { x } } = chart;
+                    const timestamps = chart.config.options.fullTimestamps;
+                    if (!timestamps || timestamps.length === 0) return;
+                    const dayColors = ['rgba(230, 230, 255, 0.2)', 'transparent'];
+                    if (timestamps.length === 0) return;
+                    let lastDateStr = new Date(timestamps[0]).toDateString();
+                    let colorIndex = 0;
+                    for (let i = 1; i < timestamps.length; i++) {
+                        const currentDateStr = new Date(timestamps[i]).toDateString();
+                        if (currentDateStr !== lastDateStr) {
+                            colorIndex = (colorIndex + 1) % dayColors.length;
+                        }
+                        const xStart = x.getPixelForTick(i - 1);
+                        const xEnd = x.getPixelForTick(i);
+                        ctx.fillStyle = dayColors[colorIndex];
+                        ctx.fillRect(xStart, top, xEnd - xStart, bottom - top);
+                        lastDateStr = currentDateStr;
+                    }
+                }
+            };
+
+            if (userHistoryLineChart) userHistoryLineChart.destroy();
+            
+            const ctx = document.getElementById('userHistoryChart').getContext('2d');
+            userHistoryLineChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Jumlah User Aktif',
+                        data: userData,
+                        backgroundColor: 'rgba(94, 92, 230, 0.2)',
+                        borderColor: 'rgba(94, 92, 230, 1)',
+                        borderWidth: 2.5,
+                        fill: true,
+                        tension: 0.4,
+                        pointBackgroundColor: 'rgba(94, 92, 230, 1)',
+                        pointRadius: 0,
+                        pointHoverRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    fullTimestamps: fullTimestamps,
+                    scales: { 
+                        y: { 
+                            title: { 
+                                display: true, // Biarkan display true agar Chart.js menghitung lebar sumbu Y
+                                text: 'Jumlah User', // Teks ini akan disembunyikan dan digantikan oleh sticky label
+                                font: { family: 'Poppins', size: 14, weight: '600' },
+                                color: 'var(--text-dark)'
+                            },
+                            grid: { color: 'rgba(0,0,0,0.05)' },
+                            ticks: { 
+                                font: { family: 'Poppins' },
+                                display: true 
+                            }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { font: { family: 'Poppins' } }
+                        }
+                    },
+                    plugins: { 
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: '#1d1d1f',
+                            titleFont: { family: 'Poppins', weight: 'bold' },
+                            bodyFont: { family: 'Poppins' }
+                        }
+                    }
+                },
+                plugins: [verticalDayBands]
+            });
+
+            setTimeout(() => {
+                updateChartScale(userHistoryLineChart);
+                userHistoryLineChart.update();
+                createStickyYAxis(userHistoryLineChart);
+                addDataToChart(null, null, null);
+            }, 100);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStats();
+            fetch('/api/history').then(res => res.json()).then(historyData => {
+                initializeChart(historyData);
+            });
+            setInterval(loadStats, 30000);
+            setInterval(addNewDataPoint, 20000);
+        });
+
+        function showActiveUsers() {
+            const myModal = new bootstrap.Modal(document.getElementById('activeUsersModal'));
+            const tableBody = document.getElementById('activeUsersTableBody');
+            myModal.show();
+            tableBody.innerHTML = '<tr><td colspan="3" class="text-center"><i class="fas fa-spinner fa-spin"></i> Memuat data...</td></tr>';
+            fetch('/api/hotspot/active-users')
+                .then(response => response.json())
+                .then(data => {
+                    tableBody.innerHTML = '';
+                    if (data.error) {
+                         tableBody.innerHTML = `<tr><td colspan="3" class="text-center text-danger">Error: ${data.error}</td></tr>`;
+                         return;
+                    }
+                    if (data.length === 0) {
+                        tableBody.innerHTML = '<tr><td colspan="3" class="text-center">Tidak ada user aktif.</td></tr>';
+                        return;
+                    }
+                    data.forEach((user, index) => {
+                        const row = `<tr>
+                                         <td>${index + 1}</td>
+                                         <td>${user.ip || '-'}</td>
+                                         <td>${user.mac || '-'}</td>
+                                     </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                })
+                .catch(error => {
+                   tableBody.innerHTML = `<tr><td colspan="3" class="text-center text-danger">Gagal mengambil data. Coba lagi.</td></tr>`;
+                   console.error('Error fetching active users:', error);
+                });
+        }
+    </script>
+</body>
+</html>
