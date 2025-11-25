@@ -31,25 +31,28 @@ def load_user(user_id):
         return User(user_id)
     return None
 
-DATA_FILE = 'onts.json'
-NOTIFICATIONS_FILE = 'notifications.json'
+BASE_DIR = app.root_path
+DATA_FILE = os.path.join(BASE_DIR, 'onts.json')
+NOTIFICATIONS_FILE = os.path.join(BASE_DIR, 'notifications.json')
 NOTIFICATIONS_BAK_FILE = f"{NOTIFICATIONS_FILE}.bak"
-OUTAGES_FILE = 'outages.json'
-BACKUP_DIR = 'backups'
-HISTORY_FILE = 'history.json'
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+WIFI_DATA_FILE = os.path.join(DATA_DIR, 'wifi_sleman.json')
+OUTAGES_FILE = os.path.join(DATA_DIR, 'outages.json')
+BACKUP_DIR = os.path.join(BASE_DIR, 'backups')
+HISTORY_FILE = os.path.join(BASE_DIR, 'history.json')
 MIKROTIK_IP = '111.92.166.184'
 MIKROTIK_PORT = 8728
 MIKROTIK_USER = 'monitor'
 MIKROTIK_PASS = 's0t0kudus'
-USER_LOG_FILE = 'user_log.json'
+USER_LOG_FILE = os.path.join(BASE_DIR, 'user_log.json')
+STATUS_CACHE_FILE = os.path.join(BASE_DIR, 'status_cache.json')
 
 
 def load_data():
     # Membaca data ONT dari `wifi_sleman.json` sebagai sumber utama untuk monitoring.
     # Jika file tersebut tidak ada atau corrupt, fallback ke DATA_FILE (onts.json).
     try:
-        path_wifi = os.path.join(app.root_path, 'wifi_sleman.json')
-        with open(path_wifi, 'r', encoding='utf-8') as f:
+        with open(WIFI_DATA_FILE, 'r', encoding='utf-8') as f:
             base = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         try:
@@ -60,8 +63,7 @@ def load_data():
 
     # Jika ada cache status yang dibuat oleh skrip monitoring, gabungkan ke data
     try:
-        path_cache = os.path.join(app.root_path, 'status_cache.json')
-        with open(path_cache, 'r', encoding='utf-8') as sf:
+        with open(STATUS_CACHE_FILE, 'r', encoding='utf-8') as sf:
             status_cache = json.load(sf)
             # status_cache diharapkan berupa list atau dict; normalisasi ke dict by id/ip
             status_map = {}
@@ -141,7 +143,7 @@ def _recover_notifications_from_backup():
     """Mencoba memulihkan notifikasi dari backup terbaru"""
     try:
         import glob
-        backup_pattern = f'{BACKUP_DIR}/notifications-*.json'
+        backup_pattern = os.path.join(BACKUP_DIR, 'notifications-*.json')
         backup_files = glob.glob(backup_pattern)
         if not backup_files:
             print("No notification backups found, starting fresh")
@@ -222,7 +224,7 @@ def add_notification(message, notification_type="info", ont_id=None, ont_name=No
 def _backup_notifications(notifications):
     try:
         timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
-        backup_path = f'{BACKUP_DIR}/notifications-{timestamp}.json'
+        backup_path = os.path.join(BACKUP_DIR, f'notifications-{timestamp}.json')
         os.makedirs(BACKUP_DIR, exist_ok=True)
         with open(backup_path, 'w') as f:
             json.dump(notifications, f, indent=2)
@@ -233,7 +235,7 @@ def _backup_notifications(notifications):
 def _cleanup_old_backups(pattern, keep_count):
     try:
         import glob
-        backup_files = glob.glob(f'{BACKUP_DIR}/{pattern}')
+        backup_files = glob.glob(os.path.join(BACKUP_DIR, pattern))
         backup_files.sort(key=os.path.getmtime, reverse=True)
         for old_file in backup_files[keep_count:]:
             try:
@@ -248,7 +250,7 @@ def save_and_backup(onts):
         json.dump(onts, f, indent=2)
     os.makedirs(BACKUP_DIR, exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
-    backup_path = f'{BACKUP_DIR}/onts-{timestamp}.json'
+    backup_path = os.path.join(BACKUP_DIR, f'onts-{timestamp}.json')
     with open(backup_path, 'w') as f:
         json.dump(onts, f, indent=2)
 

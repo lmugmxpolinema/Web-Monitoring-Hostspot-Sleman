@@ -1,0 +1,47 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+.env/
+.env
+.env.*
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs and runtime files
+*.log
+status_cache.json
+history.json
+user_log.json
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Build / distribution artifacts
+dist/
+build/
+*.egg-info/
+*.tar.gz
+*.zip
+*.rar
+
+# Test & tool caches
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Backups and temporary artifacts
+*.bak
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
