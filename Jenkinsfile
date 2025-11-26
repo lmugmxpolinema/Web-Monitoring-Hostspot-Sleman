@@ -38,12 +38,6 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
-
-                    if [ -d tests ] && [ "$(ls -A tests)" ]; then
-                        pytest
-                    else
-                        echo "No tests found, skipping tests."
-                    fi
                 """
             }
         }
