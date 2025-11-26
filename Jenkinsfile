@@ -72,39 +72,40 @@ pipeline {
                 sh """
                     set -e
 
-                    SERVICE_WEB=hotspot_sleman
-                    SERVICE_PING=ping_sleman
+                    SERVICE=hotspot_sleman
 
-                    DEPLOY_ROOT="${DEPLOY_DIR}"
-                    RELEASES_DIR="${DEPLOY_ROOT}/releases"
-                    CURRENT_LINK="${DEPLOY_ROOT}/current"
-                    DATA_DIR="${DEPLOY_ROOT}/data"
-                    RUNTIME_DIR="${DEPLOY_ROOT}/runtime"
+                    DEPLOY_ROOT=${DEPLOY_ROOT}
+                    RELEASES_DIR=${DEPLOY_ROOT}/releases
+                    CURRENT_LINK=${DEPLOY_ROOT}/current
+                    DATA_DIR=${DEPLOY_ROOT}/data
+                    RUNTIME_DIR=${DEPLOY_ROOT}/runtime
 
                     mkdir -p "$RELEASES_DIR" "$DATA_DIR" "$RUNTIME_DIR"
 
                     RELEASE_DIR="${RELEASES_DIR}/${APP_NAME}-${BUILD_NUMBER}"
 
-                    sudo systemctl stop "$SERVICE_WEB" "$SERVICE_PING" || true
+                    sudo systemctl stop $SERVICE || true
 
                     rm -rf "$RELEASE_DIR"
                     mkdir -p "$RELEASE_DIR"
                     tar xzf "${ARTIFACT}" -C "$RELEASE_DIR"
 
+                    # ACTIVATE VENV INSIDE RELEASE
                     python3 -m venv "$RELEASE_DIR/.venv"
                     . "$RELEASE_DIR/.venv/bin/activate"
                     pip install --upgrade pip
                     pip install -r "$RELEASE_DIR/requirements.txt"
 
+                    # LINK TO CURRENT VERSION
                     ln -sfn "$RELEASE_DIR" "$CURRENT_LINK"
 
-                    sudo systemctl restart "$SERVICE_WEB"
-                    sudo systemctl restart "$SERVICE_PING"
+                    sudo systemctl restart $SERVICE
 
                     sleep 5
-                    curl -f http://localhost:8000/ || (echo "Healthcheck failed"; systemctl status "$SERVICE_WEB"; exit 1)
+                    curl -f http://localhost:8000/ || (echo "Healthcheck failed" && exit 1)
                 """
             }
         }
+
     }
 }
