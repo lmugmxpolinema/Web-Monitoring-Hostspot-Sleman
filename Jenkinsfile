@@ -65,7 +65,7 @@ pipeline {
         }
 
         stage('Deploy (PROD)') {
-            when { branch 'main' }
+            // when { branch 'main' }
             agent { label 'prod' }
             steps {
                 unstash 'artifact'
