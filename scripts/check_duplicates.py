@@ -4,11 +4,17 @@ Script untuk memeriksa data duplikat di file onts.json
 """
 
 import json
+import os
 from collections import defaultdict
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / 'data'
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / 'data'
 ONT_SOURCE = DATA_DIR / 'wifi_sleman.json'
 
 def load_onts_data():

@@ -17,9 +17,14 @@ MIKROTIK_PORT = 1500
 MIKROTIK_USER = 'cleon'
 MIKROTIK_PASS = 'cleon'
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / 'data'
-RUNTIME_DIR = BASE_DIR / 'runtime'
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / 'data'
+RUNTIME_DIR = PROJECT_ROOT / 'runtime'
 STATUS_CACHE_PATH = RUNTIME_DIR / 'status_cache.json'
 
 FLASK_SERVER_URL = 'http://127.0.0.1:8000'

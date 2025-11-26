@@ -4,13 +4,19 @@ Script sederhana untuk testing ping ke beberapa IP
 Membantu debug masalah ping di sistem monitoring ONT
 """
 
+import os
 import platform
 import subprocess
 import time
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_FILE = BASE_DIR / "data" / "wifi_sleman.json"
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_FILE = PROJECT_ROOT / "data" / "wifi_sleman.json"
 
 def test_ping_simple(ip):
     """Test ping sederhana ke IP tertentu"""

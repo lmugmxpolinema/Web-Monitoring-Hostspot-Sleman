@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 import json
 from collections import Counter
+from pathlib import Path
 import routeros_api
 
 app = Flask(__name__)
@@ -31,22 +32,27 @@ def load_user(user_id):
         return User(user_id)
     return None
 
-BASE_DIR = app.root_path
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-RUNTIME_DIR = os.path.join(BASE_DIR, 'runtime')
-DATA_FILE = os.path.join(DATA_DIR, 'onts.json')
-NOTIFICATIONS_FILE = os.path.join(DATA_DIR, 'notifications.json')
-NOTIFICATIONS_BAK_FILE = f"{NOTIFICATIONS_FILE}.bak"
-WIFI_DATA_FILE = os.path.join(DATA_DIR, 'wifi_sleman.json')
-OUTAGES_FILE = os.path.join(DATA_DIR, 'outages.json')
-BACKUP_DIR = os.path.join(RUNTIME_DIR, 'backups')
-HISTORY_FILE = os.path.join(RUNTIME_DIR, 'history.json')
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(app.root_path).resolve()
+
+DATA_DIR = PROJECT_ROOT / 'data'
+RUNTIME_DIR = PROJECT_ROOT / 'runtime'
+DATA_FILE = DATA_DIR / 'onts.json'
+NOTIFICATIONS_FILE = DATA_DIR / 'notifications.json'
+NOTIFICATIONS_BAK_FILE = NOTIFICATIONS_FILE.with_name(NOTIFICATIONS_FILE.name + '.bak')
+WIFI_DATA_FILE = DATA_DIR / 'wifi_sleman.json'
+OUTAGES_FILE = DATA_DIR / 'outages.json'
+BACKUP_DIR = RUNTIME_DIR / 'backups'
+HISTORY_FILE = RUNTIME_DIR / 'history.json'
 MIKROTIK_IP = '111.92.166.184'
 MIKROTIK_PORT = 8728
 MIKROTIK_USER = 'monitor'
 MIKROTIK_PASS = 's0t0kudus'
-USER_LOG_FILE = os.path.join(RUNTIME_DIR, 'user_log.json')
-STATUS_CACHE_FILE = os.path.join(RUNTIME_DIR, 'status_cache.json')
+USER_LOG_FILE = RUNTIME_DIR / 'user_log.json'
+STATUS_CACHE_FILE = RUNTIME_DIR / 'status_cache.json'
 
 
 def load_data():
@@ -163,6 +169,7 @@ def _recover_notifications_from_backup():
 
 def _atomic_write_json(file_path, data):
     dir_name = os.path.dirname(file_path) or '.'
+    os.makedirs(dir_name, exist_ok=True)
     temp_path = os.path.join(dir_name, f".tmp-{os.path.basename(file_path)}")
     with open(temp_path, 'w') as tf:
         json.dump(data, tf, indent=2)
@@ -247,6 +254,7 @@ def _cleanup_old_backups(pattern, keep_count):
         print(f"Warning: Failed to cleanup old backups: {e}")
 
 def save_and_backup(onts):
+    os.makedirs(DATA_FILE.parent, exist_ok=True)
     with open(DATA_FILE, 'w') as f:
         json.dump(onts, f, indent=2)
     os.makedirs(BACKUP_DIR, exist_ok=True)

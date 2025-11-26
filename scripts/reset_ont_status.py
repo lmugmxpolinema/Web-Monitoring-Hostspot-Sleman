@@ -5,10 +5,16 @@ Berguna untuk testing sistem ping
 """
 
 import json
+import os
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / 'data'
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / 'data'
 ONT_FILE = DATA_DIR / 'onts.json'
 
 def reset_ont_status():
@@ -27,6 +33,7 @@ def reset_ont_status():
             print(f"✅ {ont.get('name', 'Unknown')} ({ont.get('ip', 'N/A')}) → ON")
         
         # Simpan kembali ke file
+        ONT_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(ONT_FILE, "w", encoding='utf-8') as f:
             json.dump(onts, f, indent=2, ensure_ascii=False)
         

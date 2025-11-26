@@ -6,12 +6,18 @@ Menimpa data yang sama berdasarkan id_pelanggan
 """
 
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / 'data'
-RUNTIME_DIR = BASE_DIR / 'runtime'
+_env_root = os.environ.get("HOTSPOT_ROOT")
+if _env_root:
+    PROJECT_ROOT = Path(_env_root).expanduser().resolve()
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / 'data'
+RUNTIME_DIR = PROJECT_ROOT / 'runtime'
 BACKUP_DIR = RUNTIME_DIR / 'backups'
 ONT_FILE = DATA_DIR / 'onts.json'
 CSV_FILE = DATA_DIR / 'csvjson.json'
