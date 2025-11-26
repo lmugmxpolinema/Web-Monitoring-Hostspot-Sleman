@@ -94,7 +94,9 @@ pipeline {
 
                     ln -sfn "\$RELEASE_DIR" "\$CURRENT_LINK"
 
-                    sudo systemctl restart "\$SERVICE"
+                    sudo systemctl daemon-reload
+                    sudo systemctl restart ping_sleman.service
+                    sudo systemctl restart hotspot_sleman.service
                 """
             }
         }
