@@ -39,11 +39,10 @@ pipeline {
                     pip install --upgrade pip
                     pip install -r requirements.txt
 
-                    if [ -d tests ]; then
-                        # Kalau pytest ada, jalankan. Kalau gak ada, fail biar lo sadar.
-                        python3 -m pytest
+                    if [ -d tests ] && [ "$(ls -A tests)" ]; then
+                        pytest
                     else
-                        echo "No tests/ directory, skipping tests."
+                        echo "No tests found, skipping tests."
                     fi
                 """
             }
