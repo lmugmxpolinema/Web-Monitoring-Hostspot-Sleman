@@ -1,5 +1,6 @@
 pipeline {
     agent none
+
     options {
         disableConcurrentBuilds()
         timestamps()
@@ -7,18 +8,22 @@ pipeline {
     }
 
     environment {
-        APP_NAME = 'hotspot_sleman'
-        VENV_DIR = '.venv_ci'
-        ARTIFACT = "${APP_NAME}-${BUILD_NUMBER}.tar.gz"
-        DEPLOY_DIR = '/var/www/monitoringwebsekolah'
+        APP_NAME      = 'hotspot_sleman'
+        VENV_DIR      = '.venv_ci'
+        ARTIFACT      = "${APP_NAME}-${BUILD_NUMBER}.tar.gz"
+        DEPLOY_ROOT   = '/var/www/hotspot_sleman' // ini folder utama di server
     }
 
     stages {
+
         stage('Checkout') {
-            agent { label 'master' }
+            agent { label 'controller' } // sesuaikan dengan label controller lo
             steps {
                 checkout scm
-                stash name: 'source', includes: '**', excludes: '.git/**, .venv/**, venv/**, tests/**'
+                // KIRIM SEMUA KECUALI sampah; tests IKUT, tapi nanti TIDAK dimasukin artifact
+                stash name: 'source',
+                      includes: '**',
+                      excludes: '.git/**, .venv/**, venv/**, __pycache__/**, runtime/**'
             }
         }
 
@@ -27,14 +32,18 @@ pipeline {
             steps {
                 unstash 'source'
                 sh """
+                    set -e
+
                     python3 -m venv ${VENV_DIR} || true
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
-                    
-                    # smoke test
+
                     if [ -d tests ]; then
-                        pytest || echo 'no tests found, skipped'
+                        # Kalau pytest ada, jalankan. Kalau gak ada, fail biar lo sadar.
+                        python3 -m pytest
+                    else
+                        echo "No tests/ directory, skipping tests."
                     fi
                 """
             }
@@ -44,8 +53,18 @@ pipeline {
             agent { label 'stb' }
             steps {
                 sh """
-                    tar czf ${ARTIFACT} \
-                        app.py scripts data static templates requirements.txt
+                    set -e
+                    tar czf ${ARTIFACT} \\
+                        app.py \\
+                        requirements.txt \\
+                        scripts \\
+                        static \\
+                        templates \\
+                        data \\
+                        COLOR_LEGEND.md \\
+                        COLOR_SYSTEM_DOCUMENTATION.md \\
+                        QUICK_COLOR_REFERENCE.txt \\
+                        TROUBLESHOOTING_PING.md || true
                 """
                 stash name: 'artifact', includes: "${ARTIFACT}"
                 archiveArtifacts artifacts: "${ARTIFACT}", fingerprint: true
@@ -58,19 +77,39 @@ pipeline {
             steps {
                 unstash 'artifact'
                 sh """
-                    SERVICE=pingsekolah
-                    RELEASE_DIR=${DEPLOY_DIR}_releases/${APP_NAME}-${BUILD_NUMBER}
+                    set -e
 
-                    systemctl stop \$SERVICE || true
-                    mkdir -p \$RELEASE_DIR
-                    tar xzf ${ARTIFACT} -C \$RELEASE_DIR
+                    SERVICE_WEB=hotspot_sleman
+                    SERVICE_PING=ping_sleman
 
-                    python3 -m venv \$RELEASE_DIR/.venv
-                    . \$RELEASE_DIR/.venv/bin/activate
-                    pip install -r \$RELEASE_DIR/requirements.txt
+                    DEPLOY_ROOT="${DEPLOY_DIR}"
+                    RELEASES_DIR="${DEPLOY_ROOT}/releases"
+                    CURRENT_LINK="${DEPLOY_ROOT}/current"
+                    DATA_DIR="${DEPLOY_ROOT}/data"
+                    RUNTIME_DIR="${DEPLOY_ROOT}/runtime"
 
-                    ln -sfn \$RELEASE_DIR ${DEPLOY_DIR}
-                    systemctl restart \$SERVICE
+                    mkdir -p "$RELEASES_DIR" "$DATA_DIR" "$RUNTIME_DIR"
+
+                    RELEASE_DIR="${RELEASES_DIR}/${APP_NAME}-${BUILD_NUMBER}"
+
+                    sudo systemctl stop "$SERVICE_WEB" "$SERVICE_PING" || true
+
+                    rm -rf "$RELEASE_DIR"
+                    mkdir -p "$RELEASE_DIR"
+                    tar xzf "${ARTIFACT}" -C "$RELEASE_DIR"
+
+                    python3 -m venv "$RELEASE_DIR/.venv"
+                    . "$RELEASE_DIR/.venv/bin/activate"
+                    pip install --upgrade pip
+                    pip install -r "$RELEASE_DIR/requirements.txt"
+
+                    ln -sfn "$RELEASE_DIR" "$CURRENT_LINK"
+
+                    sudo systemctl restart "$SERVICE_WEB"
+                    sudo systemctl restart "$SERVICE_PING"
+
+                    sleep 5
+                    curl -f http://localhost:8000/ || (echo "Healthcheck failed"; systemctl status "$SERVICE_WEB"; exit 1)
                 """
             }
         }

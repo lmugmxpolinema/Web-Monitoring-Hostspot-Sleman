@@ -10,18 +10,21 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / 'data'
-BACKUP_DIR = BASE_DIR / 'backups'
+RUNTIME_DIR = BASE_DIR / 'runtime'
+BACKUP_DIR = RUNTIME_DIR / 'backups'
+ONT_FILE = DATA_DIR / 'onts.json'
+CSV_FILE = DATA_DIR / 'csvjson.json'
 
 def load_csv_data():
     """Memuat data dari csvjson.json"""
     try:
-        with open(BASE_DIR / 'csvjson.json', 'r', encoding='utf-8') as f:
+        with open(CSV_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print("File csvjson.json tidak ditemukan")
+        print(f"File {CSV_FILE.name} tidak ditemukan di folder data")
         return []
     except json.JSONDecodeError as e:
-        print(f"Error parsing JSON dari csvjson.json: {e}")
+        print(f"Error parsing JSON dari {CSV_FILE.name}: {e}")
         return []
 
 def convert_csv_to_onts_format(csv_data):
@@ -80,7 +83,7 @@ def backup_existing_data():
     """Membuat backup data existing"""
     try:
         try:
-            with open(BASE_DIR / 'onts.json', 'r', encoding='utf-8') as f:
+            with open(ONT_FILE, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
         except FileNotFoundError:
             # Jika onts.json tidak ada, coba ambil dari wifi_sleman.json sebagai fallback
@@ -100,7 +103,7 @@ def backup_existing_data():
         print(f"✓ Backup data existing: {backup_filename}")
         return len(existing_data)
     except FileNotFoundError:
-        print("ℹ️  File onts.json tidak ditemukan, tidak ada backup yang dibuat")
+        print(f"ℹ️  File {ONT_FILE.name} tidak ditemukan, tidak ada backup yang dibuat")
         return 0
     except Exception as e:
         print(f"⚠️  Error membuat backup: {e}")
@@ -109,9 +112,9 @@ def backup_existing_data():
 def save_new_data(data):
     """Menyimpan data baru ke onts.json"""
     try:
-        with open(BASE_DIR / 'onts.json', 'w', encoding='utf-8') as f:
+        with open(ONT_FILE, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"✓ Data baru tersimpan ke onts.json")
+        print(f"✓ Data baru tersimpan ke {ONT_FILE.name}")
         return True
     except Exception as e:
         print(f"❌ Error menyimpan data: {e}")
@@ -163,7 +166,7 @@ def main():
     existing_count = backup_existing_data()
     
     # 2. Load data CSV
-    print("\n2. Memuat data dari csvjson.json...")
+        print(f"\n2. Memuat data dari {CSV_FILE.name} (folder data)...")
     csv_data = load_csv_data()
     if not csv_data:
         print("❌ Tidak ada data CSV untuk diproses")

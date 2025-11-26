@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ONT_FILE = BASE_DIR / 'onts.json'
+DATA_DIR = BASE_DIR / 'data'
+ONT_FILE = DATA_DIR / 'onts.json'
 
 def reset_ont_status():
     """Reset semua status ONT ke ON"""
@@ -37,8 +38,8 @@ def reset_ont_status():
         print(f"📊 Statistik: {online_count} ONLINE, 0 OFFLINE")
         
     except FileNotFoundError:
-        print("❌ File onts.json tidak ditemukan!")
-        print("💡 Pastikan file onts.json ada di direktori project")
+        print(f"❌ File {ONT_FILE.name} tidak ditemukan!")
+        print("💡 Pastikan file tersebut ada di folder data")
     except json.JSONDecodeError:
         print("❌ File onts.json tidak valid!")
         print("💡 Pastikan format JSON benar")

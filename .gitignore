@@ -16,9 +16,12 @@ venv/
 
 # Logs and runtime files
 *.log
-status_cache.json
+runtime/
 history.json
+status_cache.json
 user_log.json
+backups/
+reports/
 
 # Coverage
 .coverage

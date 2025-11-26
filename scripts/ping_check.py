@@ -19,7 +19,8 @@ MIKROTIK_PASS = 'cleon'
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / 'data'
-STATUS_CACHE_PATH = BASE_DIR / 'status_cache.json'
+RUNTIME_DIR = BASE_DIR / 'runtime'
+STATUS_CACHE_PATH = RUNTIME_DIR / 'status_cache.json'
 
 FLASK_SERVER_URL = 'http://127.0.0.1:8000'
 PING_INTERVAL = 30
@@ -143,6 +144,7 @@ def update_ont_statuses():
                     'status': item.get('status')
                 })
             # atomic write
+            STATUS_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
             tmp = STATUS_CACHE_PATH.with_name('.tmp-status_cache.json')
             with open(tmp, 'w', encoding='utf-8') as tf:
                 json.dump(status_cache, tf, indent=2, ensure_ascii=False)

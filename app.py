@@ -32,20 +32,21 @@ def load_user(user_id):
     return None
 
 BASE_DIR = app.root_path
-DATA_FILE = os.path.join(BASE_DIR, 'onts.json')
-NOTIFICATIONS_FILE = os.path.join(BASE_DIR, 'notifications.json')
-NOTIFICATIONS_BAK_FILE = f"{NOTIFICATIONS_FILE}.bak"
 DATA_DIR = os.path.join(BASE_DIR, 'data')
+RUNTIME_DIR = os.path.join(BASE_DIR, 'runtime')
+DATA_FILE = os.path.join(DATA_DIR, 'onts.json')
+NOTIFICATIONS_FILE = os.path.join(DATA_DIR, 'notifications.json')
+NOTIFICATIONS_BAK_FILE = f"{NOTIFICATIONS_FILE}.bak"
 WIFI_DATA_FILE = os.path.join(DATA_DIR, 'wifi_sleman.json')
 OUTAGES_FILE = os.path.join(DATA_DIR, 'outages.json')
-BACKUP_DIR = os.path.join(BASE_DIR, 'backups')
-HISTORY_FILE = os.path.join(BASE_DIR, 'history.json')
+BACKUP_DIR = os.path.join(RUNTIME_DIR, 'backups')
+HISTORY_FILE = os.path.join(RUNTIME_DIR, 'history.json')
 MIKROTIK_IP = '111.92.166.184'
 MIKROTIK_PORT = 8728
 MIKROTIK_USER = 'monitor'
 MIKROTIK_PASS = 's0t0kudus'
-USER_LOG_FILE = os.path.join(BASE_DIR, 'user_log.json')
-STATUS_CACHE_FILE = os.path.join(BASE_DIR, 'status_cache.json')
+USER_LOG_FILE = os.path.join(RUNTIME_DIR, 'user_log.json')
+STATUS_CACHE_FILE = os.path.join(RUNTIME_DIR, 'status_cache.json')
 
 
 def load_data():
@@ -459,6 +460,7 @@ def record_history():
     if len(history) > MAX_HISTORY:
         history = history[-MAX_HISTORY:]
 
+    os.makedirs(os.path.dirname(HISTORY_FILE), exist_ok=True)
     with open(HISTORY_FILE, 'w') as f:
         json.dump(history, f, indent=2)
 
@@ -561,6 +563,7 @@ def log_active_users():
     if len(log_data) > MAX_LOG_ENTRIES:
         log_data = log_data[-MAX_LOG_ENTRIES:]
 
+    os.makedirs(os.path.dirname(USER_LOG_FILE), exist_ok=True)
     with open(USER_LOG_FILE, 'w') as f:
         json.dump(log_data, f, indent=2)
 

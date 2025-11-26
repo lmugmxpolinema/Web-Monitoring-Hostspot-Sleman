@@ -11,9 +11,10 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / 'data'
-BACKUP_DIR = BASE_DIR / 'backups'
-ONT_FILE = BASE_DIR / 'onts.json'
-CSV_FILE = BASE_DIR / 'csvjson.json'
+RUNTIME_DIR = BASE_DIR / 'runtime'
+BACKUP_DIR = RUNTIME_DIR / 'backups'
+ONT_FILE = DATA_DIR / 'onts.json'
+CSV_FILE = DATA_DIR / 'csvjson.json'
 WIFI_FALLBACK_FILE = DATA_DIR / 'wifi_sleman.json'
 
 def load_json_file(filepath: Path):
@@ -122,7 +123,7 @@ def main():
     print("=== Merge Data ONT ===\n")
     
     # Load data yang sudah ada
-    print("1. Memuat data existing dari onts.json (atau wifi_sleman.json jika tidak ada)...")
+    print(f"1. Memuat data existing dari {ONT_FILE.name} (folder data, fallback ke wifi_sleman.json jika tidak ada)...")
     existing_data = load_json_file(ONT_FILE)
     if not existing_data:
         existing_data = load_json_file(WIFI_FALLBACK_FILE)
@@ -131,7 +132,7 @@ def main():
     print(f"   Data existing: {len(existing_data)} item")
     
     # Load data dari CSV
-    print("\n2. Memuat data dari csvjson.json...")
+    print(f"\n2. Memuat data dari {CSV_FILE.name} (folder data)...")
     csv_data = load_json_file(CSV_FILE)
     print(f"   Data CSV: {len(csv_data)} item")
     
