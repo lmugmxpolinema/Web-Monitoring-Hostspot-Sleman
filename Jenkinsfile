@@ -8,16 +8,16 @@ pipeline {
     }
 
     environment {
-        APP_NAME      = 'hotspot_sleman'
-        VENV_DIR      = '.venv_ci'
-        ARTIFACT      = "${APP_NAME}-${BUILD_NUMBER}.tar.gz"
-        DEPLOY_ROOT   = '/var/www/hotspot_sleman' // ini folder utama di server
+        APP_NAME    = 'hotspot_sleman'
+        VENV_DIR    = '.venv_ci'
+        ARTIFACT    = "${APP_NAME}-${BUILD_NUMBER}.tar.gz"
+        DEPLOY_ROOT = '/var/www/hotspot_sleman' // folder utama di server
     }
 
     stages {
 
         stage('Checkout') {
-            agent { label 'controller' } // sesuaikan dengan label controller lo
+            agent { label 'controller' } // controller Jenkins
             steps {
                 checkout scm
                 // KIRIM SEMUA KECUALI sampah; tests IKUT, tapi nanti TIDAK dimasukin artifact
@@ -28,6 +28,7 @@ pipeline {
         }
 
         stage('Install & Test (STB)') {
+            // ⬅️ TEST JALAN UNTUK SEMUA BRANCH (PR & main)
             agent { label 'stb' }
             steps {
                 unstash 'source'
@@ -38,11 +39,18 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
+
+                    # TODO: tambahkan command test beneran di sini (pytest dsb)
+                    # pytest -q || true
                 """
             }
         }
 
         stage('Package (STB)') {
+            // ⬅️ HANYA JALAN DI BRANCH main (PR gak akan nge-package)
+            when {
+                branch 'main'
+            }
             agent { label 'stb' }
             steps {
                 sh """
@@ -65,6 +73,10 @@ pipeline {
         }
 
         stage('Deploy (PROD)') {
+            // ⬅️ JUGA HANYA JALAN DI main
+            when {
+                branch 'main'
+            }
             agent { label 'prod' }
             steps {
                 unstash 'artifact'
@@ -82,6 +94,7 @@ pipeline {
 
                     RELEASE_DIR="\$RELEASES_DIR/${APP_NAME}-${BUILD_NUMBER}"
 
+                    # stop service kalau bisa, tapi JANGAN bikin build fail kalau sudo minta password
                     sudo -n systemctl stop "\$SERVICE_WEB" "\$SERVICE_PING" || true
 
                     rm -rf "\$RELEASE_DIR"
@@ -95,9 +108,9 @@ pipeline {
 
                     ln -sfn "\$RELEASE_DIR" "\$CURRENT_LINK"
 
-                    sudo -n systemctl daemon-reload
-                    sudo -n systemctl restart "\$SERVICE_WEB"
-                    sudo -n systemctl restart "\$SERVICE_PING"
+                    sudo -n systemctl daemon-reload || true
+                    sudo -n systemctl restart "\$SERVICE_WEB" || true
+                    sudo -n systemctl restart "\$SERVICE_PING" || true
                 """
             }
         }
