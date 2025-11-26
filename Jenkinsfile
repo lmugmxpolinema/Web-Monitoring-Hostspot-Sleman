@@ -71,7 +71,8 @@ pipeline {
                 sh """
                     set -e
 
-                    SERVICE=hotspot_sleman
+                    SERVICE_WEB=hotspot_sleman
+                    SERVICE_PING=ping_sleman
 
                     DEPLOY_ROOT="${DEPLOY_ROOT}"
                     RELEASES_DIR="\$DEPLOY_ROOT/releases"
@@ -81,7 +82,7 @@ pipeline {
 
                     RELEASE_DIR="\$RELEASES_DIR/${APP_NAME}-${BUILD_NUMBER}"
 
-                    sudo systemctl stop "\$SERVICE" || true
+                    sudo -n systemctl stop "\$SERVICE_WEB" "\$SERVICE_PING" || true
 
                     rm -rf "\$RELEASE_DIR"
                     mkdir -p "\$RELEASE_DIR"
@@ -94,9 +95,9 @@ pipeline {
 
                     ln -sfn "\$RELEASE_DIR" "\$CURRENT_LINK"
 
-                    sudo systemctl daemon-reload
-                    sudo systemctl restart ping_sleman.service
-                    sudo systemctl restart hotspot_sleman.service
+                    sudo -n systemctl daemon-reload
+                    sudo -n systemctl restart "\$SERVICE_WEB"
+                    sudo -n systemctl restart "\$SERVICE_PING"
                 """
             }
         }
