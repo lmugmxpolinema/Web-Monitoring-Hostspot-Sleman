@@ -47,10 +47,6 @@ pipeline {
         }
 
         stage('Package (STB)') {
-            // ⬅️ HANYA JALAN DI BRANCH main (PR gak akan nge-package)
-            when {
-                branch 'main'
-            }
             agent { label 'stb' }
             steps {
                 sh """
