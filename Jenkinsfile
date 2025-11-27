@@ -111,6 +111,8 @@ pipeline {
                     sudo -n systemctl daemon-reload || true
                     sudo -n systemctl restart "\$SERVICE_WEB" || true
                     sudo -n systemctl restart "\$SERVICE_PING" || true
+                    echo "Deployed to production: \${CURRENT_LINK} -> \${RELEASE_DIR}"
+                    echo "To rollback, use: ln -sfn \$(ls -td \$RELEASES_DIR/${APP_NAME}-* | tail -n +2 | head -n 1) \$CURRENT_LINK"
                 """
             }
         }
