@@ -73,7 +73,6 @@ pipeline {
         }
 
         stage('Deploy (PROD)') {
-            }
             agent { label 'prod' }
             steps {
                 unstash 'artifact'
@@ -107,7 +106,7 @@ pipeline {
 
                     sudo -n systemctl daemon-reload || true
                     sudo -n systemctl restart "\$SERVICE_WEB" || true
-                    sudo -n systemctl restart "\$SERVICE_PING" || true                
+                    sudo -n systemctl restart "\$SERVICE_PING" || true        
                 """
             }
         }
