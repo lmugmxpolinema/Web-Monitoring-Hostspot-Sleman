@@ -105,19 +105,16 @@ pipeline {
                     sudo -n systemctl daemon-reload || true
                     sudo -n systemctl restart "\$SERVICE_WEB" || true
                     sudo -n systemctl restart "\$SERVICE_PING" || true  
+                 
+                    cd "${'$'}RELEASES_DIR"
 
-                    cd "$RELEASES_DIR"
-                    # ambil semua release, urutkan paling baru dulu
                     OLD_RELEASES=\$(ls -1dt ${APP_NAME}-* 2>/dev/null | tail -n +6 || true)
 
                     if [ -n "\$OLD_RELEASES" ]; then
                         echo "Menghapus release lama:"
-                        echo "\$OLD_RELEASES" | tr ' ' '\n'
-
-                        # pakai sudo, dan kalau gagal jangan jatuhin pipeline
+                        echo "\$OLD_RELEASES" | tr ' ' '\\n'
                         echo "\$OLD_RELEASES" | xargs -r sudo -n rm -rf -- || true
                     fi
-
                 """
             }
         }
