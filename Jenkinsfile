@@ -111,6 +111,7 @@ pipeline {
                     sudo -n systemctl daemon-reload || true
                     sudo -n systemctl restart "\$SERVICE_WEB" || true
                     sudo -n systemctl restart "\$SERVICE_PING" || true
+                    echo "Deployed to production: \${CURRENT_LINK} -> \${RELEASE_DIR}"
                 """
             }
         }
