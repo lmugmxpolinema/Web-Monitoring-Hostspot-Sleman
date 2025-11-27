@@ -4,7 +4,9 @@ pipeline {
     options {
         disableConcurrentBuilds()
         timestamps()
-        buildDiscarder(logRotator(numToKeepStr: '10'))
+        buildDiscarder(logRotator(
+            numToKeepStr: '10',
+            artifactNumToKeepStr: '5' ))
     }
 
     environment {
@@ -102,7 +104,11 @@ pipeline {
 
                     sudo -n systemctl daemon-reload || true
                     sudo -n systemctl restart "\$SERVICE_WEB" || true
-                    sudo -n systemctl restart "\$SERVICE_PING" || true        
+                    sudo -n systemctl restart "\$SERVICE_PING" || true  
+
+                    # === CLEANUP RELEASE LAMA: SIMPAN CUMA 5 TERBARU ===
+                    cd "\$RELEASES_DIR"
+                    ls -1dt ${APP_NAME}-* 2>/dev/null | tail -n +6 | xargs -r rm -rf --      
                 """
             }
         }
