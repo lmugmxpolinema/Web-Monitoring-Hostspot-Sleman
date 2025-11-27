@@ -73,9 +73,6 @@ pipeline {
         }
 
         stage('Deploy (PROD)') {
-            // ⬅️ JUGA HANYA JALAN DI main
-            when {
-                branch 'main'
             }
             agent { label 'prod' }
             steps {
